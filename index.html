@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FiloClasice</title>
+  
+  <!-- Fonturi clasice filologice -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@600;700;800&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-page: #f8f6f0;
+      --bg-card: #fdfcf9;
+      --border-color: #d8ceb8;
+      --border-accent: #b59a57;
+      --text-main: #231f1d;
+      --text-muted: #6e6559;
+      --crimson: #8b1e1e;
+      --crimson-hover: #6e1616;
+      --gold: #9e782f;
+      --gold-light: #f4ece1;
+      --morph-bg: #f4ede1;
+      --morph-border: #c8b082;
+      --highlight: #fef08a;
+      --shadow-sm: 0 2px 6px rgba(0,0,0,0.05);
+      --shadow-md: 0 6px 18px rgba(0,0,0,0.08);
+      --font-body: 'Cardo', Georgia, serif;
+      --font-title: 'Cinzel', serif;
+      --font-quote: 'Playfair Display', serif;
+    }
+
+    [data-theme="dark"], .dark {
+      --bg-page: #141312;
+      --bg-card: #1c1a18;
+      --border-color: #38332c;
+      --border-accent: #786439;
+      --text-main: #e8e4dc;
+      --text-muted: #a09789;
+      --crimson: #c44343;
+      --crimson-hover: #d95353;
+      --gold: #c29d4c;
+      --gold-light: #28241d;
+      --morph-bg: #27221b;
+      --morph-border: #625032;
+      --highlight: #715809;
+      --shadow-sm: 0 2px 6px rgba(0,0,0,0.3);
+      --shadow-md: 0 6px 18px rgba(0,0,0,0.5);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      line-height: 1.6;
+      font-size: 17px;
+      transition: background-color 0.25s, color 0.25s;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: var(--bg-card);
+      border-bottom: 2px solid var(--border-accent);
+      padding: 0.9rem 1.25rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .header-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .logo-block {
+      cursor: pointer;
+    }
+
+    .site-title {
+      font-family: var(--font-title);
+      font-size: 1.55rem;
+      letter-spacing: 0.12em;
+      color: var(--crimson);
+      font-weight: 800;
+      line-height: 1.1;
+      display: block;
+    }
+
+    .site-subtitle {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      display: block;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .btn-action {
+      background: var(--gold-light);
+      border: 1px solid var(--border-accent);
+      color: var(--text-main);
+      padding: 0.4rem 0.75rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      transition: all 0.2s;
+    }
+
+    .btn-action:hover {
+      background: var(--border-accent);
+      color: #fff;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 1.5rem auto;
+      padding: 0 1.25rem;
+      flex: 1;
+      width: 100%;
+    }
+
+    /* Panou 6 Moduri de Căutare */
+    .modes-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      margin-bottom: 1.2rem;
+      background: var(--bg-card);
+      padding: 1rem;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+    }
+
+    .modes-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      align-items: center;
+    }
+
+    .modes-group-label {
+      font-family: var(--font-title);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      min-width: 140px;
+    }
+
+    .mode-chip {
+      background: var(--bg-page);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      padding: 0.3rem 0.75rem;
+      border-radius: 20px;
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .mode-chip:hover {
+      border-color: var(--border-accent);
+      color: var(--text-main);
+    }
+
+    .mode-chip.active {
+      background: var(--crimson);
+      border-color: var(--crimson);
+      color: #ffffff;
+      font-weight: bold;
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* Căsuță de căutare */
+    .search-section {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.3rem;
+      box-shadow: var(--shadow-md);
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+
+    .search-bar-wrap {
+      display: flex;
+      position: relative;
+      align-items: center;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 0.85rem 4.5rem 0.85rem 1.1rem;
+      font-size: 1.15rem;
+      font-family: var(--font-body);
+      border: 2px solid var(--border-color);
+      border-radius: 6px;
+      background: var(--bg-page);
+      color: var(--text-main);
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .search-input:focus {
+      border-color: var(--crimson);
+      box-shadow: 0 0 0 3px rgba(139, 30, 30, 0.15);
+    }
+
+    .search-lower-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      align-items: start;
+      margin-top: 0.85rem;
+    }
+
+    .search-section.has-active-search .search-lower-layout {
+      grid-template-columns: 1fr;
+      margin-top: 0;
+    }
+
+    .search-section.has-active-search #dailyWordContainer {
+      display: none;
+    }
+
+    .daily-word-card {
+      width: 100%;
+      padding: 0.9rem 1rem;
+      text-align: left;
+      background: var(--bg-page);
+      color: var(--text-main);
+      border: 1px solid var(--border-accent);
+      border-left: 4px solid var(--gold);
+      border-radius: 6px;
+      cursor: pointer;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .daily-word-card:hover {
+      border-color: var(--crimson);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .daily-word-label {
+      display: block;
+      margin-bottom: 0.25rem;
+      color: var(--text-muted);
+      font-family: var(--font-title);
+      font-size: 0.72rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .daily-word-lemma {
+      display: block;
+      margin-bottom: 0.2rem;
+      color: var(--crimson);
+      font-size: 1.35rem;
+      font-weight: 700;
+    }
+
+    .daily-word-definition {
+      display: block;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      line-height: 1.45;
+    }
+
+    .daily-word-details {
+      display: block;
+      margin-top: 0.6rem;
+      padding-top: 0.55rem;
+      border-top: 1px solid var(--border-color);
+      font-size: 0.88rem;
+      line-height: 1.5;
+    }
+
+    .daily-word-detail {
+      display: block;
+      margin-top: 0.3rem;
+    }
+
+    .daily-word-detail-label {
+      color: var(--text-muted);
+      font-weight: 700;
+    }
+
+    .daily-word-definitions {
+      display: block;
+      margin-top: 0.55rem;
+    }
+
+    .daily-word-definition-item {
+      display: block;
+      margin-top: 0.28rem;
+      padding-left: 1rem;
+      text-indent: -1rem;
+    }
+
+    .daily-word-hint {
+      display: block;
+      margin-top: 0.45rem;
+      color: var(--gold);
+      font-size: 0.78rem;
+      font-weight: 600;
+    }
+
+    @media (max-width: 640px) {
+      .search-lower-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .search-actions {
+      position: absolute;
+      right: 0.75rem;
+      display: flex;
+      gap: 0.35rem;
+      align-items: center;
+    }
+
+    .icon-btn {
+      background: none;
+      border: none;
+      font-size: 1.05rem;
+      cursor: pointer;
+      color: var(--text-muted);
+      padding: 0.3rem 0.5rem;
+      border-radius: 4px;
+      transition: color 0.2s, background-color 0.2s;
+    }
+
+    .icon-btn:hover {
+      color: var(--crimson);
+      background: var(--gold-light);
+    }
+
+    /* Dropdown Autocomplete / Recomandări la fiecare literă */
+    .autocomplete-dropdown {
+      display: none;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: calc(100% + 0.3rem);
+      background: var(--bg-card);
+      border: 2px solid var(--border-accent);
+      border-radius: 8px;
+      box-shadow: var(--shadow-md);
+      max-height: 220px;
+      overflow-y: auto;
+      z-index: 150;
+    }
+
+    .autocomplete-dropdown.active {
+      display: block;
+    }
+
+    .dropdown-header {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.75rem;
+      font-family: var(--font-title);
+      color: var(--text-muted);
+      background: var(--gold-light);
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .dropdown-item {
+      min-height: 2.15rem;
+      padding: 0.35rem 0.75rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      border-bottom: 1px solid var(--border-color);
+      transition: background-color 0.15s;
+    }
+
+    .dropdown-item > div {
+      min-width: 0;
+      flex: 1;
+      display: flex;
+      align-items: baseline;
+      gap: 0.6rem;
+    }
+
+    .dropdown-item:last-child {
+      border-bottom: none;
+    }
+
+    .dropdown-item:hover {
+      background-color: var(--gold-light);
+    }
+
+    .dropdown-lemma {
+      flex: 0 0 auto;
+      font-size: 1.15rem;
+      font-weight: bold;
+      color: var(--crimson);
+      white-space: nowrap;
+    }
+
+    .dropdown-desc {
+      flex: 1;
+      min-width: 0;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Tastatură virtuală diacritice */
+    .virtual-keyboard {
+      display: none;
+      margin-top: 0.9rem;
+      padding-top: 0.8rem;
+      border-top: 1px dashed var(--border-color);
+    }
+
+    .virtual-keyboard.active {
+      display: block;
+    }
+
+    .kb-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+      margin-bottom: 0.4rem;
+      font-family: var(--font-title);
+    }
+
+    .kb-keys {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+    }
+
+    .kb-key {
+      background: var(--bg-page);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      padding: 0.25rem 0.55rem;
+      font-size: 1rem;
+      border-radius: 3px;
+      cursor: pointer;
+      font-family: var(--font-body);
+      transition: all 0.15s;
+    }
+
+    .kb-key:hover {
+      background: var(--gold);
+      color: #fff;
+      border-color: var(--gold);
+    }
+
+    /* Alertă lematizator */
+    .morph-notice {
+      display: none;
+      background: var(--morph-bg);
+      border: 1px solid var(--morph-border);
+      border-left: 5px solid var(--gold);
+      padding: 1rem 1.2rem;
+      border-radius: 6px;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .morph-notice.active {
+      display: block;
+    }
+
+    .morph-title {
+      font-family: var(--font-title);
+      font-size: 0.88rem;
+      color: var(--crimson);
+      letter-spacing: 0.08em;
+      margin-bottom: 0.35rem;
+    }
+
+    /* Card Rezultate Căutare Revers */
+    .reverse-results-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .reverse-item-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-left: 4px solid var(--gold);
+      border-radius: 6px;
+      padding: 1.2rem;
+      box-shadow: var(--shadow-sm);
+      cursor: pointer;
+      transition: transform 0.15s, border-color 0.15s;
+    }
+
+    .reverse-item-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--crimson);
+      border-left-color: var(--crimson);
+    }
+
+    .reverse-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.4rem;
+    }
+
+    .reverse-lemma {
+      font-size: 1.5rem;
+      color: var(--crimson);
+      font-weight: bold;
+    }
+
+    .reverse-match-text {
+      font-size: 1rem;
+      margin-top: 0.4rem;
+      background: var(--bg-page);
+      padding: 0.5rem 0.8rem;
+      border-radius: 4px;
+      border: 1px dashed var(--border-color);
+    }
+
+    /* Card Articol Dicționar */
+    .entry-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      margin-bottom: 2rem;
+    }
+
+    .entry-header {
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 1.1rem;
+      margin-bottom: 1.3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .lemma-title {
+      font-size: 2.3rem;
+      color: var(--crimson);
+      font-weight: 700;
+      line-height: 1.1;
+    }
+
+    .lemma-badges {
+      display: flex;
+      gap: 0.4rem;
+      margin-top: 0.4rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 0.15rem 0.5rem;
+      border-radius: 3px;
+      font-family: var(--font-title);
+    }
+
+    .badge-lang {
+      background: var(--crimson);
+      color: #fff;
+    }
+
+    .badge-pos {
+      background: var(--gold-light);
+      border: 1px solid var(--border-accent);
+      color: var(--text-main);
+    }
+
+    .etymology-box {
+      font-style: italic;
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+      padding: 0.6rem 0.9rem;
+      background: var(--bg-page);
+      border-left: 3px solid var(--border-accent);
+      border-radius: 0 4px 4px 0;
+      font-size: 0.95rem;
+    }
+
+    .section-title {
+      font-family: var(--font-title);
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--gold);
+      margin: 1.4rem 0 0.75rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .section-title::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--border-color);
+    }
+
+    .definitions-list {
+      list-style-position: inside;
+      padding-left: 0.3rem;
+    }
+
+    .definition-item {
+      margin-bottom: 0.6rem;
+    }
+
+    .definition-num {
+      font-weight: bold;
+      color: var(--crimson);
+      margin-right: 0.35rem;
+    }
+
+    .citation-card {
+      margin: 0.75rem 0;
+      padding: 0.8rem 1.1rem;
+      background: var(--bg-page);
+      border-left: 3px solid var(--crimson);
+      border-radius: 0 6px 6px 0;
+    }
+
+    .citation-original {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.15rem;
+    }
+
+    .citation-trans {
+      color: var(--text-muted);
+      font-style: italic;
+      font-family: var(--font-quote);
+      font-size: 0.95rem;
+    }
+
+    .citation-source {
+      text-align: right;
+      font-size: 0.82rem;
+      font-family: var(--font-title);
+      color: var(--gold);
+      margin-top: 0.35rem;
+    }
+
+    .paradigm-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 0.7rem;
+      font-size: 0.92rem;
+    }
+
+    .paradigm-table th, .paradigm-table td {
+      border: 1px solid var(--border-color);
+      padding: 0.45rem 0.75rem;
+      text-align: left;
+    }
+
+    .paradigm-table th {
+      background: var(--gold-light);
+      font-family: var(--font-title);
+      font-size: 0.82rem;
+    }
+
+    footer {
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      padding: 1.25rem;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      background: var(--bg-card);
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo-block" onclick="resetToHome()">
+        <span class="site-title">DICȚIONAR</span>
+        <span class="site-subtitle">Lexicon Graeco-Latinum</span>
+      </div>
+      <div class="header-actions">
+        <button class="btn-action" id="themeToggleBtn" onclick="toggleTheme()">🌙 Nocturn</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Selector cu 6 Moduri de Căutare -->
+    <div class="modes-container">
+      <div class="modes-row">
+        <span class="modes-group-label">Clasice ➔ Română:</span>
+        <button class="mode-chip active" id="btn-omnia-dir" onclick="setSearchMode('omnia-dir')">
+          🏛️ Omnia (Gr + Lat)
+        </button>
+        <button class="mode-chip" id="btn-greek-dir" onclick="setSearchMode('greek-dir')">
+          🏺 Greacă Veche
+        </button>
+        <button class="mode-chip" id="btn-latin-dir" onclick="setSearchMode('latin-dir')">
+          📜 Latină
+        </button>
+      </div>
+
+      <div class="modes-row" style="margin-top:0.3rem;">
+        <span class="modes-group-label">Română ➔ Clasice:</span>
+        <button class="mode-chip" id="btn-omnia-rev" onclick="setSearchMode('omnia-rev')">
+          🇷🇴 ➔ Omnia (Toate)
+        </button>
+        <button class="mode-chip" id="btn-greek-rev" onclick="setSearchMode('greek-rev')">
+          🇷🇴 ➔ Greacă Veche
+        </button>
+        <button class="mode-chip" id="btn-latin-rev" onclick="setSearchMode('latin-rev')">
+          🇷🇴 ➔ Latină
+        </button>
+      </div>
+    </div>
+
+    <!-- Căsuță de căutare cu Autocomplete / Recomandări la fiecare literă -->
+    <div class="search-section">
+      <div class="search-bar-wrap">
+        <input 
+          type="text" 
+          id="searchInput" 
+          class="search-input" 
+          placeholder="Tastează o literă sau un cuvânt"
+          autocomplete="off"
+          oninput="handleSearchInput(this.value)"
+          onkeydown="handleSearchKeydown(event)"
+        >
+        <div class="search-actions">
+          <button class="icon-btn" id="searchSubmitBtn" onclick="submitSearch()" title="Caută" aria-label="Caută" style="display:none;">🔍</button>
+          <button class="icon-btn" onclick="clearSearch()" title="Șterge textul">✕</button>
+          <button class="icon-btn" id="kbdToggleBtn" onclick="toggleKeyboard()" title="Tastatură diacritice">ᾱ/ὦ</button>
+        </div>
+        <!-- Dropdown Recomandări dinamice pe măsură ce tastezi -->
+        <div class="autocomplete-dropdown" id="autocompleteDropdown">
+          <div class="dropdown-header">
+            <span id="dropdownTitle">Recomandări</span>
+            <span style="font-family: sans-serif; font-size:10px;">Apasă click pentru deschidere</span>
+          </div>
+          <div id="dropdownList"></div>
+        </div>
+      </div>
+      <!-- Tastatură virtuală diacritice -->
+      <div class="search-lower-layout">
+        <div>
+          <div class="virtual-keyboard" id="keyboardPanel">
+            <div class="kb-label">Diacritice Grecești Politonice & Macrone Latine</div>
+            <div class="kb-keys">
+              <button class="kb-key" onclick="insertChar('ᾱ')">ᾱ</button>
+              <button class="kb-key" onclick="insertChar('ē')">ē</button>
+              <button class="kb-key" onclick="insertChar('ī')">ī</button>
+              <button class="kb-key" onclick="insertChar('ō')">ō</button>
+              <button class="kb-key" onclick="insertChar('ū')">ū</button>
+              <button class="kb-key" onclick="insertChar('ἄ')">ἄ</button>
+              <button class="kb-key" onclick="insertChar('ἁ')">ἁ</button>
+              <button class="kb-key" onclick="insertChar('ᾶ')">ᾶ</button>
+              <button class="kb-key" onclick="insertChar('ῆ')">ῆ</button>
+              <button class="kb-key" onclick="insertChar('ῶ')">ῶ</button>
+              <button class="kb-key" onclick="insertChar('ῃ')">ῃ</button>
+              <button class="kb-key" onclick="insertChar('ῳ')">ῳ</button>
+            </div>
+          </div>
+        </div>
+        <div id="dailyWordContainer" aria-live="polite"></div>
+      </div>
+    </div>
+
+    <!-- Alertă lematizator -->
+    <div class="morph-notice" id="morphNotice">
+      <div class="morph-title">
+        <span>🏛️ ANALIZĂ MORFOLOGICĂ DETECTATĂ (LEMATIZATOR)</span>
+      </div>
+      <div id="morphContent"></div>
+    </div>
+
+    <!-- Afișare articol sau rezultate revers -->
+    <div id="dictionaryDisplay"></div>
+  </main>
+
+  <footer>
+    Thesaurus Graeco-Latinum • Dicționar filologic clasic bilingv & bidirecțional.
+  </footer>
+
+  <script>
+    let currentMode = 'omnia-dir';
+
+    const lexiconData = {
+      "ψυχή": {
+        id: "ψυχή",
+        lang: "Greacă Veche",
+        pos: "Substantiv feminin, declinarea I (-ῆς)",
+        forms: "ἡ ψυχή, τῆς ψυχῆς",
+        etym: "Din verbul ψύχω (psýkhō, „a sufla, a adia”). Rădăcină PIE *bʰes-.",
+        defs: [
+          "Suflare de viață, suflu vital, spirit ce animă trupul viu.",
+          "Suflet ca sediu al vieții biologice și al individualității; umbră a celui decedat în Hades.",
+          "Suflet în sens metafizic și psihologic: sediul rațiunii superioare și al nemuririi (la Platon)."
+        ],
+        citations: [
+          { text: "ψυχὴ δ' ἐκ ῥεθέων πταμένη Ἄϊδόσδε βεβήκει.", trans: "Iar sufletul, zburând din mădulare, a coborât spre Hades.", author: "Homerus, Ilias XVI, 856" }
+        ],
+        paradigm: [
+          ["Caz", "Singular", "Plural"],
+          ["Nominativ", "ἡ ψυχή", "αἱ ψυχαί"],
+          ["Genitiv", "τῆς ψυχῆς", "τῶν ψυχῶν"],
+          ["Dativ", "τῇ ψυχῇ", "ταῖς ψυχαῖς"],
+          ["Acuzativ", "τὴν ψυχήν", "τὰς ψυχάς"]
+        ]
+      },
+      "θυμός": {
+        id: "θυμός",
+        lang: "Greacă Veche",
+        pos: "Substantiv masculin, declinarea a II-a (-οῦ)",
+        forms: "ὁ θυμός, τοῦ θυμοῦ",
+        etym: "Din rădăcina PIE *dʰuh₂-mós („fum, abur fierbinte”).",
+        defs: [
+          "Suflet pasional, suflu aprins; sediul mâniei, al curajului și al simțirii intense.",
+          "Inimă, voință nestăvilită, pornire afectivă violentă sau curaj vitejesc."
+        ],
+        citations: [
+          { text: "θυμέ, θύμ', ἀμηχάνοισι κήδεσιν κυκώμενε, ἄναδύ.", trans: "Suflete, suflet al meu, tulburat de griji fără ieșire, ridică-te!", author: "Archilochus, Fragmentul 128" }
+        ]
+      },
+      "λόγος": {
+        id: "λόγος",
+        lang: "Greacă Veche",
+        pos: "Substantiv masculin, declinarea a II-a (gen. -ου)",
+        forms: "ὁ λόγος, τοῦ λόγου; pl. οἱ λόγοι",
+        etym: "Substantiv deverbal din λέγω („a culege; a spune”).",
+        defs: [
+          "Cuvânt rostit, expunere, vorbire, conversație, discurs sau narațiune.",
+          "Rațiune, judecată, proporție matematică, calcul.",
+          "Principiul cosmic ordonator al universului în gândirea stoică."
+        ],
+        citations: [
+          { text: "τοῦ δὲ λόγου τοῦδ' ἐόντος ἀεὶ ἀξύνετοι γίνονται ἄνθρωποι.", trans: "Deși acest Logos este veșnic, oamenii nu-l înțeleg.", author: "Heraclitus, B1" }
+        ]
+      },
+      "ἀρετή": {
+        id: "ἀρετή",
+        lang: "Greacă Veche",
+        pos: "Substantiv feminin, declinarea I (-ῆς)",
+        forms: "ἡ ἀρετή, τῆς ἀρετῆς",
+        etym: "Din rădăcina PIE *h₂er- („a îmbina, a potrivi”).",
+        defs: [
+          "Excelență, desăvârșire a unei calități umane, destoinicie.",
+          "Virtute morală, merit, noblețe de caracter, curaj."
+        ],
+        citations: [
+          { text: "ἡ δ' ἀρετὴ βέβαιον, οὐ τὰ χρήματα.", trans: "Virtutea este trainică, nu averile.", author: "Menander" }
+        ]
+      },
+      "ἄνθρωπος": {
+        id: "ἄνθρωπος",
+        lang: "Greacă Veche",
+        pos: "Substantiv masculin, declinarea a II-a",
+        forms: "ὁ ἄνθρωπος, τοῦ ἀνθρώπου",
+        etym: "Om, ființă umană muritoare.",
+        defs: ["Om, ființă umană în contrast cu zeii nemuritori."]
+      },
+      "θεός": {
+        id: "θεός",
+        lang: "Greacă Veche",
+        pos: "Substantiv masculin",
+        forms: "ὁ θεός, τοῦ θεοῦ",
+        etym: "Zeu, divinitate nemuritoare.",
+        defs: ["Zeu, divinitate, providență cerească."]
+      },
+      "λείπω": {
+        id: "λείπω",
+        lang: "Greacă Veche",
+        pos: "Verb tranzitiv",
+        forms: "λείπω, λείψω, ἔλιπον, λέλοιπα",
+        etym: "Din rădăcina PIE *leikʷ- („a lăsa, a abandona”).",
+        defs: [
+          "A lăsa în urmă, a părăsi, a abandona un tovarăș.",
+          "A trece cu vederea, a omite."
+        ],
+        citations: [
+          { text: "ἔλιπον δέ με μῶνον ἑταῖροι.", trans: "Iar tovarășii m-au lăsat singur.", author: "Homerus, Odyssea IX, 420" }
+        ]
+      },
+      "anima": {
+        id: "anima",
+        lang: "Latină",
+        pos: "Substantiv feminin, declinarea I",
+        forms: "anima, animae; pl. animae",
+        etym: "Din rădăcina PIE *h₂enh₁- („a respira”).",
+        defs: [
+          "Aer inspirat, suflare, boare, adiere de vânt.",
+          "Suflet în sens biologic, suflul vieții fizice.",
+          "Ființă vie; umbră a unui mort în lumea subterană."
+        ],
+        citations: [
+          { text: "Dum anima est, spes esse dicitur.", trans: "Câtă vreme există viață, există speranță.", author: "Cicero" }
+        ]
+      },
+      "animus": {
+        id: "animus",
+        lang: "Latină",
+        pos: "Substantiv masculin, declinarea a II-a",
+        forms: "animus, animī",
+        etym: "Suflet rațional, facultățile spirituale active.",
+        defs: [
+          "Suflet rațional, spirit, minte, intelect, gândire.",
+          "Curaj, îndrăzneală, bărbăție în fața primejdiei.",
+          "Voință, dispoziție, caracter."
+        ],
+        citations: [
+          { text: "Aequam memento rebus in arduis servare mentem.", trans: "Păstrează un suflet neclintit în împrejurări grele.", author: "Horatius" }
+        ]
+      },
+      "amor": {
+        id: "amor",
+        lang: "Latină",
+        pos: "Substantiv masculin, declinarea a III-a",
+        forms: "amor, amōris",
+        etym: "Din verbul amō („a iubi”).",
+        defs: [
+          "Iubire, dragoste sinceră, afecțiune profundă.",
+          "Zeul Iubirii (Cupido / Amor)."
+        ],
+        citations: [
+          { text: "Omnia vincit Amor.", trans: "Iubirea învinge toate.", author: "Vergilius" }
+        ]
+      },
+      "virtūs": {
+        id: "virtūs",
+        lang: "Latină",
+        pos: "Substantiv feminin, declinarea a III-a",
+        forms: "virtūs, virtūtis",
+        etym: "Derivat din vir („bărbat, erou”).",
+        defs: [
+          "Curaj militar, bravură, vitejie pe câmpul de luptă.",
+          "Virtute morală, merit, desăvârșire sufletească."
+        ],
+        citations: [
+          { text: "Virtus in arduis.", trans: "Virtutea strălucește în greutăți.", author: "Proverb latin" }
+        ]
+      },
+      "vita": {
+        id: "vita",
+        lang: "Latină",
+        pos: "Substantiv feminin, declinarea I",
+        forms: "vīta, vītae",
+        etym: "Viață, existență biologică.",
+        defs: ["Viață, existență, mod de trai."],
+        citations: [
+          { text: "Vita brevis, ars longa.", trans: "Viața e scurtă, arta e lungă.", author: "Seneca" }
+        ]
+      },
+      "ferō": {
+        id: "ferō",
+        lang: "Latină",
+        pos: "Verb neregulat",
+        forms: "ferō, ferre, tulī, lātum",
+        etym: "Rădăcina PIE *bʰer- („a purta, a duce”).",
+        defs: [
+          "A purta, a duce cu sine o povară.",
+          "A suporta, a răbda, a îndura suferința."
+        ],
+        citations: [
+          { text: "Forsan et haec olim meminisse iuvabit.", trans: "Poate că într-o zi ne va plăcea să ne amintim de aceste greutăți.", author: "Vergilius" }
+        ]
+      },
+      "rex": {
+        id: "rex",
+        lang: "Latină",
+        pos: "Substantiv masculin",
+        forms: "rēx, rēgis; pl. rēgēs",
+        etym: "Din rădăcina PIE *h₃rēǵs („stăpânitor”).",
+        defs: ["Rege, monarh, cârmuitor suprem, suveran."],
+        citations: [
+          { text: "Regem non faciunt opes.", trans: "Nu bogățiile fac un rege.", author: "Seneca" }
+        ]
+      },
+      "regō": {
+        id: "regō",
+        lang: "Latină",
+        pos: "Verb conj. a III-a",
+        forms: "regō, regere, rēxī, rēctum",
+        etym: "A îndrepta, a călăuzi drumul drept.",
+        defs: [
+          "A conduce în linie dreaptă, a călăuzi.",
+          "A cârmui, a guverna, a stăpâni peste un popor."
+        ],
+        citations: [
+          { text: "Tu regere imperio populos, Romane, memento.", trans: "Adu-ți aminte, romane, să cârmuiești neamurile.", author: "Vergilius" }
+        ]
+      },
+      "sapientia": {
+        id: "sapientia",
+        lang: "Latină",
+        pos: "Substantiv feminin, declinarea I",
+        forms: "sapientia, sapientiae",
+        etym: "Înțelepciune, discernământ.",
+        defs: [
+          "Înțelepciune, discernământ, chibzuință în viață.",
+          "Cunoaștere a lucrurilor divine și omenești."
+        ],
+        citations: [
+          { text: "Sapientia est rerum humanarum divinarumque scientia.", trans: "Înțelepciunea este cunoașterea lucrurilor omenești și dumnezeiești.", author: "Cicero" }
+        ]
+      }
+    };
+
+    const morphologicalIndex = {
+      "ἔλιπον": [ { lemma: "λείπω", parse: "Aorist II Indicativ Activ, Pers. 1 Sg. / Pers. 3 Pl." } ],
+      "tuli": [ { lemma: "ferō", parse: "Perfect Indicativ Activ, Pers. 1 Sg." } ],
+      "tuleram": [ { lemma: "ferō", parse: "Mai mult ca perfect Indicativ Activ, Pers. 1 Sg." } ],
+      "regis": [
+        { lemma: "rex", parse: "Substantiv masculin, Genitiv singular („al regelui”)" },
+        { lemma: "regō", parse: "Verb conj. III, Prezent Indicativ Activ, Pers. a II-a sg. („tu conduci”)" }
+      ]
+    };
+
+    function renderDailyWord() {
+      const entries = Object.keys(lexiconData).sort();
+      const today = new Date();
+      const dateKey = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`;
+      let hash = 2166136261;
+
+      for (let i = 0; i < dateKey.length; i++) {
+        hash = Math.imul(hash ^ dateKey.charCodeAt(i), 16777619);
+      }
+
+      const item = lexiconData[entries[(hash >>> 0) % entries.length]];
+      const greekClass = item.lang === "Greacă Veche" ? " greek-text" : "";
+      document.getElementById("dailyWordContainer").innerHTML = `
+        <button class="daily-word-card" type="button" onclick="selectSuggestion('${item.id}')">
+          <span class="daily-word-label">Cuvântul zilei</span>
+          <span class="daily-word-lemma${greekClass}">${item.id}</span>
+          <span class="daily-word-definition">${item.pos}</span>
+          <span class="daily-word-details">
+            <span class="daily-word-detail"><span class="daily-word-detail-label">Forme:</span> <span class="${greekClass.trim()}">${item.forms}</span></span>
+            <span class="daily-word-detail"><span class="daily-word-detail-label">Etimologie:</span> ${item.etym}</span>
+            <span class="daily-word-definitions">
+              <span class="daily-word-detail-label">Definiții:</span>
+              ${item.defs.map((definition, index) => `<span class="daily-word-definition-item">${index + 1}. ${definition}</span>`).join('')}
+            </span>
+          </span>
+          <span class="daily-word-hint">Apasă pentru a deschide fișa →</span>
+        </button>
+      `;
+    }
+
+    function cleanUniversal(str) {
+      if (!str) return '';
+      return str
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/[āă]/gi, 'a')
+        .replace(/[ēĕ]/gi, 'e')
+        .replace(/[īĭ]/gi, 'i')
+        .replace(/[ōŏ]/gi, 'o')
+        .replace(/[ūŭ]/gi, 'u')
+        .replace(/[șş]/gi, 's')
+        .replace(/[țţ]/gi, 't')
+        .replace(/[îâ]/gi, 'i')
+        .toLowerCase()
+        .trim();
+    }
+
+    function transliterateGreek(str) {
+      const greekLetters = {
+        "α": "a", "β": "b", "γ": "g", "δ": "d", "ε": "e",
+        "ζ": "z", "η": "e", "θ": "th", "ι": "i", "κ": "k",
+        "λ": "l", "μ": "m", "ν": "n", "ξ": "x", "ο": "o",
+        "π": "p", "ρ": "r", "σ": "s", "ς": "s", "τ": "t",
+        "υ": "y", "φ": "ph", "χ": "ch", "ψ": "ps", "ω": "o"
+      };
+      const normalized = cleanUniversal(str).replace(/ς/g, "σ");
+      return Array.from(normalized, letter => greekLetters[letter] || letter).join("");
+    }
+
+    function greekSearchKey(str) {
+      const cleanText = cleanUniversal(str);
+      const containsGreek = /[\u0370-\u03ff\u1f00-\u1fff]/.test(cleanText);
+      return containsGreek
+        ? transliterateGreek(cleanText)
+        : cleanText.replace(/kh/g, "ch").replace(/ks/g, "x");
+    }
+
+    function matchesSearchText(text, query) {
+      return greekSearchKey(text) === greekSearchKey(query);
+    }
+
+    function setSearchMode(mode) {
+      currentMode = mode;
+      const allModeButtons = ['omnia-dir', 'greek-dir', 'latin-dir', 'omnia-rev', 'greek-rev', 'latin-rev'];
+      allModeButtons.forEach(m => {
+        const btn = document.getElementById('btn-' + m);
+        if (btn) btn.classList.toggle('active', m === mode);
+      });
+
+      const input = document.getElementById('searchInput');
+      const kbdBtn = document.getElementById('kbdToggleBtn');
+      const searchSubmitBtn = document.getElementById('searchSubmitBtn');
+      const kbdPanel = document.getElementById('keyboardPanel');
+      const morphNotice = document.getElementById('morphNotice');
+
+      morphNotice.classList.remove('active');
+      kbdPanel.classList.remove('active');
+      document.getElementById('autocompleteDropdown').classList.remove('active');
+
+      const isReverse = mode.endsWith('-rev');
+      kbdBtn.style.display = isReverse ? "none" : "inline-block";
+      searchSubmitBtn.style.display = isReverse ? "inline-block" : "none";
+
+      if (!isReverse) {
+        input.placeholder = "Tastează o literă sau un cuvânt";
+      } else {
+        input.placeholder = "Tastează un cuvânt în română...";
+      }
+
+      if (isReverse) {
+        document.getElementById('autocompleteDropdown').classList.remove('active');
+        document.getElementById('dictionaryDisplay').innerHTML = '';
+      } else {
+        handleSearch(input.value);
+      }
+      input.focus();
+    }
+
+    function handleSearchInput(query) {
+      if (currentMode.endsWith('-rev')) {
+        document.getElementById('autocompleteDropdown').classList.remove('active');
+        document.getElementById('dictionaryDisplay').innerHTML = '';
+        updateHomeView(query);
+        return;
+      }
+
+      updateLiveSuggestions(query);
+      handleSearch(query);
+    }
+
+    function submitSearch() {
+      if (!currentMode.endsWith('-rev')) return;
+      document.getElementById('autocompleteDropdown').classList.remove('active');
+      runReverseSearch(document.getElementById('searchInput').value);
+    }
+
+    function handleSearchKeydown(event) {
+      if (event.key === 'Enter' && currentMode.endsWith('-rev')) {
+        event.preventDefault();
+        submitSearch();
+      }
+    }
+
+    function updateHomeView(query) {
+      document.querySelector('.search-section').classList.toggle('has-active-search', Boolean(query.trim()));
+    }
+
+    function updateLiveSuggestions(query) {
+      const dropdown = document.getElementById('autocompleteDropdown');
+      const list = document.getElementById('dropdownList');
+      const title = document.getElementById('dropdownTitle');
+
+      if (!query || query.trim() === '') {
+        dropdown.classList.remove('active');
+        return;
+      }
+
+      const raw = query.trim();
+      const cleanQ = greekSearchKey(raw);
+      const matches = [];
+
+      for (let lemma in lexiconData) {
+        const item = lexiconData[lemma];
+        if (currentMode === 'greek-dir' && item.lang !== "Greacă Veche") continue;
+        if (currentMode === 'latin-dir' && item.lang !== "Latină") continue;
+
+        if (greekSearchKey(lemma).startsWith(cleanQ)) {
+          matches.push(item);
+        }
+      }
+
+      if (matches.length > 0) {
+        matches.sort((a, b) => greekSearchKey(a.id).localeCompare(greekSearchKey(b.id), 'en', { sensitivity: 'base' }));
+        dropdown.classList.add('active');
+        title.innerText = `Recomandări pentru „${raw}” (${matches.length})`;
+        list.innerHTML = matches.slice(0, 5).map(item => `
+          <div class="dropdown-item" onclick="selectSuggestion('${item.id}')">
+            <div>
+              <span class="dropdown-lemma${item.lang === 'Greacă Veche' ? ' greek-text' : ''}">${item.id}</span>
+              <span class="dropdown-desc">${item.defs[0]}</span>
+            </div>
+          </div>
+        `).join('');
+      } else {
+        dropdown.classList.remove('active');
+      }
+    }
+
+    function selectSuggestion(lemma) {
+      document.getElementById('searchInput').value = lemma;
+      document.getElementById('autocompleteDropdown').classList.remove('active');
+      updateHomeView(lemma);
+      renderEntry(lemma);
+    }
+
+    function handleSearch(query) {
+      updateHomeView(query);
+      if (currentMode.endsWith('-dir')) {
+        runDirectSearch(query);
+      } else {
+        runReverseSearch(query);
+      }
+    }
+
+    function runDirectSearch(query) {
+      const morphNotice = document.getElementById('morphNotice');
+      const morphContent = document.getElementById('morphContent');
+      const display = document.getElementById('dictionaryDisplay');
+
+      if (!query || query.trim() === '') {
+        morphNotice.classList.remove('active');
+        display.innerHTML = '';
+        return;
+      }
+
+      const raw = query.trim();
+
+      for (let form in morphologicalIndex) {
+        if (form === raw || matchesSearchText(form, raw)) {
+          const targets = morphologicalIndex[form];
+          const isGreek = lexiconData[targets[0].lemma].lang === "Greacă Veche";
+          const greekClass = isGreek ? ' class="greek-text"' : '';
+          morphNotice.classList.add('active');
+          morphContent.innerHTML = `Forma <strong${greekClass}>„${form}”</strong> identificată: <strong${greekClass} style="color:var(--crimson);">${targets[0].parse}</strong>. Trimis la <strong${greekClass}>${targets[0].lemma}</strong>.`;
+          renderEntry(targets[0].lemma);
+          return;
+        }
+      }
+
+      morphNotice.classList.remove('active');
+
+      let matchedLemma = null;
+      for (let lemma in lexiconData) {
+        const item = lexiconData[lemma];
+        if (currentMode === 'greek-dir' && item.lang !== "Greacă Veche") continue;
+        if (currentMode === 'latin-dir' && item.lang !== "Latină") continue;
+
+        if (lemma === raw || matchesSearchText(lemma, raw)) {
+          matchedLemma = lemma;
+          break;
+        }
+      }
+
+      if (matchedLemma) {
+        renderEntry(matchedLemma);
+      } else {
+        display.innerHTML = '';
+      }
+    }
+
+    function runReverseSearch(query) {
+      const display = document.getElementById('dictionaryDisplay');
+      document.getElementById('morphNotice').classList.remove('active');
+
+      if (!query || query.trim().length < 2) {
+        display.innerHTML = '';
+        return;
+      }
+
+      const raw = query.trim();
+      const cleanQ = cleanUniversal(raw);
+      const matches = [];
+
+      for (let key in lexiconData) {
+        const item = lexiconData[key];
+        if (currentMode === 'greek-rev' && item.lang !== "Greacă Veche") continue;
+        if (currentMode === 'latin-rev' && item.lang !== "Latină") continue;
+
+        const matchedDefs = [];
+        item.defs.forEach((def, idx) => {
+          if (cleanUniversal(def).includes(cleanQ)) {
+            matchedDefs.push({ num: idx + 1, text: def });
+          }
+        });
+
+        if (matchedDefs.length > 0) {
+          matches.push({ lemma: item.id, lang: item.lang, pos: item.pos, forms: item.forms, defs: matchedDefs });
+        }
+      }
+
+      if (matches.length === 0) {
+        display.innerHTML = '';
+        return;
+      }
+
+      let html = `<div class="reverse-results-container">`;
+      matches.forEach(m => {
+        html += `
+          <div class="reverse-item-card" onclick="selectSuggestion('${m.lemma}')">
+            <div class="reverse-header">
+              <div>
+                <span class="reverse-lemma">${m.lemma}</span>
+                <span class="badge badge-lang" style="margin-left: 0.5rem;">${m.lang}</span>
+                <span class="badge badge-pos">${m.pos}</span>
+              </div>
+              <span style="font-size: 0.85rem; color: var(--crimson); font-weight: bold;">Vezi fișa ➔</span>
+            </div>
+            <div style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.4rem;"><em>${m.forms}</em></div>
+            <div class="reverse-match-text">
+              ${m.defs.map(d => `<div><strong>${d.num}.</strong> ${d.text}</div>`).join('')}
+            </div>
+          </div>
+        `;
+      });
+      html += `</div>`;
+      display.innerHTML = html;
+    }
+
+    function renderEntry(lemmaKey) {
+      const data = lexiconData[lemmaKey];
+      const display = document.getElementById('dictionaryDisplay');
+      if (!data) return;
+
+      let citationsHtml = '';
+      if (data.citations && data.citations.length > 0) {
+        citationsHtml += `<div class="section-title">Citate & Atestări Clasice</div>`;
+        data.citations.forEach(cit => {
+          citationsHtml += `
+            <div class="citation-card">
+              <div class="citation-original">${cit.text}</div>
+              <div class="citation-trans">${cit.trans}</div>
+              <div class="citation-source">— ${cit.author}</div>
+            </div>
+          `;
+        });
+      }
+
+      let paradigmHtml = '';
+      if (data.paradigm && data.paradigm.length > 0) {
+        paradigmHtml += `
+          <div class="section-title">Paradigmă Gramaticală</div>
+          <table class="paradigm-table">
+            <thead><tr>${data.paradigm[0].map(h => `<th>${h}</th>`).join('')}</tr></thead>
+            <tbody>
+              ${data.paradigm.slice(1).map(row => `<tr>${row.map(c => `<td>${c}</td>`).join('')}</tr>`).join('')}
+            </tbody>
+          </table>
+        `;
+      }
+
+      display.innerHTML = `
+        <article class="entry-card">
+          <div class="entry-header">
+            <div>
+              <h1 class="lemma-title">${data.id}</h1>
+              <div class="lemma-badges">
+                <span class="badge badge-lang">${data.lang}</span>
+                <span class="badge badge-pos">${data.pos}</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="etymology-box">
+            <strong>Forme canonice:</strong> ${data.forms}<br>
+            <strong>Etimologie & Origine:</strong> ${data.etym}
+          </div>
+
+          <div class="section-title">Definiții & Sensuri (Limba Română)</div>
+          <ol class="definitions-list">
+            ${data.defs.map((d, idx) => `<li class="definition-item"><span class="definition-num">${idx + 1}.</span> ${d}</li>`).join('')}
+          </ol>
+
+          ${citationsHtml}
+          ${paradigmHtml}
+        </article>
+      `;
+    }
+
+    function clearSearch() {
+      const input = document.getElementById('searchInput');
+      input.value = '';
+      document.getElementById('autocompleteDropdown').classList.remove('active');
+      input.focus();
+      handleSearch('');
+    }
+
+    function resetToHome() {
+      setSearchMode('omnia-dir');
+      clearSearch();
+    }
+
+    function toggleKeyboard() {
+      document.getElementById('keyboardPanel').classList.toggle('active');
+    }
+
+    function insertChar(char) {
+      const input = document.getElementById('searchInput');
+      const start = input.selectionStart;
+      const end = input.selectionEnd;
+      input.value = input.value.substring(0, start) + char + input.value.substring(end);
+      input.focus();
+      input.selectionStart = input.selectionEnd = start + char.length;
+      handleSearchInput(input.value);
+    }
+
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute('data-theme');
+      const target = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', target);
+      if (target === 'dark') document.documentElement.classList.add('dark');
+      else document.documentElement.classList.remove('dark');
+      document.getElementById('themeToggleBtn').innerText = target === 'dark' ? '☀️ Luminos' : '🌙 Nocturn';
+    }
+
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.innerText = text;
+      return div.innerHTML;
+    }
+
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.search-section')) {
+        document.getElementById('autocompleteDropdown').classList.remove('active');
+      }
+    });
+
+    window.addEventListener('DOMContentLoaded', () => {
+      renderDailyWord();
+      setSearchMode('omnia-dir');
+    });
+  </script>
+</body>
+</html>
