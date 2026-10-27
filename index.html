@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="ro">
 <head>
   <meta charset="UTF-8">
@@ -1089,20 +1089,72 @@
       return greekSearchKey(text) === greekSearchKey(query);
     }
 
-    function getRemoteDictionaryTarget(query) {
-      const raw = query.trim();
-      if (!raw) return null;
+    function greekDocumentKeyForLetter(letter) {
+      const normalized = String(letter || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+      const greekLetterMap = {
+        'α': 'alpha', 'β': 'beta', 'γ': 'gamma', 'δ': 'delta', 'ε': 'epsilon', 'ζ': 'zeta', 'η': 'eta',
+        'θ': 'theta', 'ι': 'iota', 'κ': 'kappa', 'λ': 'lambda', 'μ': 'mu', 'ν': 'nu', 'ξ': 'xi',
+        'ο': 'omicron', 'π': 'pi', 'ρ': 'rho', 'σ': 'sigma', 'ς': 'sigma', 'τ': 'tau', 'υ': 'upsilon',
+        'φ': 'phi', 'χ': 'chi', 'ψ': 'psi', 'ω': 'omega'
+      };
+      return greekLetterMap[normalized] || normalized || 'a';
+    }
 
-      const normalizedFirstLetter = raw.normalize("NFD").replace(/[\u0300-\u036f]/g, "")[0].toLowerCase();
+    function buildDictionaryTargets(query) {
+      const raw = query.trim();
+      if (!raw) return [];
+
+      const firstLetter = [...raw].find(ch => /[\p{L}]/u.test(ch)) || raw[0] || 'a';
+      const normalizedFirstLetter = String(firstLetter).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
       const isGreek = /[\u0370-\u03ff\u1f00-\u1fff]/.test(raw);
       const language = currentMode === 'greek-dir' || (currentMode === 'omnia-dir' && isGreek)
         ? 'gr'
         : 'lat';
+      const fileKey = language === 'gr'
+        ? greekDocumentKeyForLetter(firstLetter)
+        : (normalizedFirstLetter || 'a');
 
-      return {
+      const directoryNames = [
         language,
-        path: `data/${language}.json/${encodeURIComponent(normalizedFirstLetter)}.json`
-      };
+        `${language}.json`
+      ];
+
+      const fileNames = [
+        fileKey,
+        `${fileKey}.json`,
+        normalizedFirstLetter,
+        `${normalizedFirstLetter}.json`,
+        String(firstLetter),
+        `${String(firstLetter)}.json`
+      ].filter((value, index, arr) => value && arr.indexOf(value) === index);
+
+      const seen = new Set();
+      const targets = [];
+
+      directoryNames.forEach(dirName => {
+        fileNames.forEach(fileName => {
+          const actualName = fileName.endsWith('.json') ? fileName : `${fileName}.json`;
+          const path = `data/${dirName}/${actualName}`;
+          if (!seen.has(path)) {
+            seen.add(path);
+            targets.push({ language, path });
+          }
+        });
+      });
+
+      const legacyDirName = `${language}.json`;
+      const legacyAlternative = `data/${legacyDirName}/${encodeURIComponent(fileKey)}.json`;
+      if (!seen.has(legacyAlternative)) {
+        seen.add(legacyAlternative);
+        targets.push({ language, path: legacyAlternative });
+      }
+
+      return targets;
+    }
+
+    function getRemoteDictionaryTarget(query) {
+      const targets = buildDictionaryTargets(query);
+      return targets[0] || null;
     }
 
     function normalizeRemoteEntry(lemma, entry, language) {
@@ -1144,33 +1196,40 @@
     }
 
     async function loadRemoteDictionary(query) {
-      const target = getRemoteDictionaryTarget(query);
-      if (!target) return;
+      const targets = buildDictionaryTargets(query);
+      if (!targets.length) return;
 
-      if (!remoteDictionaryCache.has(target.path)) {
-        const request = fetch(target.path).then(response => {
-          if (!response.ok) {
-            throw new Error(`Răspuns HTTP ${response.status}`);
+      let lastError = null;
+
+      for (const target of targets) {
+        if (!remoteDictionaryCache.has(target.path)) {
+          const request = fetch(target.path).then(response => {
+            if (!response.ok) {
+              throw new Error(`Răspuns HTTP ${response.status}`);
+            }
+            return response.json();
+          });
+          remoteDictionaryCache.set(target.path, request);
+        }
+
+        try {
+          const data = await remoteDictionaryCache.get(target.path);
+          if (!data || typeof data !== 'object' || Array.isArray(data)) {
+            throw new TypeError('Fișierul JSON trebuie să conțină un obiect cu intrări indexate după lemă.');
           }
-          return response.json();
-        });
-        remoteDictionaryCache.set(target.path, request);
+          for (const [lemma, entry] of Object.entries(data)) {
+            if (!Object.prototype.hasOwnProperty.call(lexiconData, lemma)) {
+              lexiconData[lemma] = normalizeRemoteEntry(lemma, entry, target.language);
+            }
+          }
+          return;
+        } catch (error) {
+          lastError = error;
+          remoteDictionaryCache.delete(target.path);
+        }
       }
 
-      try {
-        const data = await remoteDictionaryCache.get(target.path);
-        if (!data || typeof data !== 'object' || Array.isArray(data)) {
-          throw new TypeError('Fișierul JSON trebuie să conțină un obiect cu intrări indexate după lemă.');
-        }
-        for (const [lemma, entry] of Object.entries(data)) {
-          if (!Object.prototype.hasOwnProperty.call(lexiconData, lemma)) {
-            lexiconData[lemma] = normalizeRemoteEntry(lemma, entry, target.language);
-          }
-        }
-      } catch (error) {
-        remoteDictionaryCache.delete(target.path);
-        throw new Error(`Nu s-a putut încărca ${target.path}: ${error.message}`);
-      }
+      throw new Error(`Nu s-a putut încărca niciun fișier pentru ${query}: ${lastError ? lastError.message : 'eroare necunoscută'}`);
     }
 
     function setSearchMode(mode) {
