@@ -146,15 +146,10 @@
 
     .page-layout {
       display: grid;
-      grid-template-columns: minmax(180px, 220px) minmax(0, 1fr);
-      grid-template-areas: "left content";
+      grid-template-columns: minmax(0, 1fr);
+      grid-template-areas: "content";
       align-items: start;
       gap: 1.25rem;
-    }
-
-    .left-sidebar {
-      grid-area: left;
-      min-width: 0;
     }
 
     .content-column {
@@ -178,23 +173,6 @@
       font-weight: 700;
       letter-spacing: 0.06em;
       text-transform: uppercase;
-    }
-
-    .left-sidebar .daily-word-card {
-      padding: 0.75rem;
-    }
-
-    .left-sidebar .daily-word-lemma {
-      font-size: 1.2rem;
-      overflow-wrap: anywhere;
-    }
-
-    .left-sidebar .daily-word-details {
-      font-size: 0.82rem;
-    }
-
-    .left-sidebar .daily-word-hint {
-      font-size: 0.72rem;
     }
 
     .main-sidebar-menu {
@@ -322,96 +300,10 @@
       margin-top: 0;
     }
 
-    .page-layout.has-active-search .left-sidebar {
-      display: none;
-    }
-
-    .daily-word-card {
-      width: 100%;
-      padding: 0.9rem 1rem;
-      text-align: left;
-      background: var(--bg-page);
-      color: var(--text-main);
-      border: 1px solid var(--border-accent);
-      border-left: 4px solid var(--gold);
-      border-radius: 6px;
-      cursor: pointer;
-      transition: border-color 0.2s, box-shadow 0.2s;
-    }
-
-    .daily-word-card:hover {
-      border-color: var(--crimson);
-      box-shadow: var(--shadow-sm);
-    }
-
-    .daily-word-label {
-      display: block;
-      margin-bottom: 0.25rem;
-      color: var(--text-muted);
-      font-family: var(--font-title);
-      font-size: 0.72rem;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
-
-    .daily-word-lemma {
-      display: block;
-      margin-bottom: 0.2rem;
-      color: var(--crimson);
-      font-size: 1.35rem;
-      font-weight: 700;
-    }
-
-    .daily-word-definition {
-      display: block;
-      color: var(--text-muted);
-      font-size: 0.9rem;
-      line-height: 1.45;
-    }
-
-    .daily-word-details {
-      display: block;
-      margin-top: 0.6rem;
-      padding-top: 0.55rem;
-      border-top: 1px solid var(--border-color);
-      font-size: 0.88rem;
-      line-height: 1.5;
-    }
-
-    .daily-word-detail {
-      display: block;
-      margin-top: 0.3rem;
-    }
-
-    .daily-word-detail-label {
-      color: var(--text-muted);
-      font-weight: 700;
-    }
-
-    .daily-word-definitions {
-      display: block;
-      margin-top: 0.55rem;
-    }
-
-    .daily-word-definition-item {
-      display: block;
-      margin-top: 0.28rem;
-      padding-left: 1rem;
-      text-indent: -1rem;
-    }
-
-    .daily-word-hint {
-      display: block;
-      margin-top: 0.45rem;
-      color: var(--gold);
-      font-size: 0.78rem;
-      font-weight: 600;
-    }
-
     @media (max-width: 1050px) {
       .page-layout {
-        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-        grid-template-areas: "content content" "left left";
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas: "content";
       }
 
     }
@@ -419,7 +311,7 @@
     @media (max-width: 640px) {
       .page-layout {
         grid-template-columns: minmax(0, 1fr);
-        grid-template-areas: "content" "left";
+        grid-template-areas: "content";
         gap: 1rem;
       }
     }
@@ -583,14 +475,6 @@
 
     .morph-notice.active {
       display: block;
-    }
-
-    .morph-title {
-      font-family: var(--font-title);
-      font-size: 0.88rem;
-      color: var(--crimson);
-      letter-spacing: 0.08em;
-      margin-bottom: 0.35rem;
     }
 
     /* Card Rezultate Căutare Revers */
@@ -907,17 +791,6 @@
       outline: none;
     }
 
-    .daily-word-card {
-      border-radius: 14px;
-      background: linear-gradient(135deg, var(--bg-page), var(--gold-light));
-      transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
-    }
-
-    .daily-word-card:hover {
-      transform: translateY(-2px);
-      box-shadow: var(--shadow-sm);
-    }
-
     .autocomplete-dropdown {
       border-radius: 14px;
       border-width: 1px;
@@ -1091,10 +964,6 @@
 
   <main>
     <div class="page-layout">
-      <aside class="left-sidebar" aria-label="Cuvântul zilei">
-        <div id="dailyWordContainer" aria-live="polite"></div>
-      </aside>
-
       <section class="content-column" aria-label="Dicționar">
         <!-- Căsuță de căutare cu Autocomplete / Recomandări la fiecare literă -->
         <div class="search-section">
@@ -1163,12 +1032,6 @@
           </div>
         </div>
 
-        <div class="morph-notice" id="morphNotice">
-          <div class="morph-title">
-            <span>ANALIZĂ MORFOLOGICĂ DETECTATĂ (LEMATIZATOR)</span>
-          </div>
-          <div id="morphContent"></div>
-        </div>
         <div id="dictionaryDisplay" aria-live="polite"></div>
       </section>
 
@@ -1183,265 +1046,7 @@
     let currentMode = 'omnia-dir';
     const remoteDictionaryCache = new Map();
     let searchRequestId = 0;
-    const lexiconData = {
-      "ψυχή": {
-        id: "ψυχή",
-        lang: "Greacă Veche",
-        pos: "Substantiv feminin, declinarea I (-ῆς)",
-        forms: "ἡ ψυχή, τῆς ψυχῆς",
-        etym: "Din verbul ψύχω (psýkhō, „a sufla, a adia”). Rădăcină PIE *bʰes-.",
-        defs: [
-          "Suflare de viață, suflu vital, spirit ce animă trupul viu.",
-          "Suflet ca sediu al vieții biologice și al individualității; umbră a celui decedat în Hades.",
-          "Suflet în sens metafizic și psihologic: sediul rațiunii superioare și al nemuririi (la Platon)."
-        ],
-        citations: [
-          { text: "ψυχὴ δ' ἐκ ῥεθέων πταμένη Ἄϊδόσδε βεβήκει.", trans: "Iar sufletul, zburând din mădulare, a coborât spre Hades.", author: "Homerus, Ilias XVI, 856" }
-        ],
-        paradigm: [
-          ["Caz", "Singular", "Plural"],
-          ["Nominativ", "ἡ ψυχή", "αἱ ψυχαί"],
-          ["Genitiv", "τῆς ψυχῆς", "τῶν ψυχῶν"],
-          ["Dativ", "τῇ ψυχῇ", "ταῖς ψυχαῖς"],
-          ["Acuzativ", "τὴν ψυχήν", "τὰς ψυχάς"]
-        ]
-      },
-      "θυμός": {
-        id: "θυμός",
-        lang: "Greacă Veche",
-        pos: "Substantiv masculin, declinarea a II-a (-οῦ)",
-        forms: "ὁ θυμός, τοῦ θυμοῦ",
-        etym: "Din rădăcina PIE *dʰuh₂-mós („fum, abur fierbinte”).",
-        defs: [
-          "Suflet pasional, suflu aprins; sediul mâniei, al curajului și al simțirii intense.",
-          "Inimă, voință nestăvilită, pornire afectivă violentă sau curaj vitejesc."
-        ],
-        citations: [
-          { text: "θυμέ, θύμ', ἀμηχάνοισι κήδεσιν κυκώμενε, ἄναδύ.", trans: "Suflete, suflet al meu, tulburat de griji fără ieșire, ridică-te!", author: "Archilochus, Fragmentul 128" }
-        ]
-      },
-      "λόγος": {
-        id: "λόγος",
-        lang: "Greacă Veche",
-        pos: "Substantiv masculin, declinarea a II-a (gen. -ου)",
-        forms: "ὁ λόγος, τοῦ λόγου; pl. οἱ λόγοι",
-        etym: "Substantiv deverbal din λέγω („a culege; a spune”).",
-        defs: [
-          "Cuvânt rostit, expunere, vorbire, conversație, discurs sau narațiune.",
-          "Rațiune, judecată, proporție matematică, calcul.",
-          "Principiul cosmic ordonator al universului în gândirea stoică."
-        ],
-        citations: [
-          { text: "τοῦ δὲ λόγου τοῦδ' ἐόντος ἀεὶ ἀξύνετοι γίνονται ἄνθρωποι.", trans: "Deși acest Logos este veșnic, oamenii nu-l înțeleg.", author: "Heraclitus, B1" }
-        ]
-      },
-      "ἀρετή": {
-        id: "ἀρετή",
-        lang: "Greacă Veche",
-        pos: "Substantiv feminin, declinarea I (-ῆς)",
-        forms: "ἡ ἀρετή, τῆς ἀρετῆς",
-        etym: "Din rădăcina PIE *h₂er- („a îmbina, a potrivi”).",
-        defs: [
-          "Excelență, desăvârșire a unei calități umane, destoinicie.",
-          "Virtute morală, merit, noblețe de caracter, curaj."
-        ],
-        citations: [
-          { text: "ἡ δ' ἀρετὴ βέβαιον, οὐ τὰ χρήματα.", trans: "Virtutea este trainică, nu averile.", author: "Menander" }
-        ]
-      },
-      "ἄνθρωπος": {
-        id: "ἄνθρωπος",
-        lang: "Greacă Veche",
-        pos: "Substantiv masculin, declinarea a II-a",
-        forms: "ὁ ἄνθρωπος, τοῦ ἀνθρώπου",
-        etym: "Om, ființă umană muritoare.",
-        defs: ["Om, ființă umană în contrast cu zeii nemuritori."]
-      },
-      "θεός": {
-        id: "θεός",
-        lang: "Greacă Veche",
-        pos: "Substantiv masculin",
-        forms: "ὁ θεός, τοῦ θεοῦ",
-        etym: "Zeu, divinitate nemuritoare.",
-        defs: ["Zeu, divinitate, providență cerească."]
-      },
-      "λείπω": {
-        id: "λείπω",
-        lang: "Greacă Veche",
-        pos: "Verb tranzitiv",
-        forms: "λείπω, λείψω, ἔλιπον, λέλοιπα",
-        etym: "Din rădăcina PIE *leikʷ- („a lăsa, a abandona”).",
-        defs: [
-          "A lăsa în urmă, a părăsi, a abandona un tovarăș.",
-          "A trece cu vederea, a omite."
-        ],
-        citations: [
-          { text: "ἔλιπον δέ με μῶνον ἑταῖροι.", trans: "Iar tovarășii m-au lăsat singur.", author: "Homerus, Odyssea IX, 420" }
-        ]
-      },
-      "anima": {
-        id: "anima",
-        lang: "Latină",
-        pos: "Substantiv feminin, declinarea I",
-        forms: "anima, animae; pl. animae",
-        etym: "Din rădăcina PIE *h₂enh₁- („a respira”).",
-        defs: [
-          "Aer inspirat, suflare, boare, adiere de vânt.",
-          "Suflet în sens biologic, suflul vieții fizice.",
-          "Ființă vie; umbră a unui mort în lumea subterană."
-        ],
-        citations: [
-          { text: "Dum anima est, spes esse dicitur.", trans: "Câtă vreme există viață, există speranță.", author: "Cicero" }
-        ]
-      },
-      "animus": {
-        id: "animus",
-        lang: "Latină",
-        pos: "Substantiv masculin, declinarea a II-a",
-        forms: "animus, animī",
-        etym: "Suflet rațional, facultățile spirituale active.",
-        defs: [
-          "Suflet rațional, spirit, minte, intelect, gândire.",
-          "Curaj, îndrăzneală, bărbăție în fața primejdiei.",
-          "Voință, dispoziție, caracter."
-        ],
-        citations: [
-          { text: "Aequam memento rebus in arduis servare mentem.", trans: "Păstrează un suflet neclintit în împrejurări grele.", author: "Horatius" }
-        ]
-      },
-      "amor": {
-        id: "amor",
-        lang: "Latină",
-        pos: "Substantiv masculin, declinarea a III-a",
-        forms: "amor, amōris",
-        etym: "Din verbul amō („a iubi”).",
-        defs: [
-          "Iubire, dragoste sinceră, afecțiune profundă.",
-          "Zeul Iubirii (Cupido / Amor)."
-        ],
-        citations: [
-          { text: "Omnia vincit Amor.", trans: "Iubirea învinge toate.", author: "Vergilius" }
-        ]
-      },
-      "virtūs": {
-        id: "virtūs",
-        lang: "Latină",
-        pos: "Substantiv feminin, declinarea a III-a",
-        forms: "virtūs, virtūtis",
-        etym: "Derivat din vir („bărbat, erou”).",
-        defs: [
-          "Curaj militar, bravură, vitejie pe câmpul de luptă.",
-          "Virtute morală, merit, desăvârșire sufletească."
-        ],
-        citations: [
-          { text: "Virtus in arduis.", trans: "Virtutea strălucește în greutăți.", author: "Proverb latin" }
-        ]
-      },
-      "vita": {
-        id: "vita",
-        lang: "Latină",
-        pos: "Substantiv feminin, declinarea I",
-        forms: "vīta, vītae",
-        etym: "Viață, existență biologică.",
-        defs: ["Viață, existență, mod de trai."],
-        citations: [
-          { text: "Vita brevis, ars longa.", trans: "Viața e scurtă, arta e lungă.", author: "Seneca" }
-        ]
-      },
-      "ferō": {
-        id: "ferō",
-        lang: "Latină",
-        pos: "Verb neregulat",
-        forms: "ferō, ferre, tulī, lātum",
-        etym: "Rădăcina PIE *bʰer- („a purta, a duce”).",
-        defs: [
-          "A purta, a duce cu sine o povară.",
-          "A suporta, a răbda, a îndura suferința."
-        ],
-        citations: [
-          { text: "Forsan et haec olim meminisse iuvabit.", trans: "Poate că într-o zi ne va plăcea să ne amintim de aceste greutăți.", author: "Vergilius" }
-        ]
-      },
-      "rex": {
-        id: "rex",
-        lang: "Latină",
-        pos: "Substantiv masculin",
-        forms: "rēx, rēgis; pl. rēgēs",
-        etym: "Din rădăcina PIE *h₃rēǵs („stăpânitor”).",
-        defs: ["Rege, monarh, cârmuitor suprem, suveran."],
-        citations: [
-          { text: "Regem non faciunt opes.", trans: "Nu bogățiile fac un rege.", author: "Seneca" }
-        ]
-      },
-      "regō": {
-        id: "regō",
-        lang: "Latină",
-        pos: "Verb conj. a III-a",
-        forms: "regō, regere, rēxī, rēctum",
-        etym: "A îndrepta, a călăuzi drumul drept.",
-        defs: [
-          "A conduce în linie dreaptă, a călăuzi.",
-          "A cârmui, a guverna, a stăpâni peste un popor."
-        ],
-        citations: [
-          { text: "Tu regere imperio populos, Romane, memento.", trans: "Adu-ți aminte, romane, să cârmuiești neamurile.", author: "Vergilius" }
-        ]
-      },
-      "sapientia": {
-        id: "sapientia",
-        lang: "Latină",
-        pos: "Substantiv feminin, declinarea I",
-        forms: "sapientia, sapientiae",
-        etym: "Înțelepciune, discernământ.",
-        defs: [
-          "Înțelepciune, discernământ, chibzuință în viață.",
-          "Cunoaștere a lucrurilor divine și omenești."
-        ],
-        citations: [
-          { text: "Sapientia est rerum humanarum divinarumque scientia.", trans: "Înțelepciunea este cunoașterea lucrurilor omenești și dumnezeiești.", author: "Cicero" }
-        ]
-      }
-    };
-
-    const morphologicalIndex = {
-      "ἔλιπον": [ { lemma: "λείπω", parse: "Aorist II Indicativ Activ, Pers. 1 Sg. / Pers. 3 Pl." } ],
-      "tuli": [ { lemma: "ferō", parse: "Perfect Indicativ Activ, Pers. 1 Sg." } ],
-      "tuleram": [ { lemma: "ferō", parse: "Mai mult ca perfect Indicativ Activ, Pers. 1 Sg." } ],
-      "regis": [
-        { lemma: "rex", parse: "Substantiv masculin, Genitiv singular („al regelui”)" },
-        { lemma: "regō", parse: "Verb conj. III, Prezent Indicativ Activ, Pers. a II-a sg. („tu conduci”)" }
-      ]
-    };
-
-    function renderDailyWord() {
-      const entries = Object.keys(lexiconData).sort();
-      const today = new Date();
-      const dateKey = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`;
-      let hash = 2166136261;
-
-      for (let i = 0; i < dateKey.length; i++) {
-        hash = Math.imul(hash ^ dateKey.charCodeAt(i), 16777619);
-      }
-
-      const item = lexiconData[entries[(hash >>> 0) % entries.length]];
-      const greekClass = item.lang === "Greacă Veche" ? " greek-text" : "";
-      document.getElementById("dailyWordContainer").innerHTML = `
-        <button class="daily-word-card" type="button" onclick="selectSuggestion('${item.id}')">
-          <span class="daily-word-label">Cuvântul zilei</span>
-          <span class="daily-word-lemma${greekClass}">${item.id}</span>
-          <span class="daily-word-definition">${item.pos}</span>
-          <span class="daily-word-details">
-            <span class="daily-word-detail"><span class="daily-word-detail-label">Forme:</span> <span class="${greekClass.trim()}">${item.forms}</span></span>
-            <span class="daily-word-detail"><span class="daily-word-detail-label">Etimologie:</span> ${item.etym}</span>
-            <span class="daily-word-definitions">
-              <span class="daily-word-detail-label">Definiții:</span>
-              ${item.defs.map((definition, index) => `<span class="daily-word-definition-item">${index + 1}. ${definition}</span>`).join('')}
-            </span>
-          </span>
-          <span class="daily-word-hint">Apasă pentru a deschide fișa →</span>
-        </button>
-      `;
-    }
+    const lexiconData = Object.create(null);
 
     function cleanUniversal(str) {
       if (!str) return '';
@@ -1496,9 +1101,7 @@
 
       return {
         language,
-        path: language === 'lat'
-          ? `${encodeURIComponent(normalizedFirstLetter)}.json`
-          : `data/${language}/${encodeURIComponent(normalizedFirstLetter)}.json`
+        path: `data/${language}.json/${encodeURIComponent(normalizedFirstLetter)}.json`
       };
     }
 
@@ -1582,9 +1185,7 @@
       const kbdBtn = document.getElementById('kbdToggleBtn');
       const searchSubmitBtn = document.getElementById('searchSubmitBtn');
       const kbdPanel = document.getElementById('keyboardPanel');
-      const morphNotice = document.getElementById('morphNotice');
 
-      morphNotice.classList.remove('active');
       kbdPanel.classList.remove('active');
       document.getElementById('autocompleteDropdown').classList.remove('active');
 
@@ -1772,31 +1373,14 @@
     }
 
     function runDirectSearch(query) {
-      const morphNotice = document.getElementById('morphNotice');
-      const morphContent = document.getElementById('morphContent');
       const display = document.getElementById('dictionaryDisplay');
 
       if (!query || query.trim() === '') {
-        morphNotice.classList.remove('active');
         display.innerHTML = '';
         return;
       }
 
       const raw = query.trim();
-
-      for (let form in morphologicalIndex) {
-        if (form === raw || matchesSearchText(form, raw)) {
-          const targets = morphologicalIndex[form];
-          const isGreek = lexiconData[targets[0].lemma].lang === "Greacă Veche";
-          const greekClass = isGreek ? ' class="greek-text"' : '';
-          morphNotice.classList.add('active');
-          morphContent.innerHTML = `Forma <strong${greekClass}>„${form}”</strong> identificată: <strong${greekClass} style="color:var(--crimson);">${targets[0].parse}</strong>. Trimis la <strong${greekClass}>${targets[0].lemma}</strong>.`;
-          renderEntry(targets[0].lemma);
-          return;
-        }
-      }
-
-      morphNotice.classList.remove('active');
 
       let matchedLemma = null;
       for (let lemma in lexiconData) {
@@ -1820,7 +1404,6 @@
 
     function runReverseSearch(query) {
       const display = document.getElementById('dictionaryDisplay');
-      document.getElementById('morphNotice').classList.remove('active');
 
       if (!query || query.trim().length < 2) {
         display.innerHTML = '';
@@ -2001,7 +1584,6 @@
     });
 
     window.addEventListener('DOMContentLoaded', () => {
-      renderDailyWord();
       setSearchMode('omnia-dir');
     });
   </script>
