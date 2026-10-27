@@ -1,1 +1,72 @@
-
+{
+  "A": {
+    "pos": "f. și n. indecl.",
+    "definitie_ro": "litera A, a; (în abrev.): 1 A. = Aulus (prenume); 2 A. = annus „anul”; 3 (la votarea unei legi) A. = Antiquo sau Absolvo „resping”; 4 (la votarea într-o instanță de judecată) A. = Absolvo „achit” (littera salutaris); 5 (la datare) A. U. C. = ab Urbe condita sau anno Urbis conditae „de la întemeierea Romei”; 6 a. d. = ante diem ... „înainte de ziua de ...”; 7 (în inscr.) A. = Augustus; A. A. = Augusti duo; A. A. A. = aurum, argentum, aes „aur, argint, aramă” (triumviri monetari)",
+    "paradigma": []
+  },
+  "a¹": {
+    "variante": ["ah"],
+    "pos": "interj.",
+    "definitie_ro": "(exprimând durere, admirație, indignare etc.) ah!, vai!",
+    "paradigma": []
+  },
+  "a²": {
+    "variante": ["ab", "abs"],
+    "pos": "prep. cu abl.",
+    "indicatii": "a înainte de consoane (fără h); ab înainte de vocale, h și frecvent lichide/nazale; abs înainte de c, q, t",
+    "definitie_ro": "I. 1. de la, din (cu nume de loc, pers., orașe); 2. arătând proveniența (după vb. ca petere, quaerere, accipere, audire etc.); 3. arătând originea, descendența, filiația literară/filozofică sau în etimologii; II. de, de la (arătând separarea, îndepărtarea; după vb. de apărare: defendere, tueri, cavere); (expr.) ab re = nepotrivit cu împrejurarea, fără rost; III. 1. (sens local) din partea, dinspre, din; 2. (ab aliquo esse/stare) a fi de partea cuiva; 3. în privința, în ceea ce privește; 4. (funcția) servus a pedibus = sclav care face cursele; IV. 1. pornind de la, de la; 2. (evaluarea distanței) de, de la; 3. pornind de la, din; V. (punct de plecare în raționament) după; (expr.) ab arte = după regulile artei, artistic; VI. 1. (temporal) de la, începând cu (ab initio, a puero); 2. (ordinea) după, al doilea după; 3. după, îndată după (a tuo digressu); VII. (cauza) de pe urma, ca urmare, din cauza; VIII. (agentul pe lângă diateza pasivă) de, de către; IX. (târziu, cu adv.) ab intus = dinăuntru, a foris = de afară, ab invicem = reciproc; X. (târziu, după comparativ = quam) decât",
+    "paradigma": []
+  },
+  "abacinus": {
+    "pos": "adj. (3 term.)",
+    "definitie_ro": "de mozaic",
+    "paradigma": []
+  },
+  "abactiō": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f. III",
+    "definitie_ro": "izgonire",
+    "paradigma": []
+  },
+  "abactor": {
+    "indicatii": "-ōris",
+    "pos": "subst. m. III",
+    "definitie_ro": "hoț de vite",
+    "paradigma": []
+  },
+  "abactus¹": {
+    "pos": "part. perf. (3 term.)",
+    "definitie_ro": "izgonit, mânat; v. abigō",
+    "paradigma": []
+  },
+  "abactus²": {
+    "indicatii": "-ūs",
+    "pos": "subst. m. IV",
+    "definitie_ro": "furt de vite, luarea turmelor",
+    "paradigma": []
+  },
+  "abaculus": {
+    "indicatii": "-ī",
+    "pos": "subst. m. II",
+    "definitie_ro": "tăbliță de sticlă colorată pentru mozaic",
+    "paradigma": []
+  },
+  "abacus": {
+    "indicatii": "-ī",
+    "pos": "subst. m. II",
+    "definitie_ro": "1. tablă de joc împărțită alternativ în pătrățele albe și negre, eșichier; 2. tablă de calcul; 3. masă de lux, servind ca suport vaselor de vin, bufet; 4. tăbliță de marmură sau sticlă aplicată ca ornament pe pereți; 5. (arhit.) abacă (placa superioară a capitelului)",
+    "paradigma": []
+  },
+  "abaddir": {
+    "indicatii": "-iris",
+    "pos": "n. indecl. sau subst. m. III",
+    "definitie_ro": "piatră meteorică (piatra pe care Rhea i-a dat-o lui Saturn să o înghită în locul lui Jupiter)",
+    "paradigma": []
+  },
+  "abaliēnātiō": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f. III",
+    "definitie_ro": "înstrăinare",
+    "paradigma": []
+  }
+}
