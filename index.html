@@ -1089,7 +1089,7 @@
       return greekSearchKey(text) === greekSearchKey(query);
     }
 
-    function greekDocumentKeyForLetter(letter) {
+       function greekDocumentKeyForLetter(letter) {
       const normalized = String(letter || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
       const greekLetterMap = {
         'α': 'alpha', 'β': 'beta', 'γ': 'gamma', 'δ': 'delta', 'ε': 'epsilon', 'ζ': 'zeta', 'η': 'eta',
@@ -1116,7 +1116,9 @@
 
       const directoryNames = [
         language,
-        `${language}.json`
+        `${language}.json`,
+        `data/${language}`,
+        `data/${language}.json`
       ];
 
       const fileNames = [
@@ -1134,7 +1136,7 @@
       directoryNames.forEach(dirName => {
         fileNames.forEach(fileName => {
           const actualName = fileName.endsWith('.json') ? fileName : `${fileName}.json`;
-          const path = `data/${dirName}/${actualName}`;
+          const path = `${dirName}/${actualName}`;
           if (!seen.has(path)) {
             seen.add(path);
             targets.push({ language, path });
@@ -1142,19 +1144,13 @@
         });
       });
 
-      const legacyDirName = `${language}.json`;
-      const legacyAlternative = `data/${legacyDirName}/${encodeURIComponent(fileKey)}.json`;
+      const legacyAlternative = `data/${language}.json/${encodeURIComponent(fileKey)}.json`;
       if (!seen.has(legacyAlternative)) {
         seen.add(legacyAlternative);
         targets.push({ language, path: legacyAlternative });
       }
 
       return targets;
-    }
-
-    function getRemoteDictionaryTarget(query) {
-      const targets = buildDictionaryTargets(query);
-      return targets[0] || null;
     }
 
     function normalizeRemoteEntry(lemma, entry, language) {
@@ -1171,6 +1167,74 @@
         .map(String)
         .filter(Boolean);
       const escape = value => escapeHtml(String(value ?? ''));
+
+      return {
+        ...entry,
+        lemmaKey: lemma,
+        id: escape(entry.id ?? lemma),
+        lang: language === 'gr' ? 'Greacă Veche' : 'Latină',
+        pos: escape(entry.pos ?? 'Parte de vorbire nespecificată'),
+        forms: escape(Array.isArray(rawForms) ? rawForms.join(', ') : rawForms),
+        indicatii: escape(entry.indicatii ?? ''),
+        redirect: escape(entry.trimite_la ?? ''),
+        searchForms,
+        etym: escape(entry.etym ?? entry.etimologie ?? ''),
+        defs: definitions.map(escape),
+        citations: Array.isArray(entry.citations) ? entry.citations.map(citation => ({
+          text: escape(citation.text),
+          trans: escape(citation.trans),
+          author: escape(citation.author)
+        })) : [],
+        paradigm: Array.isArray(entry.paradigm)
+          ? entry.paradigm.map(row => Array.isArray(row) ? row.map(escape) : [])
+          : []
+      };
+    }
+
+    async function loadRemoteDictionary(query) {
+      const targets = buildDictionaryTargets(query);
+      if (!targets.length) return;
+
+      let lastError = null;
+
+      for (const target of targets) {
+        if (!remoteDictionaryCache.has(target.path)) {
+          const request = fetch(target.path).then(async response => {
+            if (!response.ok) {
+              throw new Error(`Răspuns HTTP ${response.status}`);
+            }
+            const body = await response.text();
+            try {
+              return JSON.parse(body);
+            } catch (error) {
+              if (body.trimStart().startsWith('<')) {
+                throw new Error('serverul a returnat o pagină HTML, nu fișierul JSON cerut');
+              }
+              throw error;
+            }
+          });
+          remoteDictionaryCache.set(target.path, request);
+        }
+
+        try {
+          const data = await remoteDictionaryCache.get(target.path);
+          if (!data || typeof data !== 'object' || Array.isArray(data)) {
+            throw new TypeError('Fișierul JSON trebuie să conțină un obiect cu intrări indexate după lemă.');
+          }
+          for (const [lemma, entry] of Object.entries(data)) {
+            if (!Object.prototype.hasOwnProperty.call(lexiconData, lemma)) {
+              lexiconData[lemma] = normalizeRemoteEntry(lemma, entry, target.language);
+            }
+          }
+          return;
+        } catch (error) {
+          lastError = new Error(`${target.path}: ${error.message}`);
+          remoteDictionaryCache.delete(target.path);
+        }
+      }
+
+      throw new Error(`Nu s-a putut încărca niciun fișier pentru ${query}: ${lastError ? lastError.message : 'eroare necunoscută'}`);
+    }
 
       return {
         ...entry,
