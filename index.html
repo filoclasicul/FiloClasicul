@@ -1088,7 +1088,8 @@
     function matchesSearchText(text, query) {
       return greekSearchKey(text) === greekSearchKey(query);
     }
-       function greekDocumentKeyForLetter(letter) {
+
+    function greekDocumentKeyForLetter(letter) {
       const normalized = String(letter || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
       const greekLetterMap = {
         'α': 'alpha', 'β': 'beta', 'γ': 'gamma', 'δ': 'delta', 'ε': 'epsilon', 'ζ': 'zeta', 'η': 'eta',
@@ -1228,65 +1229,6 @@
           return;
         } catch (error) {
           lastError = new Error(`${target.path}: ${error.message}`);
-          remoteDictionaryCache.delete(target.path);
-        }
-      }
-
-      throw new Error(`Nu s-a putut încărca niciun fișier pentru ${query}: ${lastError ? lastError.message : 'eroare necunoscută'}`);
-    }
-      return {
-        ...entry,
-        lemmaKey: lemma,
-        id: escape(entry.id ?? lemma),
-        lang: language === 'gr' ? 'Greacă Veche' : 'Latină',
-        pos: escape(entry.pos ?? 'Parte de vorbire nespecificată'),
-        forms: escape(Array.isArray(rawForms) ? rawForms.join(', ') : rawForms),
-        indicatii: escape(entry.indicatii ?? ''),
-        redirect: escape(entry.trimite_la ?? ''),
-        searchForms,
-        etym: escape(entry.etym ?? entry.etimologie ?? ''),
-        defs: definitions.map(escape),
-        citations: Array.isArray(entry.citations) ? entry.citations.map(citation => ({
-          text: escape(citation.text),
-          trans: escape(citation.trans),
-          author: escape(citation.author)
-        })) : [],
-        paradigm: Array.isArray(entry.paradigm)
-          ? entry.paradigm.map(row => Array.isArray(row) ? row.map(escape) : [])
-          : []
-      };
-    }
-
-    async function loadRemoteDictionary(query) {
-      const targets = buildDictionaryTargets(query);
-      if (!targets.length) return;
-
-      let lastError = null;
-
-      for (const target of targets) {
-        if (!remoteDictionaryCache.has(target.path)) {
-          const request = fetch(target.path).then(response => {
-            if (!response.ok) {
-              throw new Error(`Răspuns HTTP ${response.status}`);
-            }
-            return response.json();
-          });
-          remoteDictionaryCache.set(target.path, request);
-        }
-
-        try {
-          const data = await remoteDictionaryCache.get(target.path);
-          if (!data || typeof data !== 'object' || Array.isArray(data)) {
-            throw new TypeError('Fișierul JSON trebuie să conțină un obiect cu intrări indexate după lemă.');
-          }
-          for (const [lemma, entry] of Object.entries(data)) {
-            if (!Object.prototype.hasOwnProperty.call(lexiconData, lemma)) {
-              lexiconData[lemma] = normalizeRemoteEntry(lemma, entry, target.language);
-            }
-          }
-          return;
-        } catch (error) {
-          lastError = error;
           remoteDictionaryCache.delete(target.path);
         }
       }
