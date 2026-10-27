@@ -1088,7 +1088,6 @@
     function matchesSearchText(text, query) {
       return greekSearchKey(text) === greekSearchKey(query);
     }
-
        function greekDocumentKeyForLetter(letter) {
       const normalized = String(letter || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
       const greekLetterMap = {
@@ -1235,7 +1234,6 @@
 
       throw new Error(`Nu s-a putut încărca niciun fișier pentru ${query}: ${lastError ? lastError.message : 'eroare necunoscută'}`);
     }
-
       return {
         ...entry,
         lemmaKey: lemma,
