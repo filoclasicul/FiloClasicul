@@ -1,0 +1,314 @@
+{
+  "A": {
+    "pos": "f. și n. indecl.",
+    "definitie_ro": "litera A, a; (în abrev.): 1 A. = Aulus (prenume); 2 A. = annus „anul”; 3 (la votarea unei legi) A. = Antiquo sau Absolvo „resping”; 4 (la votarea într-o instanță de judecată) A. = Absolvo „achit” (littera salutaris); 5 (la datare) A. U. C. = ab Urbe condita sau anno Urbis conditae „de la întemeierea Romei”; 6 a. d. = ante diem ... „înainte de ziua de ...”; 7 (în inscr.) A. = Augustus; A. A. = Augusti duo; A. A. A. = aurum, argentum, aes „aur, argint, aramă” (triumviri monetari)",
+    "paradigma": []
+  },
+  "a¹": {
+    "variante": ["ah"],
+    "pos": "interj.",
+    "definitie_ro": "(exprimând durere, admirație, indignare etc.) ah!, vai!",
+    "paradigma": []
+  },
+  "a²": {
+    "variante": ["ab", "abs"],
+    "pos": "prep. cu abl.",
+    "indicatii": "a înainte de consoane (fără h); ab înainte de vocale, h și frecvent lichide/nazale; abs înainte de c, q, t",
+    "definitie_ro": "I. 1. de la, din (cu nume de loc, pers., orașe); 2. arătând proveniența (după vb. ca petere, quaerere, accipere, audire etc.); 3. arătând originea, descendența, filiația literară/filozofică sau în etimologii; II. de, de la (arătând separarea, îndepărtarea; după vb. de apărare: defendere, tueri, cavere); (expr.) ab re = nepotrivit cu împrejurarea, fără rost; III. 1. (sens local) din partea, dinspre, din; 2. (ab aliquo esse/stare) a fi de partea cuiva; 3. în privința, în ceea ce privește; 4. (funcția) servus a pedibus = sclav care face cursele; IV. 1. pornind de la, de la; 2. (evaluarea distanței) de, de la; 3. pornind de la, din; V. (punct de plecare în raționament) după; (expr.) ab arte = după regulile artei, artistic; VI. 1. (temporal) de la, începând cu (ab initio, a puero); 2. (ordinea) după, al doilea după; 3. după, îndată după (a tuo digressu); VII. (cauza) de pe urma, ca urmare, din cauza; VIII. (agentul pe lângă diateza pasivă) de, de către; IX. (târziu, cu adv.) ab intus = dinăuntru, a foris = de afară, ab invicem = reciproc; X. (târziu, după comparativ = quam) decât",
+    "paradigma": []
+  },
+  "abacinus": {
+    "pos": "adj. (3 term.)",
+    "definitie_ro": "de mozaic",
+    "paradigma": []
+  },
+  "abactiō": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f. III",
+    "definitie_ro": "izgonire",
+    "paradigma": []
+  },
+  "abactor": {
+    "indicatii": "-ōris",
+    "pos": "subst. m. III",
+    "definitie_ro": "hoț de vite",
+    "paradigma": []
+  },
+  "abactus¹": {
+    "pos": "part. perf. (3 term.)",
+    "definitie_ro": "izgonit, mânat; v. abigō",
+    "paradigma": []
+  },
+  "abactus²": {
+    "indicatii": "-ūs",
+    "pos": "subst. m. IV",
+    "definitie_ro": "furt de vite, luarea turmelor",
+    "paradigma": []
+  },
+  "abaculus": {
+    "indicatii": "-ī",
+    "pos": "subst. m. II",
+    "definitie_ro": "tăbliță de sticlă colorată pentru mozaic",
+    "paradigma": []
+  },
+  "abacus": {
+    "indicatii": "-ī",
+    "pos": "subst. m. II",
+    "definitie_ro": "1. tablă de joc împărțită alternativ în pătrățele albe și negre, eșichier; 2. tablă de calcul; 3. masă de lux, servind ca suport vaselor de vin, bufet; 4. tăbliță de marmură sau sticlă aplicată ca ornament pe pereți; 5. (arhit.) abacă (placa superioară a capitelului)",
+    "paradigma": []
+  },
+  "abaddir": {
+    "indicatii": "-iris",
+    "pos": "n. indecl. sau subst. m. III",
+    "definitie_ro": "piatră meteorică (piatra pe care Rhea i-a dat-o lui Saturn să o înghită în locul lui Jupiter)",
+    "paradigma": []
+  },
+  "abaliēnātiō": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f. III",
+    "definitie_ro": "înstrăinare",
+    "paradigma": []
+  },
+ "abaliēnō": {
+    "indicatii": "-āre, -āvī, -ātum",
+    "pos": "verb I tr.",
+    "definitie_ro": "1. a face (pe cineva) să fie lipsit (de ceva al său), a separa, a îndepărta; 2. a înstrăina (un bun al său), a vinde, a ceda; 3. (fig. frecv.) a înstrăina, a îndepărta (sentimentele cuiva, făcându-l dușmănos sau indiferent)",
+    "paradigma": []
+  },
+  "abaliud": {
+    "pos": "adv.",
+    "definitie_ro": "de altă parte (TERT.)",
+    "paradigma": []
+  },
+  "abamita": {
+    "indicatii": "-ae",
+    "pos": "subst. f. I",
+    "definitie_ro": "soră a străbunicului după tată (DIG.)",
+    "paradigma": []
+  },
+  "abante": {
+    "pos": "prep. cu ac. și abl.",
+    "definitie_ro": "(tard.) înaintea",
+    "paradigma": []
+  },
+  "Abās": {
+    "indicatii": "-antis",
+    "pos": "subst. m. III",
+    "definitie_ro": "rege în Argos, tatăl lui Acrisius, bunic al Danaei și al Atalantei, străbunic al lui Perseus; // Abantēus (3) adj. al lui Abas, abanteic; // Abantiadēs, -ae m. urmaș al lui Abas (Acrisius sau Perseus); // Abantias, -adis f. 1. urmașă a lui Abas (Danae sau Atalanta); 2. vechi nume al insulei Eubeea; // Abantius (3) adj. al Eubeii, eubeic",
+    "paradigma": []
+  },
+  "Abatos": {
+    "indicatii": "-ī",
+    "pos": "subst. f. II",
+    "definitie_ro": "insulă stâncoasă pe Nil (în apropiere de Memphis, unde aveau acces doar preoții)",
+    "paradigma": []
+  },
+  "abavia": {
+    "indicatii": "-ae",
+    "pos": "subst. f. I",
+    "definitie_ro": "străbunică (DIG.)",
+    "paradigma": []
+  },
+  "abbaetō": {
+    "indicatii": "-ere",
+    "pos": "verb III intr.",
+    "definitie_ro": "a se depărta (PL.)",
+    "paradigma": []
+  },
+  "abavunculus": {
+    "indicatii": "-ī",
+    "pos": "subst. m. II",
+    "definitie_ro": "frate al străbunicului (DIG.)",
+    "paradigma": []
+  },
+  "abavus": {
+    "indicatii": "-ī",
+    "pos": "subst. m. II",
+    "definitie_ro": "străbunic; (la pl.) strămoși",
+    "paradigma": []
+  },
+  "abbās": {
+    "indicatii": "-ātis",
+    "pos": "subst. m. III",
+    "definitie_ro": "abate (ECCL.)",
+    "paradigma": []
+  },
+  "abbātīa": {
+    "indicatii": "-ae",
+    "pos": "subst. f. I",
+    "definitie_ro": "abație (ECCL.)",
+    "paradigma": []
+  },
+  "abbātissa": {
+    "indicatii": "-ae",
+    "pos": "subst. f. I",
+    "definitie_ro": "superioară a unei mănăstiri (ECCL.)",
+    "paradigma": []
+  },
+  "abbreviātiō": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f. III",
+    "definitie_ro": "abreviere (ECCL.)",
+    "paradigma": []
+  },
+  "abbreviātor": {
+    "indicatii": "-ōris",
+    "pos": "subst. m. III",
+    "definitie_ro": "(tard.) abreviator",
+    "paradigma": []
+  },
+  "abbreviō": {
+    "indicatii": "-āre",
+    "pos": "verb I tr.",
+    "definitie_ro": "a abrevia (ECCL.)",
+    "paradigma": []
+  },
+  "Abdēra": {
+    "indicatii": "-ōrum n. pl. și -ae f.",
+    "pos": "subst. pr.",
+    "definitie_ro": "oraș în Thracia (locul de naștere al filozofilor Protagoras și Democrit; renumit prin neghiobia locuitorilor săi); // Abdērītēs, -ae m. locuitor din Abdera; // Abdērītānus (3) adj. abderitan; (fig.) neghiob",
+    "paradigma": []
+  },
+  "abdicātiō": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f. III",
+    "definitie_ro": "1. părăsire, renunțare (abdicatio dictaturae = renunțare la dictatură); 2. dezmoștenire (a unui fiu)",
+    "paradigma": []
+  },
+  "abdicō¹": {
+    "indicatii": "-āre, -āvī, -ātum",
+    "pos": "verb I tr.",
+    "definitie_ro": "1. a respinge, a nu recunoaște (legem agrariam = a respinge legea agrară; aliquem patrem = a nu recunoaște pe cineva ca tată; liberos = a nu-și recunoaște copiii); 2. (frecv.) a se demite, a renunța public la o funcție: (cu se) se abdicare dictatura = a renunța la dictatură; (fără se) magistratum abdicare = a renunța la o demnitate; (abs.) abdicaverunt consules = consulii au renunțat la funcție",
+    "paradigma": []
+  },
+  "abdicō²": {
+    "indicatii": "-ere, -dīxī, -dictum",
+    "pos": "verb III tr.",
+    "definitie_ro": "(term. augural și juridic) a se opune, a interzice",
+    "paradigma": []
+  },
+  "abdidi": {
+    "pos": "pf. ind.",
+    "definitie_ro": "v. abdō",
+    "trimite_la": "abdō"
+  },
+  "abditē": {
+    "pos": "adv.",
+    "definitie_ro": "pe ascuns (ECCL.)",
+    "paradigma": []
+  },
+  "abditus": {
+    "indicatii": "-a, -um",
+    "pos": "part. perf. și adj.",
+    "definitie_ro": "ascuns vederii, tainic; (fig.) secret, misterios; // subst. n. pl. terrae abdita = măruntaiele pământului; abdita rerum = lucruri necunoscute; (adverbial) in abdito = într-ascuns, în secret; ex abdito = din adâncuri misterioase; v. abdō",
+    "paradigma": []
+  },
+  "abdō": {
+    "indicatii": "-ere, -didī, -ditum",
+    "pos": "verb III tr.",
+    "definitie_ro": "1. a îndepărta, a retrage (se in montes = a se retrage în munți; se in occultum = a se retrage în umbră; se litteris = a se cufunda în cărți); 2. a ascunde (se in silvas = a se ascunde în păduri; cultrum sub veste abditum habere = a avea cuțitul ascuns sub haină); 3. (poet.) a vârî (până a nu se mai vedea), a înfige (lateri abdidit ensem = a înfipt sabia în coapsă)",
+    "paradigma": []
+  },
+  "abdōmen": {
+    "indicatii": "-inis",
+    "pos": "subst. n. III",
+    "definitie_ro": "pântece, burtă; (fig.) lăcomie",
+    "paradigma": []
+  },
+  "abdūcō": {
+    "indicatii": "-ere, -dūxī, -ductum",
+    "pos": "verb III tr.",
+    "definitie_ro": "1. a duce cu sine (de undeva), a lua, a retrage (exercitum = a retrage armata; aliquem vi de foro = a lua pe cineva cu forța din for; aliquem domum = a lua pe cineva acasă; in servitutem = a lua în sclavie; ad cenam = a invita la masă); 2. a-i lua (ceva cuiva), a răpi (legiones a Bruto = a-i lua lui Brutus legiunile; somnos = a răpi somnul; aliquam marito = a lua o femeie soțului ei); 3. a separa, a îndepărta, a abate, a distrage, a atrage (la rău): animum a corpore = a separa spiritul de corp; se a reipublicae cura = a se îndepărta de preocupările publice; animum a sollicitudine = a abate spiritul de la griji; ad hanc licentiam me abducis? = mă atragi spre acest dezmăț?",
+    "paradigma": []
+  },
+  "abductiō": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f. III",
+    "definitie_ro": "1. ducere; 2. captivitate; 3. retragere, singurătate",
+    "paradigma": []
+  },
+  "abecedārius": {
+    "indicatii": "-a, -um",
+    "pos": "adj. (3 term.)",
+    "definitie_ro": "alfabetic; // abecedāriī, -ōrum m. pl. începătorii care învață alfabetul; // abecedāria, -ae f. învățare a literelor; // abecedārium, -iī n. abecedar",
+    "paradigma": []
+  },
+  "abēgī": {
+    "pos": "pf. ind.",
+    "definitie_ro": "v. abigō",
+    "trimite_la": "abigō"
+  },
+  "Abella": {
+    "indicatii": "-ae",
+    "pos": "subst. f. I",
+    "definitie_ro": "oraș în Campania (bogat în pomi fructiferi); // Abellānus (3) adj. al Abellei, din Abella; // Abellāna nux sau abellāna (avellāna), -ae f. alună",
+    "paradigma": []
+  },
+  "abeō": {
+    "indicatii": "-īre, -iī, -itum",
+    "pos": "verb nereg. intr.",
+    "definitie_ro": "I. a pleca (de undeva), a se duce (ab oculis = a pleca din ochii cuiva; de provincia = a pleca din provincie; hac urbe = a pleca din acest oraș; abiit aedem visere = s-a dus să vadă casa; abi ambulatum = du-te de te plimbă; exsulatum = a pleca în exil); II. (fig.) 1. a ieși (cu o determinare predicativă: victores abierunt = au ieșit învingători; non hoc tibi abibit = asta nu-ți va merge așa); 2. a pleca (dintr-o funcție), a părăsi (o demnitate: consulatu = a părăsi consulatul); 3. a se îndepărta (de la o temă, o chestiune: ne longius abeam = ca să nu mă depărtez prea mult de subiect; ab iure = a se depărta de lege); 4. a trece (dintr-o stare în alta), a se transforma (vestes in villos abeunt = hainele se preschimbă în peri; abiit ad deos Hercules = Hercule a trecut în rândul zeilor; tutela abit ad propinquos = tutela trece asupra rudelor); 5. a trece, a dispărea (menses abierunt decem = au trecut zece luni; nausea abiit = a trecut greața; abiit somnus = a trecut somnul); 6. (poet.) a pătrunde, a se întinde; 7. (fam.) a se duce (abi in malam rem! = du-te la naiba!; abi in malam crucem! = du-te la dracu!); [forme: abin = abisne, abissem = abiissem]",
+    "paradigma": []
+  },
+  "Abeōna": {
+    "indicatii": "-ae",
+    "pos": "subst. f. I",
+    "definitie_ro": "divinitate protectoare a primilor pași pe care-i face copilul mergând din brațele cuiva în brațele altuia (AUG.)",
+    "paradigma": []
+  },
+  "abequitō": {
+    "indicatii": "-āre, -āvī",
+    "pos": "verb I intr.",
+    "definitie_ro": "a pleca pe cal (LIV.)",
+    "paradigma": []
+  },
+  "aberrātiō": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f. III",
+    "definitie_ro": "scăpare de necazuri (CIC.)",
+    "paradigma": []
+  },
+  "abeuntis": {
+    "pos": "genit. part. prez.",
+    "definitie_ro": "v. abeō",
+    "trimite_la": "abeō"
+  },
+  "aberrō": {
+    "indicatii": "-āre, -āvī, -ātum",
+    "pos": "verb I intr.",
+    "definitie_ro": "1. a se rătăci, a se pierde (inter homines a patre = a se pierde printre oameni de tatăl său; pecore = a se rătăci de turmă); 2. (fig.) a se depărta, a se abate (a regula, a proposito = a se abate de la regulă, de la scopul propus; in melius = a se depărta de original înfrumusețându-l; coniectura = a se înșela în presupunerea sa; quasi a miseria = a uita oarecum de nenorocire)",
+    "paradigma": []
+  },
+  "abfore": {
+    "pos": "inf. viit.",
+    "definitie_ro": "v. absum",
+    "trimite_la": "absum"
+  },
+  "abforem": {
+    "pos": "conjct. impf.",
+    "definitie_ro": "v. absum",
+    "trimite_la": "absum"
+  },
+  "abhinc": {
+    "pos": "adv.",
+    "definitie_ro": "1. (de timp) acum... (sunt de atunci): abhinc annos quattuordecim = acum 14 ani; abhinc triginta diebus = acum 30 de zile; 2. (de loc) de aici (LUCR.)",
+    "paradigma": []
+  },
+  "abhorrēns": {
+    "indicatii": "-ntis",
+    "pos": "part. prez. și adj.",
+    "definitie_ro": "nepotrivit (abhorrentes lacrimae = lacrimi nepotrivite cu situația); v. abhorreō",
+    "paradigma": []
+  },
+  "abhorreō": {
+    "indicatii": "-ēre, -uī",
+    "pos": "verb II intr.",
+    "definitie_ro": "1. a fugi (de ceva), a avea oroare (de): ab re uxoria = a fugi de căsătorie; ab horum turpitudine = a nu putea suporta nerușinarea acestora; spectaculorum oblectamentis = a nu evita distracțiile; (cu ac.) pumilos = a avea oroare de pitici; 2. (fig.) a fi departe de..., a nu se potrivi, a fi în contradicție cu...: longe ab ista suspicione = a fi departe de această bănuială; oratio abhorret a persona = cuvintele nu se potrivesc cu persoana; res abhorret a fide = lucrul este de necrezut; orationes abhorrent inter se = spusele nu se potrivesc între ele",
+    "paradigma": []
+  },
+  "abhorrēscō": {
+    "indicatii": "-ere",
+    "pos": "verb III",
+    "definitie_ro": "v. horrescō",
+    "trimite_la": "horrescō"
+  }
