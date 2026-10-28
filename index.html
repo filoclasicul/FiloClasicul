@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="ro">
 <head>
   <meta charset="UTF-8">
@@ -1115,28 +1115,22 @@
         : (normalizedFirstLetter || 'a');
 
       const directoryNames = [
-        language,
-        `${language}.json`,
+        `data/${language}.json`,
         `data/${language}`,
-        `data/${language}.json`
+        language,
+        `${language}.json`
       ];
 
-      const fileNames = [
-        fileKey,
-        `${fileKey}.json`,
-        normalizedFirstLetter,
-        `${normalizedFirstLetter}.json`,
-        String(firstLetter),
-        `${String(firstLetter)}.json`
-      ].filter((value, index, arr) => value && arr.indexOf(value) === index);
+      const fileNames = [...new Set([normalizedFirstLetter, fileKey])]
+        .filter(Boolean)
+        .map(fileName => `${encodeURIComponent(fileName)}.json`);
 
       const seen = new Set();
       const targets = [];
 
       directoryNames.forEach(dirName => {
         fileNames.forEach(fileName => {
-          const actualName = fileName.endsWith('.json') ? fileName : `${fileName}.json`;
-          const path = `${dirName}/${actualName}`;
+          const path = `${dirName}/${fileName}`;
           if (!seen.has(path)) {
             seen.add(path);
             targets.push({ language, path });
