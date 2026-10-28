@@ -126,5 +126,89 @@
     "definitie_ro": "Babilon (vechea capitală a caldeenilor, pe Eufrat) (Cic. Div. 1, 47) ¶ 1. Băbylōnĭcus, a, um (sau -nĭus, -nīus, -niensis, e), din Babilon, babilonian (Manil. 4, 530; Plin. 8, 196; Pl. Truc. 472; Pl. Truc. 84). ¶ 2. Băbylōnĭi, ōrum, m., babilonienii (Cic. Div. 2, 97). ¶ 3. Băbylōnĭca, ōrum, n., covoare babiloniene; stofe brodate (Pl. St. 378; Lucr. 4, 1026).",
     "trimite_la": "",
     "paradigma": []
+  },
+  "bacchātim": {
+    "indicatii": "",
+    "pos": "adv.",
+    "definitie_ro": "în felul Bacantelor (Apul. M. 1, 13).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "bacchātĭo": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f.",
+    "definitie_ro": "(din bacchor) celebrarea misterelor lui Bacchus (Hyg. Fab. 4, 3); orgie, desfrâu [rar]: nocturnae bacchationes, orgii nocturne (Cic. Verr. 1, 33).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "bacchātŏr": {
+    "indicatii": "-ōris",
+    "pos": "subst. m.",
+    "definitie_ro": "(din bacchor) desfrânat (Eccl.).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "bacchātus": {
+    "indicatii": "-a, -um",
+    "pos": "part.",
+    "definitie_ro": "participiul verbului bacchor.",
+    "trimite_la": "bacchor",
+    "paradigma": []
+  },
+  "Bacchē": {
+    "indicatii": "-ēs",
+    "pos": "subst. f.",
+    "definitie_ro": "vezi Baccha (Ov. Tr. 4, 1, 41; Am. 1, 14, 21).",
+    "trimite_la": "Baccha",
+    "paradigma": []
+  },
+  "Bacchēis": {
+    "indicatii": "-ĭdis",
+    "pos": "adj. f.",
+    "definitie_ro": "aparținând lui Bacchis [rege al Corintului]; de aici = corintiană (Stat. S. 2, 2, 34).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "Bacchēĭus": {
+    "indicatii": "-a, -um",
+    "pos": "adj.",
+    "definitie_ro": "al lui Bacchus, aparținând lui Bacchus (Virg. G. 2, 454).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "Bacchēus": {
+    "indicatii": "-a, -um",
+    "pos": "adj.",
+    "definitie_ro": "¶ 1. al lui Bacchus (Stat. Th. 12, 791). ¶ 2. al Bacantelor (Ov. M. 11, 17); Baccheus sanguis, sânge vărsat de Bacante (Stat. Th. 1, 328).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "bacchĭa": {
+    "indicatii": "-ae",
+    "pos": "subst. f.",
+    "definitie_ro": "vezi baccia.",
+    "trimite_la": "baccia",
+    "paradigma": []
+  },
+  "Bacchīa": {
+    "indicatii": "-ōrum",
+    "pos": "subst. n.",
+    "definitie_ro": "(βάκχια) ca și Bacchanalia (Isid. Orig. 1, 16, 11).",
+    "trimite_la": "Bacchanalia",
+    "paradigma": []
+  },
+  "bacchĭăcus": {
+    "indicatii": "-a, -um",
+    "pos": "adj.",
+    "definitie_ro": "bahic (despre metru) (T.-Maur. 2608).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "Bacchĭădæ": {
+    "indicatii": "-ārum",
+    "pos": "subst. m.",
+    "definitie_ro": "Bachiadazii [familie corintiană coborâtoare din Bacchis, stabilită în Sicilia] (Ov. M. 5, 407).",
+    "trimite_la": "",
+    "paradigma": []
   }
 }
