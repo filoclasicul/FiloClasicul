@@ -1,0 +1,120 @@
+[
+  {
+    "termen": "b",
+    "forma": "b",
+    "partea_de_vorbire": "s. f. / n. indecl.",
+    "definitie": "a doua literă a alfabetului roman.",
+    "trimiteri": [],
+    "exemple": [
+      { "text": "B = bonus sau bene", "traducere": "", "sursa": "INSCR." },
+      { "text": "B. D. = bona dea", "traducere": "", "sursa": "" },
+      { "text": "B. M. = bene merenti; bonae memoriae", "traducere": "", "sursa": "" },
+      { "text": "B. M. P. = bene merenti posuit", "traducere": "", "sursa": "" },
+      { "text": "B. D. S. M. = bene de se merito sau merita, etc.", "traducere": "", "sursa": "" }
+    ]
+  },
+  {
+    "termen": "Baal",
+    "forma": "Baal (Bāhal)",
+    "partea_de_vorbire": "s. m., indecl. sau gen. -alis",
+    "definitie": "Baal [idol al asirienilor și fenicienilor]. || numele mai multor personaje.",
+    "trimiteri": ["BIBL."],
+    "exemple": []
+  },
+  {
+    "termen": "Baba",
+    "forma": "Baba, -ae",
+    "partea_de_vorbire": "s. m.",
+    "definitie": "nume de sclav.",
+    "trimiteri": ["SEN. Ep. 15, 8"],
+    "exemple": []
+  },
+  {
+    "termen": "băbæ",
+    "forma": "băbæ (βαβαί)",
+    "partea_de_vorbire": "interj.",
+    "definitie": "interjecție de admirație și aprobare: oh! ah! foarte bine! minunat!",
+    "trimiteri": ["PL. Cas. 806", "Ps. 365", "Pers. 806", "PETR. 37, 9"],
+    "exemple": []
+  },
+  {
+    "termen": "babæcălus",
+    "forma": "babæcălus, -i",
+    "partea_de_vorbire": "s. m.",
+    "definitie": "prost, imbecil.",
+    "trimiteri": ["PETR. 37, 10"],
+    "exemple": []
+  },
+  {
+    "termen": "Babba",
+    "forma": "Babba, -ae",
+    "partea_de_vorbire": "s. f.",
+    "definitie": "oraș din Mauritania Tingitana [numit și Julia Campestris].",
+    "trimiteri": ["PLIN. 5, 5"],
+    "exemple": []
+  },
+  {
+    "termen": "Babel",
+    "forma": "Babel, -ēlis",
+    "partea_de_vorbire": "s. f.",
+    "definitie": "= Babylon.",
+    "trimiteri": ["ITALA Gen. 10, 10", "HIER. Hebr. p. 16, 15 (Lag.)"],
+    "exemple": []
+  },
+  {
+    "termen": "babĭgĕr",
+    "forma": "babĭgĕr, -ĕra, -ĕrum",
+    "partea_de_vorbire": "adj.",
+    "definitie": "prost.",
+    "trimiteri": ["GLOSS. 4, 487, 24"],
+    "exemple": []
+  },
+  {
+    "termen": "Babĭlus",
+    "forma": "Babĭlus, -i",
+    "partea_de_vorbire": "s. m.",
+    "definitie": "astronom din timpul lui Nero.",
+    "trimiteri": ["SUET. Ner. 36"],
+    "exemple": []
+  },
+  {
+    "termen": "babio",
+    "forma": "babio, -īre",
+    "partea_de_vorbire": "vb. intranz.",
+    "definitie": "a se lăuda.",
+    "trimiteri": ["GLOSS."],
+    "exemple": []
+  },
+  {
+    "termen": "Babrĭus",
+    "forma": "Babrĭus, -ĭi",
+    "partea_de_vorbire": "s. m.",
+    "definitie": "fabulist grec.",
+    "trimiteri": ["AVIAN. Praef."],
+    "exemple": []
+  },
+  {
+    "termen": "Băbylōn",
+    "forma": "Băbylōn, -ōnis (acc. -ōna)",
+    "partea_de_vorbire": "s. f.",
+    "definitie": "Babilon [vechea capitală a caldeenilor, pe Eufrat].",
+    "trimiteri": ["CIC. Div. 1, 47"],
+    "exemple": [
+      {
+        "text": "Băbylōnĭcus, a, um / -nĭus / -nlus / -niensis, e",
+        "traducere": "din Babilon, babilonian",
+        "sursa": "MANIL. 4, 530; PLIN. 8, 196; PL. Truc. 472; PL. Truc. 84"
+      },
+      {
+        "text": "Băbylōnĭi, ōrum, m.",
+        "traducere": "babilonienii",
+        "sursa": "CIC. Div. 2, 97"
+      },
+      {
+        "text": "Băbylōnĭca, ōrum, n.",
+        "traducere": "covoare babiloniene; stofe brodate",
+        "sursa": "PL. St. 378; LUCR. 4, 1026"
+      }
+    ]
+  }
+]
