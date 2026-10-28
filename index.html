@@ -1089,17 +1089,6 @@
       return greekSearchKey(text) === greekSearchKey(query);
     }
 
-    function greekDocumentKeyForLetter(letter) {
-      const normalized = String(letter || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
-      const greekLetterMap = {
-        'α': 'alpha', 'β': 'beta', 'γ': 'gamma', 'δ': 'delta', 'ε': 'epsilon', 'ζ': 'zeta', 'η': 'eta',
-        'θ': 'theta', 'ι': 'iota', 'κ': 'kappa', 'λ': 'lambda', 'μ': 'mu', 'ν': 'nu', 'ξ': 'xi',
-        'ο': 'omicron', 'π': 'pi', 'ρ': 'rho', 'σ': 'sigma', 'ς': 'sigma', 'τ': 'tau', 'υ': 'upsilon',
-        'φ': 'phi', 'χ': 'chi', 'ψ': 'psi', 'ω': 'omega'
-      };
-      return greekLetterMap[normalized] || normalized || 'a';
-    }
-
     function buildDictionaryTargets(query) {
       const raw = query.trim();
       if (!raw) return [];
@@ -1110,41 +1099,12 @@
       const language = currentMode === 'greek-dir' || (currentMode === 'omnia-dir' && isGreek)
         ? 'gr'
         : 'lat';
-      const fileKey = language === 'gr'
-        ? greekDocumentKeyForLetter(firstLetter)
-        : (normalizedFirstLetter || 'a');
+      const fileLetter = normalizedFirstLetter || 'a';
 
-      const directoryNames = [
-        `data/${language}`,
-        `data/${language}`,
+      return [{
         language,
-        `${language}`
-      ];
-
-      const fileNames = [...new Set([normalizedFirstLetter, fileKey])]
-        .filter(Boolean)
-        .map(fileName => `${encodeURIComponent(fileName)}.json`);
-
-      const seen = new Set();
-      const targets = [];
-
-      directoryNames.forEach(dirName => {
-        fileNames.forEach(fileName => {
-          const path = `${dirName}/${fileName}`;
-          if (!seen.has(path)) {
-            seen.add(path);
-            targets.push({ language, path });
-          }
-        });
-      });
-
-      const legacyAlternative = `data/${language}/${encodeURIComponent(fileKey)}.json`;
-      if (!seen.has(legacyAlternative)) {
-        seen.add(legacyAlternative);
-        targets.push({ language, path: legacyAlternative });
-      }
-
-      return targets;
+        path: `data/${language}/${encodeURIComponent(fileLetter)}.json`
+      }];
     }
 
     function normalizeRemoteEntry(lemma, entry, language) {
