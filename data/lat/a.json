@@ -951,5 +951,824 @@
     "pos": "verb III tr.",
     "definitie_ro": "1. a dejuga, a deshăma. 2. Sens figurat: a separa.",
     "paradigma": []
+  },
+  "abjurassit": {
+    "indicatii": "",
+    "pos": "vb.",
+    "definitie_ro": "vezi abjuro.",
+    "trimite_la": "abjuro",
+    "paradigma": []
+  },
+  "abjūrātĭo": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f.",
+    "definitie_ro": "tăgăduire sub prestare de jurământ a unui depozit (Isid. 5, 26).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abjūrātŏr": {
+    "indicatii": "-ōris",
+    "pos": "subst. m.",
+    "definitie_ro": "cel care tăgăduiește un depozit printr-un sperjur (Cass. Var. 11, 3).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abjūrātus": {
+    "indicatii": "-a, -um",
+    "pos": "part.",
+    "definitie_ro": "participiul verbului abjuro.",
+    "trimite_la": "abjuro",
+    "paradigma": []
+  },
+  "abjurgo": {
+    "indicatii": "-āre",
+    "pos": "vb. tr.",
+    "definitie_ro": "a refuza cuiva un obiect aflat în litigiu, a-l adjudeca altuia (Hyg. Fab. 107).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abjūro": {
+    "indicatii": "-āvi, -ātum, -āre",
+    "pos": "vb. tr.",
+    "definitie_ro": "a tăgădui printr-un jurământ fals (Serv. Aen. 5, 263); pecuniam (Pl. Rud. 14), a nega o datorie sub jurământ, cf. (Curc. 496; Sall. C. 25, 4; Cic. Att. 1, 8, 3; Virg. En. 8, 263). ¶ (arhaic) abjurassit = abjuraverit (Pl. Pers. 478).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ablactātĭo": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f.",
+    "definitie_ro": "înțărcare (Vulg. Gen. 21, 8).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ablactātus": {
+    "indicatii": "-a, -um",
+    "pos": "part.",
+    "definitie_ro": "participiul verbului ablacto.",
+    "trimite_la": "ablacto",
+    "paradigma": []
+  },
+  "ablacto": {
+    "indicatii": "-āvi, -ātum, -āre",
+    "pos": "vb. tr.",
+    "definitie_ro": "a înțărca (Eccl.).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ablăcŭo": {
+    "indicatii": "",
+    "pos": "vb.",
+    "definitie_ro": "vezi ablaqueo.",
+    "trimite_la": "ablaqueo",
+    "paradigma": []
+  },
+  "ablăquĕātĭo": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f.",
+    "definitie_ro": "dezgropare, dezvelire a rădăcinilor (Col. 4, 4, 2; 4, 8, 2; 5, 10, 11, etc.; Plin. 17, 194; 17, 246; fosse: Col. Arb. 24).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ablăquĕātus": {
+    "indicatii": "-a, -um",
+    "pos": "part.",
+    "definitie_ro": "participiul verbului ablaqueo.",
+    "trimite_la": "ablaqueo",
+    "paradigma": []
+  },
+  "ablăquĕo": {
+    "indicatii": "-āvi, -ātum, -āre",
+    "pos": "vb. tr.",
+    "definitie_ro": "a dezgropa, a dezveli rădăcinile (a săpa pământul în jurul unui copac pentru a tăia rădăcinile inutile și lăstarii, și pentru a menține apa la baza plantei) (Cat. Agr. 5, 8; 29, etc.; Col. 3, 9, 12; 11, 2, 40, etc.; Plin. 17, 259). ¶ ~ ablăcŭo (Varr. R. 1, 29, 1).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ablātĭo": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f.",
+    "definitie_ro": "(din aufero) luare, îndepărtare (Eccl.).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ablātīvus 1": {
+    "indicatii": "-i",
+    "pos": "subst. m.",
+    "definitie_ro": "(cu sau fără casus) cazul ablativ (Quint. 1, 4, 26; 7, 9, 10, etc., cf. Diom. 302, 4).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ablātīvus 2": {
+    "indicatii": "-a, -um",
+    "pos": "adj.",
+    "definitie_ro": "care guvernează ablativul (Isid. 1, 13, 1).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ablātŏr": {
+    "indicatii": "-ōris",
+    "pos": "subst. m.",
+    "definitie_ro": "răpitor, jefuitor (Eccl.).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ablātus": {
+    "indicatii": "-a, -um",
+    "pos": "part.",
+    "definitie_ro": "participiul verbului aufero.",
+    "trimite_la": "aufero",
+    "paradigma": []
+  },
+  "ablēgātĭo": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f.",
+    "definitie_ro": "¶ 1. acțiunea de a trimite departe, de a îndepărta (Liv. 6, 39, 7). ¶ 2. exilare, surghiunire, relegare (Plin. 7, 149).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ablēgātus": {
+    "indicatii": "-a, -um",
+    "pos": "part.",
+    "definitie_ro": "participiul verbului ablego.",
+    "trimite_la": "ablego",
+    "paradigma": []
+  },
+  "ablegmina": {
+    "indicatii": "-um",
+    "pos": "subst. n.",
+    "definitie_ro": "părți din măruntaiele victimelor rezervate pentru a fi oferite zeilor (P. Fest. 21, 7).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ablēgo": {
+    "indicatii": "-āvi, -ātum, -āre",
+    "pos": "vb. tr.",
+    "definitie_ro": "a trimite departe de, a îndepărta, a înlătura. [cu ab]: a fratris adventu (Cic. Att. 2, 18, 3), a împiedica să fie prezent la sosirea unui frate, cf. (Liv. 5, 2, 4); dimisso atque ablegato consilio (Cic. Verr. 2, 73), consiliul fiind concediat și înlăturat, cf. (Verr. 2, 74; 2, 70; 5, 82); pueros venatum (Liv. 2, 35, 2), a îndepărta copiii trimițându-i la vânătoare.",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ablepsĭa": {
+    "indicatii": "-ae (ἀβλεψία)",
+    "pos": "subst. f.",
+    "definitie_ro": "neatenție, orbire, distragere (Serv. En. 7, 647); [în grecește în Suet. Cl. 39].",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ablĕvo": {
+    "indicatii": "-āre",
+    "pos": "vb. tr.",
+    "definitie_ro": "a ușura, a alina (Ambr. Ep. 68, 3).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abligurrĭo": {
+    "indicatii": "-īvi, -ītum, -īre",
+    "pos": "vb. tr.",
+    "definitie_ro": "a face să dispară lingând, a înfuleca (Auct. Nat. 7, 3); (fig.) a devora, a risipi (Ter. Eun. 235).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abligurrītĭo": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f.",
+    "definitie_ro": "acțiunea de a risipi, risipă (Capit. Macr. 15, 2).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abligurrītŏr": {
+    "indicatii": "-ōris",
+    "pos": "subst. m.",
+    "definitie_ro": "risipitor (Ambr. Ep. 45, 10).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ablingo": {
+    "indicatii": "-ĕre",
+    "pos": "vb. tr.",
+    "definitie_ro": "a umezi, a spăla ușor (ochii) (M.-Emp. 8).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ablŏco": {
+    "indicatii": "-āre",
+    "pos": "vb. tr.",
+    "definitie_ro": "a da cu chirie, a închiria (Suet. Vit. 8).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ablūdo": {
+    "indicatii": "-ĕre",
+    "pos": "vb. int.",
+    "definitie_ro": "a nu se potrivi cu (cf. ἀπᾴδειν); (fig.) a se îndepărta de, a fi diferit de [cu ab] (Hor. S. 2, 3, 320).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ablŭo": {
+    "indicatii": "-ŭi, -ūtum, -ĕre",
+    "pos": "vb. tr.",
+    "definitie_ro": "¶ 1. a înlătura spălând, a spăla (sânge, transpirație) (Virg. En. 9, 818; Sen. Ep. 86, 11; Tac. H. 3, 32); Ulixi pedes (Cic. Tusc. 5, 46), a spăla picioarele lui Ulise; (t. relig.) a purifica prin abluțiune (Virg. En. 2, 719). ¶ 2. (fig.) a spăla, a șterge, a face să dispară (Cic. Tusc. 4, 60; Lucr. 4, 375). ¶ 3. a șterge o întinare, a purifica prin botez (Eccl.).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ablūtĭo": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f.",
+    "definitie_ro": "¶ 1. spălare (Plin. 17, 74). ¶ 2. abluțiune, purificare (Eccl.).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ablūtŏr": {
+    "indicatii": "-ōris",
+    "pos": "subst. m.",
+    "definitie_ro": "cel care purifică (Tert. Marc. 3, 22).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ablūtus": {
+    "indicatii": "-a, -um",
+    "pos": "part.",
+    "definitie_ro": "participiul verbului abluo.",
+    "trimite_la": "abluo",
+    "paradigma": []
+  },
+  "ablŭvĭo": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f.",
+    "definitie_ro": "îndepărtare / spălare a pământului de către ape (Grom. 124, 1; 150, 27).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ablŭvĭum": {
+    "indicatii": "-ĭi",
+    "pos": "subst. n.",
+    "definitie_ro": "potop, inundație (Labeo d. Gell. 16, 7, 1).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abmātĕrtĕra": {
+    "indicatii": "-ae",
+    "pos": "subst. f.",
+    "definitie_ro": "sora stră-străbunicii (Dig. 38, 10, 3).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abnăto": {
+    "indicatii": "-āre",
+    "pos": "vb. int.",
+    "definitie_ro": "a se salva înotând, a scăpa înot (Stat. Ach. 1, 332).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abnĕgātĭo": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f.",
+    "definitie_ro": "tăgăduire, negare (Arn. 1, p. 18); (gram.) negație (decad.).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abnĕgātīvus": {
+    "indicatii": "-a, -um",
+    "pos": "adj.",
+    "definitie_ro": "negativ (Prisc. 15, 32).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abnĕgātŏr": {
+    "indicatii": "-ōris",
+    "pos": "subst. m.",
+    "definitie_ro": "cel care neagă (Tert. Fug. 12).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abnĕgo": {
+    "indicatii": "-āvi, -ātum, -āre",
+    "pos": "vb. tr.",
+    "definitie_ro": "¶ 1. a refuza categoric, a refuza total (alicui aliquid, cuiva ceva; Virg. En. 7, 424; Hor. O. 1, 35, 22); [cu inf.] a refuza să (Virg. G. 3, 456; En. 2, 637). ¶ 2. a renega, a nega [un depozit] (Sen. Ben. 4, 26, 3; Plin. Ep. 10, 96, 7; Juv. 13, 94).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abnĕpōs": {
+    "indicatii": "-ōtis",
+    "pos": "subst. m.",
+    "definitie_ro": "stră-strănepot [gradul 4] (Dig. 38, 10, 1, 6; Suet. Tib. 3).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abneptis": {
+    "indicatii": "-is",
+    "pos": "subst. f.",
+    "definitie_ro": "stră-strănepoată (Suet. Ner. 35).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "Abner": {
+    "indicatii": "",
+    "pos": "subst. m. ind.",
+    "definitie_ro": "Abner, general al armatei lui Saul (Bibl.).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "Abnŏba": {
+    "indicatii": "-ae",
+    "pos": "subst. f.",
+    "definitie_ro": "munte din Germania (Plin. 4, 79; Tac. G. 1).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abnocto": {
+    "indicatii": "-āre",
+    "pos": "vb. int.",
+    "definitie_ro": "a-și petrece noaptea în afara casei, a nu dormi acasă (Sen. Vit. 26, 6; Gell. 13, 19, 9).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abnōdātus": {
+    "indicatii": "-a, -um",
+    "pos": "part.",
+    "definitie_ro": "participiul verbului abnodo.",
+    "trimite_la": "abnodo",
+    "paradigma": []
+  },
+  "abnōdo": {
+    "indicatii": "-āre",
+    "pos": "vb. tr.",
+    "definitie_ro": "a tăia nodurile, a curăța excrescențele (la vița de vie, etc.) (Col. 4, 24, 10).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abnormis": {
+    "indicatii": "-e",
+    "pos": "adj.",
+    "definitie_ro": "(din ab și norma), care nu este conform cu regula, anormal (Hor. S. 2, 2, 2) [= în afara oricărei școli filozofice].",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăbŏlĭtĭo": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f.",
+    "definitie_ro": "abolire, suprimare (Tac. An. 13, 50; 13, 51; facti Suet. Tib. 4); amnistie.",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăbŏlĭtŏr": {
+    "indicatii": "-ōris",
+    "pos": "subst. m.",
+    "definitie_ro": "cel care distruge (Tert. Fam. 1, 3).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ablīto_1": {
+    "indicatii": "-a, -um",
+    "pos": "part.",
+    "definitie_ro": "participiul verbului aboleo.",
+    "trimite_la": "aboleo",
+    "paradigma": []
+  },
+  "ablīto_2": {
+    "indicatii": "-ūs",
+    "pos": "subst. m.",
+    "definitie_ro": "= abolitio (Cass. 4, 41).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăbolla": {
+    "indicatii": "-ae",
+    "pos": "subst. f.",
+    "definitie_ro": "manta de război (Varr. Men. 223); manta de filosof (Mart. 4, 53, 5; Juv. 3, 115); manta în general (Mart. 8, 48, 1; Juv. 4, 76; Suet. Cal. 35).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăbŏlŭi": {
+    "indicatii": "",
+    "pos": "vb.",
+    "definitie_ro": "vezi aboleo.",
+    "trimite_la": "aboleo",
+    "paradigma": []
+  },
+  "ăbōmĭnābĭlis": {
+    "indicatii": "-e",
+    "pos": "adj.",
+    "definitie_ro": "abominabil (Vulg. Lev. 11, 10).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăbōmĭnāmentum": {
+    "indicatii": "-i",
+    "pos": "subst. n.",
+    "definitie_ro": "lucru abominabil (Tert. Jud. 13).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăbōmĭnandus": {
+    "indicatii": "-a, -um",
+    "pos": "adj.",
+    "definitie_ro": "[participiu folosit ca adjectiv] abominabil (Liv. 8, 24, 11; Quint. 8, 6, 40).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăbōmĭnantĕr": {
+    "indicatii": "",
+    "pos": "adv.",
+    "definitie_ro": "în mod abominabil, oribil (Cod. Th. 3, 12, 13).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăbōmĭnātĭo": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f.",
+    "definitie_ro": "acțiunea de a respinge ca pe un lucru execrabil (Lact. Inst. 1, 17); lucru abominabil, abominație (Tert. Jud. 5; Eccl.).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăbōmĭnātus": {
+    "indicatii": "-a, -um",
+    "pos": "part.",
+    "definitie_ro": "¶ 1. participiu pasiv de la abomino (Liv. 31, 12, 8; Hor. Epo. 16, 8; Plin. 10, 34; 18, 5). ¶ 2. participiul verbului abominor.",
+    "trimite_la": "abominor",
+    "paradigma": []
+  },
+  "ăbōmĭno": {
+    "indicatii": "-āvi, -ātum, -āre",
+    "pos": "vb. tr.",
+    "definitie_ro": "a respinge ca pe un semn rău; nu există decât la formele pasive (V.-Flac. d. Prisc. 8, 16); [mai ales la participiu, vezi abominatus].",
+    "trimite_la": "abominatus",
+    "paradigma": []
+  },
+  "ăbōmĭnor": {
+    "indicatii": "-ātus sum, -āri",
+    "pos": "vb. tr.",
+    "definitie_ro": "¶ 1. a îndepărta un semn rău (Liv. 6, 18, 9; 30, 24, 12; Quint. 11, 3, 114); [cu acc.] a respinge prin dorințele sale (Liv. 39, 22, 5); quod abominor! (Ov. M. 9, 677), ceea ce zeilor să nu le placă! (ferească zeii!). ¶ 2. a respinge cu oroare (Liv. 30, 30, 9; 32, 28, 5; 40, 4, 8; Plin. Ep. 6, 4, 4); [cu inf.] a avea oroare să (Sen. Ben. 7, 3, 2); [adj. verbal: quod abominandum est (Liv. 22, 3, 5), lucru pe care trebuie să-l respingem cu oroare, cf. Sen. Clem. 1, 25, 2; Ben. 1, 9, 3].",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăbōmĭnōsus": {
+    "indicatii": "-a, -um",
+    "pos": "adj.",
+    "definitie_ro": "cu semn rău, de rău augur (Diom. 1, 470, 9).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "Ăbōra": {
+    "indicatii": "-ae",
+    "pos": "subst. m.",
+    "definitie_ro": "fluviu în Mesopotamia (Amm. 23, 5, 1).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "Ăbŏrĭense": {
+    "indicatii": "",
+    "pos": "subst. n.",
+    "definitie_ro": "Aboriense oppidum, oraș în Africa (Plin. 5, 29).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "Ăbŏrĭgĭnes": {
+    "indicatii": "-um",
+    "pos": "subst. m.",
+    "definitie_ro": "primii locuitori ai unei țări (Plin. 3, 56); aborigeni [popor primitiv al Italiei] (Cat. Or. 7; Cic. Rep. 2, 5; Sall. C. 6, 1; Liv. 1, 1, 5).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăbŏrĭgĭnĕus": {
+    "indicatii": "-a, -um",
+    "pos": "adj.",
+    "definitie_ro": "referitor la aborigeni (Septim. d. T.-Maur. 1996).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăbŏrĭŏr": {
+    "indicatii": "ortus sum, -īri",
+    "pos": "vb. int.",
+    "definitie_ro": "a pieri, a muri (Varr. L. 5, 66); a avorta (Plin. 8, 205; Gell. 12, 1, 8); [(fig.) vox aboritur (Lucr. 3, 155), vocea se stinge, amuțește. => aborsus (Paul Sent. 1, 9, 6), care a avortat].",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăbŏriscor": {
+    "indicatii": "-isci",
+    "pos": "vb. int.",
+    "definitie_ro": "a muri (Lucr. 5, 733).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăborsus_1": {
+    "indicatii": "-a, -um",
+    "pos": "part.",
+    "definitie_ro": "vezi aborior.",
+    "trimite_la": "aborior",
+    "paradigma": []
+  },
+  "ăborsŭs_2": {
+    "indicatii": "-ūs",
+    "pos": "subst. m.",
+    "definitie_ro": "avort (Tert. Fug. 3).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăbortĭo_1": {
+    "indicatii": "-īvi, -īre",
+    "pos": "vb. int.",
+    "definitie_ro": "a avorta (Vulg. Job. 21, 10; Eccl.).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăbortĭo_2": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f.",
+    "definitie_ro": "avort (Pl. Truc. 201; Cic. Clu. 34; 125).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăbortĭum": {
+    "indicatii": "-ĭi",
+    "pos": "subst. n.",
+    "definitie_ro": "avort (Hier. Ep. 22, 13).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăbortīvum": {
+    "indicatii": "-i",
+    "pos": "subst. n.",
+    "definitie_ro": "substanță abortivă (Plin. 25, 25; Juv. 2, 32; 6, 368).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăbortīvus": {
+    "indicatii": "-a, -um",
+    "pos": "adj.",
+    "definitie_ro": "¶ 1. născut înainte de termen (Hor. S. 1, 3, 45). ¶ 2. care provoacă avort (Plin. 7, 42, etc.).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăborto": {
+    "indicatii": "-āvi, -āre",
+    "pos": "vb.",
+    "definitie_ro": "(din aborior) int., a avorta (Varr. R. 2, 4, 14); tr., a aduce pe lume înainte de termen (Firm. Math. 6, 31).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăbortum": {
+    "indicatii": "-i",
+    "pos": "subst. n.",
+    "definitie_ro": "copil născut înainte de termen, avorton (Cic. 29, 2, 30).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăbortus_1": {
+    "indicatii": "-a, -um",
+    "pos": "part.",
+    "definitie_ro": "participiul verbului aborior.",
+    "trimite_la": "aborior",
+    "paradigma": []
+  },
+  "ăbortŭs_2": {
+    "indicatii": "-ūs",
+    "pos": "subst. m.",
+    "definitie_ro": "avort (Cic. Att. 14, 20, 2; Lucr. 4, 1243); abortum facere: a) a avorta (despre femeie) (Plin. 27, 110; Ep. 8, 10, 1); b) a provoca avort (despre medicamente sau substanțe) (Plin. 14, 118, etc.); [fig. despre scriitori: abortus facere (Plin. praf. 28), a produce avortoni / lucrări eșuate].",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abpatrŭus": {
+    "indicatii": "-i",
+    "pos": "subst. m.",
+    "definitie_ro": "fratele stră-străbunicului (Dig.).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abra": {
+    "indicatii": "-ae",
+    "pos": "subst. f.",
+    "definitie_ro": "tânără servitoare (Vulg. Judith. 8, 32).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abrādo": {
+    "indicatii": "rāsi, rāsum, -ĕre",
+    "pos": "vb. tr.",
+    "definitie_ro": "a înlătura radând, a rade (Cic. Cæl. 36; Plin. 6, 162); [fig.] a extorca, a smulge de la [cu ab] (Ter. Phorm. 333; Cic. Cæc. 19); [cu dat. sau abl., îndoielnic] a înlătura de la (Sen. Ep. 85, 11; Plin. Pan. 37).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "Abracūra": {
+    "indicatii": "",
+    "pos": "subst.",
+    "definitie_ro": "vezi Habracura.",
+    "trimite_la": "Habracura",
+    "paradigma": []
+  },
+  "Abrahāmĕus": {
+    "indicatii": "-i",
+    "pos": "subst. m.",
+    "definitie_ro": "descendent al lui Abraham (Aug. Civ. 16, 3).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "Abrahām": {
+    "indicatii": "",
+    "pos": "subst. m.",
+    "definitie_ro": "patriarhul evreilor; indecl. la anumiți scriitori; gen. și dat. la alții: Abrahamus (Prisc. 5, 11); Abram (Vulg. Gen. 11, 26); Abramus (Cypr. Gall. Gen. 666).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "Abrahāmĭda": {
+    "indicatii": "-ae",
+    "pos": "subst. m.",
+    "definitie_ro": "descendent al lui Abraham (Eccl.).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "Abrahāmĭus": {
+    "indicatii": "-a, -um",
+    "pos": "adj.",
+    "definitie_ro": "privitor la Abraham (P.-Nol. 24, 503).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abrāsĭo": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f.",
+    "definitie_ro": "acțiunea de a rade (Eccl.).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abrāsus": {
+    "indicatii": "-a, -um",
+    "pos": "part.",
+    "definitie_ro": "participiul verbului abrado.",
+    "trimite_la": "abrado",
+    "paradigma": []
+  },
+  "Abraxăres": {
+    "indicatii": "",
+    "pos": "subst. m. indecl.",
+    "definitie_ro": "numele unui cal (Itin. Alex. 31).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "Abraxās": {
+    "indicatii": "-ae",
+    "pos": "subst. m.",
+    "definitie_ro": "divinitate a basilidienilor [eretici] (Eccl.).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abrēlēgo": {
+    "indicatii": "-āvi, -āre",
+    "pos": "vb. tr.",
+    "definitie_ro": "a surghiuni, a exila (J.-Val. 2, 17).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abrĕlinquo": {
+    "indicatii": "-līqui, -ĕre",
+    "pos": "vb. tr.",
+    "definitie_ro": "a părăsi (Eccl.); -lictus, a, um, abandonat (Tert. Jud. 1).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abrēmissa": {
+    "indicatii": "-ōrum, n., sau abrēmissas, -ae, f., și abrēmissĭo, -ōnis, f.",
+    "pos": "subst.",
+    "definitie_ro": "iertare, remisiune a păcatelor (Eccl.).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abrēnuntiātĭo": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f.",
+    "definitie_ro": "renunțare (Eccl.).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abrēnuntĭo": {
+    "indicatii": "-āvi, -ātum, -āre",
+    "pos": "vb. int.",
+    "definitie_ro": "[cu dat.] a renunța la (la diavol, la lume etc.) (Eccl.).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abrēptĭo": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f.",
+    "definitie_ro": "răpire, luare cu forța (Gloss.).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abrēptus_1": {
+    "indicatii": "-a, -um",
+    "pos": "part.",
+    "definitie_ro": "participiul verbului abripio.",
+    "trimite_la": "abripio",
+    "paradigma": []
+  },
+  "abrēptŭs_2": {
+    "indicatii": "-ūs",
+    "pos": "subst. m.",
+    "definitie_ro": "răpire [decad.].",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "Abrettēni": {
+    "indicatii": "-ōrum",
+    "pos": "subst. m.",
+    "definitie_ro": "locuitori ai Abrettenei [regiune din Mysia] (Plin. 5, 123).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "Abrincatæ": {
+    "indicatii": "-um (sau Abrincatēni, -ōrum; Abrincatui, -ōrum)",
+    "pos": "subst. m.",
+    "definitie_ro": "abrincatenii [popor galic din regiunea Avranches] (Plin. 4, 107).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abrĭpĭo": {
+    "indicatii": "-rĭpŭi, -reptum, -ĕre (ab + rapio)",
+    "pos": "vb. tr.",
+    "definitie_ro": "a smulge, a răpi, a lua pe sus: [cu a] a tribunali (Cic. Verr. 5, 17), a smulge din fața tribunalului; [cu ex] (Verr. 4, 107); [cu de] (Verr. 4, 24); [cu dat.] pecora litori abrepta (Plin. Ep. 8, 20, 8), turme smulse de pe țărm; [fig.] (filium) etiamsi natura a parentis similitudine abriperet (Cic. Verr. 3, 70), chiar dacă natura l-ar îndepărta pe fiu de asemănarea cu tatăl; Romulum etiamsi natura ad humanum exitum abripuit (Cic. Rep. 1, 25), chiar dacă natura l-a răpit pe Romulus spre sfârșitul omenesc; ~ se abripere, a se furișa, a fugi, a scăpa (Pl. Curc. 597; Liv. 22, 6, 10; Suet. Tib. 45).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "Abrodiætus": {
+    "indicatii": "",
+    "pos": "subst.",
+    "definitie_ro": "vezi Habrodiaetus.",
+    "trimite_la": "Habrodiaetus",
+    "paradigma": []
+  },
+  "abrōdo": {
+    "indicatii": "-rōsi, -rōsum, -rōdĕre",
+    "pos": "vb. tr.",
+    "definitie_ro": "a roade, a distruge rozând (Varr. R. 2, 9, 13; Plin. 27, 42).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abrŏgans": {
+    "indicatii": "-ntis",
+    "pos": "adj.",
+    "definitie_ro": "umil (Gloss.).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abrŏgātĭo": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f.",
+    "definitie_ro": "(din abrogo) suprimarea unei legi printr-o altă lege, abrogare (Cic. Att. 3, 23, 2).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abrŏgātŏr": {
+    "indicatii": "-ōris",
+    "pos": "subst. m.",
+    "definitie_ro": "cel care abrogă, care distruge (Arn. 1, 50).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abrŏgātus": {
+    "indicatii": "-a, -um",
+    "pos": "part.",
+    "definitie_ro": "participiul verbului abrogo.",
+    "trimite_la": "abrogo",
+    "paradigma": []
+  },
+  "abrŏgo": {
+    "indicatii": "-āvi, -ātum, -āre",
+    "pos": "vb. tr.",
+    "definitie_ro": "¶ 1. a răpi, a retrage: a) fidem alicui, alicui rei, a lipsi pe cineva de credit, a nu da crezare la ceva (Pl. Trin. 1048; Cic. Caec. 44; Ac. 2, 36); b) imperium, magistratum, etc., alicui, a retrage cuiva puterea, funcția (Cic. Br. 53; Off. 3, 40; Mil. 72; Leg. 3, 24; Liv. 22, 25, 10; 27, 20, 11; 45, 39, 4, etc.). ¶ 2. a suprima, a abroga [o lege] (Cic. Inv. 2, 134; Rep. 3, 33; Br. 222; Mur. 5; Leg. 2, 14). ¶ 3. [în general] a îndepărta, a suprima (Plin. 2, 42); [la pasiv] abrogata, lucruri abolite (Quint. 1, 6, 20).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "Abrōnĭus": {
+    "indicatii": "",
+    "pos": "subst.",
+    "definitie_ro": "vezi Habronius.",
+    "trimite_la": "Habronius",
+    "paradigma": []
+  },
+  "abrōsi": {
+    "indicatii": "",
+    "pos": "vb.",
+    "definitie_ro": "perfectul verbului abrodo.",
+    "trimite_la": "abrodo",
+    "paradigma": []
+  },
+  "abrŏtŏnītēs": {
+    "indicatii": "-ae (ἀβροτονίτης οἶνος)",
+    "pos": "subst. m.",
+    "definitie_ro": "vin aromatizat cu peliniță / lemnul-domnului (Col. 12, 35).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abrŏtŏnum": {
+    "indicatii": "-i (ἀβρότονον), Plin., sau abrŏtŏnus, -i, m., Lucr.",
+    "pos": "subst. n.",
+    "definitie_ro": "lemnul-domnului, peliniță [plantă medicinală] (Lucr. 4, 125; Plin. 21, 60).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abrumpo": {
+    "indicatii": "-rūpi, -ruptum, -ĕre",
+    "pos": "vb. tr.",
+    "definitie_ro": "a rupe, a sfărâma, a despărți violent.",
+    "trimite_la": "",
+    "paradigma": []
   }
 }
