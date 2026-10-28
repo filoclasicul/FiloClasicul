@@ -1115,10 +1115,10 @@
         : (normalizedFirstLetter || 'a');
 
       const directoryNames = [
-        `data/${language}.json`,
+        `data/${language}`,
         `data/${language}`,
         language,
-        `${language}.json`
+        `${language}`
       ];
 
       const fileNames = [...new Set([normalizedFirstLetter, fileKey])]
@@ -1138,7 +1138,7 @@
         });
       });
 
-      const legacyAlternative = `data/${language}.json/${encodeURIComponent(fileKey)}.json`;
+      const legacyAlternative = `data/${language}/${encodeURIComponent(fileKey)}.json`;
       if (!seen.has(legacyAlternative)) {
         seen.add(legacyAlternative);
         targets.push({ language, path: legacyAlternative });
