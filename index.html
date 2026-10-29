@@ -626,6 +626,19 @@
       margin-bottom: 0.6rem;
     }
 
+    .dictionary-navigation {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.75rem;
+      margin-top: 1.25rem;
+    }
+
+    .dictionary-navigation-error {
+      margin-top: 0.75rem;
+      color: var(--crimson);
+      font-size: 0.9rem;
+    }
+
     .definition-text,
     .definition-subsection {
       display: block;
@@ -939,6 +952,15 @@
 
       .entry-card {
         padding: 1.25rem;
+      }
+
+      .dictionary-navigation {
+        flex-wrap: wrap;
+      }
+
+      .dictionary-navigation .btn-action {
+        flex: 1 1 100%;
+        justify-content: center;
       }
 
       .lemma-title {
@@ -1603,6 +1625,101 @@
       return true;
     }
 
+    function getDictionaryFileLetter(lemma) {
+      const firstLetter = [...lemma.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()]
+        .find(character => /\p{L}/u.test(character));
+      return firstLetter || '';
+    }
+
+    function sortDictionaryEntries(entries, language) {
+      const locale = language === 'gr' ? 'el' : 'la';
+      return entries.sort((a, b) =>
+        a.id.localeCompare(b.id, locale, { sensitivity: 'base' }) ||
+        a.lemmaKey.localeCompare(b.lemmaKey, locale, { sensitivity: 'base' })
+      );
+    }
+
+    async function findAdjacentDictionaryEntry(lemmaKey, direction) {
+      const currentEntry = lexiconData[lemmaKey];
+      if (!currentEntry) return null;
+
+      const language = currentEntry.lang === 'Greacă Veche' ? 'gr' : 'lat';
+      const alphabet = language === 'gr'
+        ? Array.from('αβγδεζηθικλμνξοπρστυφχψω')
+        : Array.from('abcdefghijklmnopqrstuvwxyz');
+      const currentLetter = getDictionaryFileLetter(lemmaKey);
+      const currentLetterIndex = alphabet.indexOf(currentLetter);
+      if (currentLetterIndex === -1) return null;
+
+      const entriesForLetter = letter => sortDictionaryEntries(
+        Object.values(lexiconData).filter(entry =>
+          entry.lang === currentEntry.lang && getDictionaryFileLetter(entry.lemmaKey) === letter
+        ),
+        language
+      );
+      const currentLetterEntries = entriesForLetter(currentLetter);
+      const currentIndex = currentLetterEntries.findIndex(entry => entry.lemmaKey === lemmaKey);
+      const adjacentEntry = currentLetterEntries[currentIndex + direction];
+      if (adjacentEntry) return adjacentEntry;
+
+      const remainingLetters = [];
+      for (let index = currentLetterIndex + direction;
+        index >= 0 && index < alphabet.length;
+        index += direction) {
+        remainingLetters.push({ index, letter: alphabet[index] });
+      }
+
+      await Promise.all(remainingLetters.map(({ letter }) => loadDictionaryTarget({
+        language,
+        path: `data/${language}/${encodeURIComponent(letter)}.json`
+      }, true)));
+
+      for (const { letter } of remainingLetters) {
+        const target = {
+          language,
+          path: `data/${language}/${encodeURIComponent(letter)}.json`
+        };
+        const entries = entriesForLetter(letter);
+        if (entries.length) {
+          return direction > 0 ? entries[0] : entries[entries.length - 1];
+        }
+      }
+
+      return null;
+    }
+
+    async function navigateDictionary(lemmaKey, direction, button) {
+      const display = document.getElementById('dictionaryDisplay');
+      const navigationButtons = [...display.querySelectorAll('.dictionary-navigation button')];
+      const errorMessage = display.querySelector('.dictionary-navigation-error');
+      navigationButtons.forEach(navigationButton => {
+        navigationButton.disabled = true;
+      });
+      errorMessage.textContent = '';
+
+      let reachedBoundary = false;
+      try {
+        const adjacentEntry = await findAdjacentDictionaryEntry(lemmaKey, direction);
+        if (!adjacentEntry) {
+          reachedBoundary = true;
+          errorMessage.textContent = direction < 0
+            ? 'Nu există un cuvânt anterior în această listă.'
+            : 'Nu există un cuvânt următor în această listă.';
+          return;
+        }
+
+        selectSuggestion(adjacentEntry.lemmaKey);
+      } catch (error) {
+        errorMessage.textContent = `Nu s-a putut încărca următorul cuvânt: ${error.message}`;
+      } finally {
+        navigationButtons.forEach(navigationButton => {
+          if (navigationButton.isConnected) {
+            navigationButton.disabled = reachedBoundary && navigationButton === button;
+          }
+        });
+      }
+    }
+
     function renderEntry(lemmaKey) {
       const data = lexiconData[lemmaKey];
       const display = document.getElementById('dictionaryDisplay');
@@ -1662,10 +1779,21 @@
             ${data.defs.map((d, idx) => `<li class="definition-item"><span class="definition-num">${idx + 1}.</span> ${formatDefinition(d)}</li>`).join('')}
           </ol>
 
+          <nav class="dictionary-navigation" aria-label="Navigare între cuvinte">
+            <button type="button" class="btn-action" data-direction="-1">← Cuvântul anterior</button>
+            <button type="button" class="btn-action" data-direction="1">Cuvântul următor →</button>
+          </nav>
+          <p class="dictionary-navigation-error" role="status" aria-live="polite"></p>
+
           ${citationsHtml}
           ${paradigmHtml}
         </article>
       `;
+      display.querySelectorAll('.dictionary-navigation button').forEach(button => {
+        button.addEventListener('click', () =>
+          navigateDictionary(lemmaKey, Number(button.dataset.direction), button)
+        );
+      });
     }
 
     function clearSearch() {
