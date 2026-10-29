@@ -1767,7 +1767,1050 @@
   "abrumpo": {
     "indicatii": "-rūpi, -ruptum, -ĕre",
     "pos": "vb. tr.",
-    "definitie_ro": "a rupe, a sfărâma, a despărți violent.",
+    "definitie_ro": "a detașa prin rupere, a rupe. ¶ 1. a detașa violent, a rupe, a smulge: abrupti nubibus ignes (Lucr. 2, 214), focurile smulse violent din nori; se latrocinio Antonii (Cic. Phil. 14, 31), a se smulge din banda de tâlhari a lui Antonius; pars velut abrupta a cetero populo (Liv. 3, 19, 9), o parte oarecum ruptă din restul poporului (cf. 28, 12, 20; 40, 2, 5); abruptis turbata procellis freta (Virg. G. 3, 259), ape tulburate de furtuna dezlănțuită (cf. En. 12, 451). ¶ 2. a sfărâma, a rupe: vincula (Enn. An. 458), a-și sfărâma lanțurile; ingeminant abruptis nubibus ignes (Virg. En. 3, 199), focurile se întețesc sfâșiind norii; abrupto ponte (Tac. H. 3, 14), podul fiind rupt; locus recenti lapsu terrae in pedum mille admodum altitudinem abruptus erat (Liv. 21, 36, 2), locul, în urma unei surpări recente de teren, se prăbușise la o adâncime de aproape o mie de picioare. ¶ 3. [fig.] a întrerupe brusc: somnos (Virg. G. 3, 530); sermonem (Virg. En. 4, 388), a rupe somnul, o conversație; vitam (Virg. En. 8, 579), existența, viața (cf. Quint. 4, 3, 13; Plin. Ep. 5, 5, 4; 7, 3, 4); dissimulationem (Tac. An. 11, 26), a rupe tăcerea, a termina cu disimularea.",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "Abrŭpŏlis": {
+    "indicatii": "-is",
+    "pos": "subst. m.",
+    "definitie_ro": "rege al Traciei (Liv. 42, 41, 11).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abruptē": {
+    "indicatii": "",
+    "pos": "adv.",
+    "definitie_ro": "brusc (Quint. 3, 8, 6; 4, 1, 74); în grabă, precipitat (Just. 2, 15, 4) || abruptius (Amm. 20, 5, 5).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abruptĭo": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f.",
+    "definitie_ro": "(din abrumpo) rupere (Cic. Div. 2, 84); [fig.] divorț, despărțire (Cic. Att. 11, 3, 1).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abruptum": {
+    "indicatii": "-i",
+    "pos": "subst. n.",
+    "definitie_ro": "(din abruptus) ¶ 1. (la pl.): a) părți rupte, fragmente (Tac. H. 5, 26); b) abrupta viarum (Luc. 10, 317), pante abrupte ale drumurilor, prăpăstii. ¶ 2. [în expresii] in abruptum ferri, trahi, a fi atras în adâncuri, într-o prăpastie, în abis [pr. și fig.] (Virg. En. 12, 687; Sen. Nat. 6, 1, 3; Tac. H. 1, 48) || per abrupta (Tac. Agr. 42), peste prăpăstii, pe drumuri abrupte, grele.",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abruptus": {
+    "indicatii": "-a, -um",
+    "pos": "adj.",
+    "definitie_ro": "¶ 1. participiul verbului abrumpo. ¶ 2. adj.: a) foarte înclinat, escarpament, abrupt (Plin. 3, 67; Tac. An. 2, 23; 15, 42; H. 3, 11; [fig.] Sen. Sap. 1, 2); b) [despre stil] rupt, tăiat, sacadat (Sen. Contr. 2, pr. 2; Sen. Ep. 114, 1; Quint. 4, 2, 45; 13, 10, 80); c) [despre caracter] intratabil, rigid: abrupta contumacia (Tac. An. 4, 20), o obstinație inflexibilă.",
+    "trimite_la": "abrumpo",
+    "paradigma": []
+  },
+  "abs": {
+    "indicatii": "",
+    "pos": "prep.",
+    "definitie_ro": "vezi a.",
+    "trimite_la": "a³",
+    "paradigma": []
+  },
+  "Absalōm": {
+    "variante": [
+      "Ăbessalōn"
+    ],
+    "indicatii": "",
+    "pos": "subst. m. ind.",
+    "definitie_ro": "Absalom [fiul lui David] (Eccl.).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "Absarrum": {
+    "variante": [
+      "Absarus"
+    ],
+    "indicatii": "-i",
+    "pos": "subst. n. (sau m.)",
+    "definitie_ro": "fluviu în Colchida (Plin. 6, 12).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abscēdentĭa": {
+    "indicatii": "-ium",
+    "pos": "subst. n. pl.",
+    "definitie_ro": "(din part. prez. al lui abscedo luat ca subst.) ¶ 1. obiecte care se îndepărtează în perspectivă (Vitr. pr. 11). ¶ 2. abcese, umflături (Cels. 5, 28, 21).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abscēdo": {
+    "indicatii": "-cessī, -cessum, -ĕre",
+    "pos": "vb. int.",
+    "definitie_ro": "a merge departe de, a se îndepărta, a pleca. ¶ 1. a) [absol.] abscede (Pl. Aul. 55), du-te, retrage-te (cf. Liv. 26, 7, 1; 45, 11, 1); [fig.] somnus abscessit (Ov. F. 3, 301); metus abscessit (Tac. H. 4, 76), somnul a dispărut, teama a trecut; b) ab aliquo (Liv. 37, 53, 18), a se îndepărta de cineva; ab urbe (Liv. 3, 8, 8), a se îndepărta de cetate; a Capua (Liv. 26, 1, 2), de la Capua [din împrejurimi]; Regio (Liv. 24, 1, 12), de la Regium; Armenia (Tac. An. 13, 7), a părăsi Armenia; [fig.] civilibus muneribus (Liv. 9, 3, 5), a se ține deoparte de funcțiile civile; e foro (Liv. 27, 50, 4), a se îndepărta de forum; e conspectu (Pl. Cap. 434), a se îndepărta din vedere; c) a abandona, a renunța la: ab obsidione (Liv. 27, 43, 1) sau obsidione (Liv. 36, 35, 1), a renunța la asediu, a abandona asediul; custodia Ioniae (Liv. 37, 25, 2), a abandona paza Ioniei. ¶ 2. a) [în pictură] a se îndepărta în perspectivă (Vitr. 1, 2, 2); b) [med.] a se forma un abces (Cels. 2, 7, etc.). ¶ 3. [fig.] a pleca, a dispărea, a se diminua [opus lui accedere, a se adăuga] (cf. Sen. Ep. 72, 7; Ben. 4, 40, 5). ➣ abscessam = abscessissem (Sil. 8, 109).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abscessĭo": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f.",
+    "definitie_ro": "acțiunea de a se îndepărta, îndepărtare (Cic. Tim. 44) || = ἀποστασία, separare, apostazie (Eccl.).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abscessūrus": {
+    "indicatii": "-a, -um",
+    "pos": "part.",
+    "definitie_ro": "participiul viitor al verbului abscedo.",
+    "trimite_la": "abscedo",
+    "paradigma": []
+  },
+  "abscessŭs": {
+    "indicatii": "-ūs",
+    "pos": "subst. m.",
+    "definitie_ro": "¶ 1. acțiunea de a se îndepărta, îndepărtare (Cic. Nat. 1, 24; Virg. En. 10, 444) || plecare (Tac. An. 14, 49). ¶ 2. absență (Tac. An. 4, 57; 6, 38) || retragere (Tac. An. 12, 33). ¶ 3. [med.] abces (Cels. 2, 1, etc.).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abscīdo": {
+    "indicatii": "-cīdi, -cīsum, -ĕre (din abs + caedo)",
+    "pos": "vb. tr.",
+    "definitie_ro": "¶ 1. a separa prin tăiere, a tranșa, a tăia: caput (Cic. Phil. 11, 5), a tăia capul (cf. Liv. 31, 24, 6; Caes. G. 3, 14, 7; 7, 73, 2). ¶ 2. [fig.] a) a separa: abscisus in duas partes exercitus (Caes. C. 3, 73), armata scindată în două părți; hostium pars parti abscisa erat (Liv. 8, 25, 5), o parte a inamicilor se afla izolată de cealaltă; abscisa aqua (Liv. 41, 11, 4), apă deviată [printr-un șanț]; b) a reteza, a înlătura [speranța, un sprijin] (Liv. 25, 45, 6; Tac. H. 3, 78).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abscindo": {
+    "indicatii": "-scĭdi, -scissum, -ĕre",
+    "pos": "vb. tr.",
+    "definitie_ro": "¶ 1. a separa prin rupere, a smulge, a rupe, a sfâșia: alicujus tunicam a pectore (Cic. Verr. 5, 5), a smulge cuiva tunica de pe piept (cf. Virg. En. 5, 685); [poetic] abscissa comas (Virg. En. 4, 590), smulgându-și părul; eodem ferro venas abscindere (Tac. An. 16, 11), a-și tăia venele cu același fier || plantas de corpore matrum (Virg. G. 2, 23), a smulge lăstarii din tulpina maternă; Hesperium Siculo latus (Virg. En. 3, 417), a rupe flancul Italiei de cel al Siciliei (cf. Hor. O. 1, 3, 21). ¶ 2. [fig.] a) a separa: inane solido (Hor. S. 1, 2, 113), vidul de plin; b) a suprima (Hor. Epo. 16, 35).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abscīsē": {
+    "indicatii": "",
+    "pos": "adv.",
+    "definitie_ro": "într-o manieră concisă (V.-Max. 3, 7, 6).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abscīsĭo": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f.",
+    "definitie_ro": "acțiunea de a reteza, tăiere (Aug. Civ. 7, 27, 2) || [ret.] reticență (Her. 4, 67) || [gram.] apocopă (Diom. 1, 442, 26).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abscissĭo": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f.",
+    "definitie_ro": "acțiunea de a smulge (Ambr. Paen. 10). ➣ cuvânt cu existență îndoielnică; poate trebuie restabilit abscisio.",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abscissus": {
+    "indicatii": "-a, -um",
+    "pos": "part.",
+    "definitie_ro": "participiul verbului abscindo.",
+    "trimite_la": "abscindo",
+    "paradigma": []
+  },
+  "abscīsus": {
+    "indicatii": "-a, -um",
+    "pos": "adj.",
+    "definitie_ro": "¶ 1. participiul verbului abscido. ¶ 2. adj.: a) abrupt (Liv. 32, 5, 12; 44, 6, 8; Sen. Ep. 70, 21); b) [despre stil] scurtat, trunchiat (Quint. 9, 4, 118; Plin. Ep. 1, 20, 19); c) [fig.] rigid, intratabil, inaccesibil (Sen. Clem. 1, 2, 2); abscisior justitia (V.-Max. 6, 5, 4), justiție prea riguroasă.",
+    "trimite_la": "abscido",
+    "paradigma": []
+  },
+  "abscondĭti": {
+    "indicatii": "",
+    "pos": "vb.",
+    "definitie_ro": "abscondĭti și abscondĭdĭ, perfectul verbului abscondo.",
+    "trimite_la": "abscondo",
+    "paradigma": []
+  },
+  "abscondĭtē": {
+    "indicatii": "",
+    "pos": "adv.",
+    "definitie_ro": "¶ 1. pe ascuns, în mod secret (Vulg.). ¶ 2. [fig.] a) într-o manieră voalată (Cic. Inv. 2, 69); b) în profunzime, profund (Cic. Fin. 3, 2).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abscondĭtĭo": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f.",
+    "definitie_ro": "acțiunea de a se ascunde (Eccl.).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abscondĭtŏr": {
+    "indicatii": "-ōris",
+    "pos": "subst. m.",
+    "definitie_ro": "cel care ascunde (Tert. Marc. 4, 25).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abscondĭtus": {
+    "indicatii": "-a, -um",
+    "pos": "adj.",
+    "definitie_ro": "¶ 1. participiul verbului abscondo. ¶ 2. adj.: ascuns, invizibil (Cic. Phil. 2, 108); [fig.] ignorat, secret, misterios (Cic. Verr. pr. 32; Cat. 3, 3).",
+    "trimite_la": "abscondo",
+    "paradigma": []
+  },
+  "abscondo": {
+    "indicatii": "-condĭdi și -condĭ, -condĭtum și -consum, -ĕre",
+    "pos": "vb. tr.",
+    "definitie_ro": "¶ 1. a ascunde departe de, a sustrage vederii (Pl. Aul. 63; Cic. Nat. 2, 94; Sen. Ben. 3, 25, 1; Ep. 16, 8; 86, 6; 115, 9; Lucr. 1, 904; Virg. G. 3, 558) || [poetic] a pierde din vedere [în timpul navigației, cf. Serv. En. 3, 291]: protinus aerias Phaeacum abscondimus arces (Virg. En. 3, 291), imediat după aceea pierdem din vedere citadelele aeriene ale feacienilor (cf. Sen. Ep. 70, 2) || se abscondere (Caecil. Com. 40), a se ascunde (cf. Sen. Ep. 68, 1); [pasiv] abscondi (Virg. G. 1, 221), a apune [despre aștri] || [absol.] abscondere (Apul. M. 6, 12), a se ascunde. ¶ 2. [fig.] a ascunde, a disimula (Cic. Amer. 131; Sen. Ben. 2, 10, 4; Ir. 3, 36, 3; Ep. 84, 7; Tac. An. 13, 16; H. 3, 68). ➣ abscondidi (Pl. Merc. 360, etc.); abscondi începând cu Seneca Retorul; absconsus (Tert. și în ep. de decadență).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absconsē": {
+    "indicatii": "",
+    "pos": "adv.",
+    "definitie_ro": "în secret (Hyg. Fab. 184).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absconsĭo": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f.",
+    "definitie_ro": "acțiunea de a ascunde (Eccl.).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absconsŏr": {
+    "indicatii": "-ōris",
+    "pos": "subst. m.",
+    "definitie_ro": "cel care ascunde (Firm. Math. 3, 8).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absconsus": {
+    "indicatii": "-a, -um",
+    "pos": "part.",
+    "definitie_ro": "participiul verbului abscondo || in absconso (Aug. Civ. 18, 32), în secret.",
+    "trimite_la": "abscondo",
+    "paradigma": []
+  },
+  "absectus": {
+    "indicatii": "-a, -um",
+    "pos": "part.",
+    "definitie_ro": "(din seco) separat (Cod. J. 12, 33, 5).",
+    "trimite_la": "seco",
+    "paradigma": []
+  },
+  "absegmen": {
+    "indicatii": "-ĭnis",
+    "pos": "subst. n.",
+    "definitie_ro": "(din seco) segment, fragment (Fest. 242).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absens": {
+    "indicatii": "-tis",
+    "pos": "part. / adj.",
+    "definitie_ro": "¶ 1. participiul prezent al verbului absum. ¶ 2. adj.: absent (Cic. Verr. 5, 109, etc.) || absentissimus (Aug. Conf. 4, 4). [Notă: ablativ absenti (Pl. Amp. 826; Men. 492; Mil. 1341); genitiv absentum (Pl. Stich. 5) || absente nobis (Ter. Eun. 649; Afran. Tog. 6), în absența noastră, cf. (Non. 76)].",
+    "trimite_la": "absum",
+    "paradigma": []
+  },
+  "absentātĭo": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f.",
+    "definitie_ro": "absență [decad.].",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absentĭa": {
+    "indicatii": "-ae",
+    "pos": "subst. f.",
+    "definitie_ro": "absență (Cic. Pis. 37; Att. 14, 13 a, 1; Sen. Helv. 15, 3; Quint. 5, 7, 1).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absentĭo": {
+    "indicatii": "-āre",
+    "pos": "vb. int.",
+    "definitie_ro": "a fi absent (Chrysol. Serm. 71).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absentĭum": {
+    "indicatii": "",
+    "pos": "subst.",
+    "definitie_ro": "vezi absinthium.",
+    "trimite_la": "absinthium",
+    "paradigma": []
+  },
+  "absentīvus": {
+    "indicatii": "-a, -um",
+    "pos": "adj.",
+    "definitie_ro": "absent (Petr. 33).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absento": {
+    "indicatii": "-āre",
+    "pos": "vb.",
+    "definitie_ro": "¶ 1. tr., a face să fie absent, a îndepărta (Cypr. Cler. 30; Cod. Th. 12, 1, 84). ¶ 2. int., a fi absent (Alcin. Ep. 72; 74).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absĭda": {
+    "indicatii": "-ae",
+    "pos": "subst. f.",
+    "definitie_ro": "vezi apsis (Aug. Ep. 22, 3; P.-Nol. Ep. 12, 17).",
+    "trimite_la": "apsis",
+    "paradigma": []
+  },
+  "absĭdātus": {
+    "indicatii": "-a, -um",
+    "pos": "adj.",
+    "definitie_ro": "arcuat, boltit (Cass. 4, 51).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "Absĭlae": {
+    "indicatii": "-ārum",
+    "pos": "subst. m.",
+    "definitie_ro": "popor din regiunea Pontului (Plin. 6, 15).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absĭlĭo": {
+    "indicatii": "-sĭlŭi și -sĭlīvi, -īre (din ab + salio)",
+    "pos": "vb.",
+    "definitie_ro": "¶ 1. int., a sări departe de, a se îndepărta prin sărituri (Lucr. 6, 1217) || a sări, a ricoșa (Stat. Th. 10, 87). ¶ 2. tr., a sări afară din: nidos (Stat. Th. 6, 97), a sări din cuiburi.",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absim": {
+    "indicatii": "-is, -it, etc.",
+    "pos": "vb.",
+    "definitie_ro": "forme de la absum.",
+    "trimite_la": "absum",
+    "paradigma": []
+  },
+  "absĭmĭlis": {
+    "indicatii": "-e",
+    "pos": "adj.",
+    "definitie_ro": "neasemănător, diferit: falces non absimili forma muralium falcium (Caes. G. 3, 14, 5), coase având absolut aceeași formă cu coasele de zid; non absimilis Tiberio principi fuit (Suet. Oth. 1), semăna perfect cu împăratul Tiberius.",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absinthĭăcus": {
+    "indicatii": "-a, -um",
+    "pos": "adj.",
+    "definitie_ro": "de pelin, cu pelin (Th.-Prisc. 2, 2, 16).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absinthĭātus": {
+    "indicatii": "-a, -um",
+    "pos": "adj.",
+    "definitie_ro": "care conține pelin (Sen. Suas. 6, 16) || absinthiatum, -i, n. (Pall. 3, 32), vin de pelin.",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absinthītēs": {
+    "indicatii": "-ae",
+    "pos": "subst. m.",
+    "definitie_ro": "vin de pelin (Col. 12, 35; Plin. 14, 19).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absinthĭum": {
+    "indicatii": "-ĭi",
+    "pos": "subst. n.",
+    "definitie_ro": "pelin (Lucr. 1, 935; 2, 400; Varr. R. 1, 57; Quint. 3, 1, 5).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absinthĭus": {
+    "indicatii": "-ĭi",
+    "pos": "subst. m.",
+    "definitie_ro": "pelin (Varr. Men. 440).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absis": {
+    "variante": ["apsis"],
+    "indicatii": "-ĭdis",
+    "pos": "subst. f.",
+    "definitie_ro": "arc, boltă (Plin. Ep. 2, 17, 8) || orbita unei planete (Plin. 2, 63) || farfurie, tipsie (Dio. 34, 2, 19) || corul unei biserici (Eccl.).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absisto": {
+    "indicatii": "-stĭti, -ĕre",
+    "pos": "vb. int.",
+    "definitie_ro": "¶ 1. a se îndepărta de: ab aliqua re (Caes. G. 5, 17, 2), de ceva; vestigiis hostis (Liv. 27, 42, 17), a se îndepărta de urmele inamicului, a pierde urma inamicului || [poetic] ab ore scintillae absistunt (Virg. En. 12, 102), scântei îi țâșnesc din față (priviri). ¶ 2. [fig.] a înceta, a renunța la: a) [cu abl.] oppugnatione (Liv. 44, 12, 7), a renunța la asediu; incepto (Liv. 25, 5, 5), a abandona o inițiativă (cf. 21, 6, 8; 24, 10, 15, etc.); continuando magistratu (Liv. 9, 34, 2), a renunța la a-și prelungi magistratura (cf. 29, 33, 8); b) [cu inf.] (Virg. En. 6, 399; 5, 405; Liv. 7, 25, 5; 32, 35, 7; 39, 35, 4); c) [absol.] a se opri, a înceta: (Virg. En. 1, 192; Liv. 34, 8, 2; 36, 45, 5; 44, 39, 9); absistamus (Virg. En. 9, 355), să ne oprim aici.",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absĭtus": {
+    "indicatii": "-a, -um",
+    "pos": "adj.",
+    "definitie_ro": "îndepărtat (P.-Nol. 21, 405).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absŏcĕr": {
+    "indicatii": "-ĕri",
+    "pos": "subst. m.",
+    "definitie_ro": "străbunicul soțului sau al soției, bunicul socrului (Capit. Gord. 2).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absŏlĕo": {
+    "indicatii": "",
+    "pos": "vb.",
+    "definitie_ro": "vezi absoleo (Gloss.).",
+    "trimite_la": "absoleo",
+    "paradigma": []
+  },
+  "absŏlūbĭlis": {
+    "indicatii": "-e",
+    "pos": "adj.",
+    "definitie_ro": "demn de a fi absolvit/iertat (Amb. Serm. 12, 7).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absŏlūtē": {
+    "indicatii": "",
+    "pos": "adv.",
+    "definitie_ro": "într-un mod desăvârșit, perfect (Cic. Ac. 2, 55; Tusc. 4, 38; Or. 227; absolutius Plin. Ep. 4, 27, 2; absolutissime Hier. 2, 23) || în mod general (Tert. Or. 21, etc.) || [gram.] absolut (Prisc.; Don. And. 817; Eun. 450; Ad. 40; Phorm. 32).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absŏlūtĭo": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f.",
+    "definitie_ro": "(din absolvo) ¶ 1. achitare (Cic. Clu. 74; Font. 36; Cat. 3, 9); majestatis (Fam. 3, 11, 1), achitare de crima de lezmajestate || achitarea unei datorii, descărcare, chitanță (Dig. 46, 4, 1). ¶ 2. desăvârșire, perfecțiune (Cic. de Or. 1, 130; Br. 137; Fin. 5, 38). ¶ 3. [ret.] exactitate [trecere în revistă completă a genurilor relative la o cauză] (Cic. Inv. 1, 33).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absŏlūtīvē": {
+    "indicatii": "",
+    "pos": "adv.",
+    "definitie_ro": "în mod absolut, precis (Charis. 263, 8) || [gram.] la pozitiv (Char. 114, 33).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absŏlūtīvus": {
+    "indicatii": "-a, -um",
+    "pos": "adj.",
+    "definitie_ro": "absolut [opus lui relativus] (Serv. En. 10, 18).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absŏlūtŏr": {
+    "indicatii": "-ōris",
+    "pos": "subst. m.",
+    "definitie_ro": "cel care achită/absolvă (Cass. 11, pref.).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absŏlūtōrĭus": {
+    "indicatii": "-a, -um",
+    "pos": "adj.",
+    "definitie_ro": "care achită, achitator (Sen. Contr. 6, 5; Ascon. Mil. p. 35 B; Suet. Aug. 33) || care eliberează de (Plin. 28, 63).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absŏlūtus": {
+    "indicatii": "-a, -um",
+    "pos": "adj.",
+    "definitie_ro": "¶ 1. participiul verbului absolvo. ¶ 2. adj.: a) desăvârșit, perfect (Cic. Off. 3, 14; de Or. 3, 84; Or. 17; 182; Nat. 2, 34); b) complet, care formează de la sine un tot (Inv. 1, 17; Part. 94); c) [gram.] nomen absolutum (Prisc. 2, 59, 24), nume care are un sens complet prin sine însuși; verbum absolutum [sau] verba pris abs* [fără niciun fel de complement] (Prisc. 2, 375, 10), [sau] care exprimă o acțiune completă [opus lui incoativ, iterativ] (Diom. 1, 343, 29); adjectivum, participium absolutum (Serv. En. 2, 26), adjectiv sau participiu folosit singur, fără substantiv || [referitor la pozitivul adjectivelor și adverbelor, opus lui comparativ și superlativ] (Quint. 9, 13, 19; Gell. 5, 21, 13; Prisc.; Diom.) || [referitor la perfectul verbelor] (Cap. 3, 314; Char., Diom.) || absolutior (Plin. 33, 66, etc.; Plin. Ep. 3, 106); absolutissimus (Cic. Tim. 12; Her. 2, 28; Plin. Ep. 1, 20, 10, etc.).",
+    "trimite_la": "absolvo",
+    "paradigma": []
+  },
+  "absolvo": {
+    "indicatii": "-solvi, -sŏlūtum, -ĕre",
+    "pos": "vb. tr.",
+    "definitie_ro": "¶ 1. a dezlega, a desface (Apul. M. 9, 22; 11, 16, etc.) || a elibera: vinctis absoluti (Tac. An. 12, 37), eliberați din lanțuri; lingua absoluta a gutture (Plin. 11, 172), limbă desprinsă de gât. ¶ 2. a elibera, a lăsa liber: te absolvam brevi (Pl. Ep. 460), te voi expedia repede, voi termina repede cu tine (cf. Aul. 520; Ps. 1231). ¶ 3. a elibera de, a dezlega de: ab aliquo se absolvere (Cic. Com. 36), a se elibera de sub obligația față de cineva; aliquem cura (Sall. Macr. 19), a scăpa pe cineva de o grijă || [în special] absolvere aliquem (Pl. Most. 652), a plăti pe cineva (cf. Ep. 631; Ter. Ad. 277). ¶ 4. a achita, a absolvi (Cic. Clu. 105; Tusc. 1, 98; Verr. 2, 74; omnibus sententiis absolvi (Cic. Verr. 4, 100), a fi achitat cu unanimitate de voturi || majestatis absolvi (Cic. Clu. 116), a fi achitat de crima de lezmajestate; capitis (Nep. Milt. 7, 6), de o acuzație capitală (cf. Paus. 2, 6); improbitatis (Cic. Verr. 1, 72), a fi absolvit de vina de necinste/incorectitudine (cf. Tac. An. 3, 78; 4, 13; 13, 30); ambitu (Cic. Cæl. 75), a fi achitat de corupție electorală; crimine (Liv. 8, 22, 3), de o acuzație (cf. Tac. An. 1, 74; 13, 21); aliquem suspicione regni (Liv. 2, 8, 1), a absolvi pe cineva de bănuiala de a aspira la regalitate || de praevaricatione absolutus (Cic. Q. 2, 16, 3), absolvit de acuzația de prevaricațiune || aliquem peccato (Liv. 1, 58, 10), a absolvi pe cineva de o greșeală; se absolvere (Sen. Ir. 1, 14, 3), a se absolvi singur; fidem (Tac. H. 2, 60), a absolvi fidelitatea (cf. Sen. Ben. 3, 6, 2). ¶ 5. a termina, a desăvârși: [despre muncile câmpului, un edificiu, un sanctuar] (Varr. R. 1, 32, 1; Cic. Off. 3, 33; Att. 12, 19, 1); Catone absoluto (Cic. Or. 35), Caton-ul meu [de Senectute] fiind terminat; absolvi beata vita sapientis non potest (Cic. Fin. 2, 105), viața fericită a înțeleptului nu poate fi desăvârșită || paucis verum absolvere (Sall. C. 38, 3), a spune tot adevărul în puține cuvinte (cf. J. 17, 2; Liv. 33, 12, 2) || [absol.] a termina o dezvoltare/o expunere: uno verbo (Pl. Rud. 653), a spune totul într-un cuvânt; de Catilinae conjuratione paucis (Sall. C. 4, 3), a face o expunere completă în puține cuvinte despre conjurația lui Catilina.",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absŏnans": {
+    "indicatii": "-tis",
+    "pos": "part. / adj.",
+    "definitie_ro": "(din absono) contrar, opus (Instit. 2, 25).",
+    "trimite_la": "absono",
+    "paradigma": []
+  },
+  "absŏnē": {
+    "indicatii": "",
+    "pos": "adv.",
+    "definitie_ro": "cu o voce falsă (Apul. Apol. 5) || [fig.] în mod absurd, fără noimă (Gell. 15, 25, 1).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absŏno": {
+    "indicatii": "-āre",
+    "pos": "vb. int.",
+    "definitie_ro": "a nu avea sunetul corect, a detona (despre voce) (Ter.-Maur. 2024).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absŏnus": {
+    "indicatii": "-a, -um",
+    "pos": "adj.",
+    "definitie_ro": "¶ 1. care nu are sunetul corect, fals (Cic. de Or. 3, 41; 1, 115) || littera absona (Quint. 12, 10, 32), literă cu un sunet dezagreabil || discordant, inarmonic (Gell. 13, 21, 12; Apul. M. 8, 26). ¶ 2. [fig.] discordant: alicui rei (Liv. 1, 15, 6), care nu se acordă cu ceva; [sau] ab aliqua re (Liv. 7, 2, 5) || [absol.] șocant, care face notă discordantă (Quint. 6, 3, 107).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absorbĕo": {
+    "indicatii": "-bŭi, -ēre",
+    "pos": "vb. tr.",
+    "definitie_ro": "a face să dispară înghițind, a absorbi, a înghiți (Cic. Phil. 2, 67; Hor. S. 2, 8, 24) || [fig.] (Cic. Br. 282; Leg. 2, 9); tribunatus quodam modo absorbet orationem meam (Cic. Sest. 13), tribunatul său parcă îmi înghite discursul.",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absorbĭtĭo": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f.",
+    "definitie_ro": "absorbire, acțiunea de a înghiți (Aug. Serm. 162, 2).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "Absŏris": {
+    "indicatii": "-is sau -ĭdis",
+    "pos": "subst. f.",
+    "definitie_ro": "cetățeană din insula Absorōs (Hyg. F. 26).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "Absŏrītānus": {
+    "indicatii": "-i",
+    "pos": "subst. m.",
+    "definitie_ro": "locuitor din insula Absorōs (Hyg. F. 26).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "Absŏros": {
+    "indicatii": "-i",
+    "pos": "subst. f.",
+    "definitie_ro": "insulă în Marea Adriatică [astăzi Osero] (Mel. 2, 114).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absorptĭo": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f.",
+    "definitie_ro": "vezi absorbitio (Hier. Psalm. 110).",
+    "trimite_la": "absorbitio",
+    "paradigma": []
+  },
+  "absorptus": {
+    "indicatii": "-a, -um",
+    "pos": "part.",
+    "definitie_ro": "participiul verbului absorbeo.",
+    "trimite_la": "absorbeo",
+    "paradigma": []
+  },
+  "Absorthĭum": {
+    "indicatii": "-ĭi",
+    "pos": "subst. n.",
+    "definitie_ro": "vezi Absorōs (Plin. 3, 140).",
+    "trimite_la": "Absoros",
+    "paradigma": []
+  },
+  "absp-": {
+    "indicatii": "",
+    "pos": "",
+    "definitie_ro": "vezi asp-.",
+    "trimite_la": "asp-",
+    "paradigma": []
+  },
+  "absquē 1": {
+    "indicatii": "",
+    "pos": "prep. cu abl.",
+    "definitie_ro": "¶ 1. fără [la scriitorii comici, urmat de un abl. care este sau ar fi subiectul unei prop. condiționale]: absque te esset, hodie non viverem (Pl. Men. 1022), dacă lucrurile s-ar fi petrecut fără tine, astăzi n-aș mai fi în viață; absque me foret et meo praesidio, hic faceret... (Pl. Pers. 836), fără mine și sprijinul meu, el ar face... (cf. Cap. 754); quam fortunatus ceteris sum rebus, absque una hac foret (Ter. Hec. 601), cât de norocos aș fi în toate celelalte privințe, dacă n-ar fi doar această singură problemă. ¶ 2. a) fără (Gell. 2, 26, 20); b) exceptând, cu excepția (Gell. 13, 19, 4); c) în afară de, departe de [cu sens local] (Apul. Apol. 55). ¶ 3. [ca adv.] absque cum (Capit. 3, 230), exceptând când. ➣ absque = apsque (Pl. Trin. 832, 1127).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absquē 2": {
+    "indicatii": "",
+    "pos": "adv.",
+    "definitie_ro": "= et abs (cf. Macr. S. 3, 9, 8).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abstantĭa": {
+    "indicatii": "-ae",
+    "pos": "subst. f.",
+    "definitie_ro": "distanță, depărtare (Vitr. 9, 1, 11).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abstēmĭus": {
+    "indicatii": "-a, -um",
+    "pos": "adj.",
+    "definitie_ro": "(din abs și *temum, cf. Quint. 1, 7, 9; Gell. 10, 231; Porph. Hor. Ep. 1, 12, 7) ¶ 1. care se abține de la vin (Ov. M. 15, 323). ¶ 2. sobru, cumpătat; [cu gen.] care se abține de la: (Hor. Ep. 1, 12, 6; Plin. 22, 115).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abstensus": {
+    "indicatii": "-ūs",
+    "pos": "subst. m.",
+    "definitie_ro": "acțiunea de a se abține (Plac. Med. 30, 3).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abstentĭo": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f.",
+    "definitie_ro": "acțiunea de a se abține de la (Aug. Ep. 196, 1, 3) || suprimare (C.-Aur. Acut. 3, 11, 103).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abstentus": {
+    "indicatii": "-a, -um",
+    "pos": "part.",
+    "definitie_ro": "participiul verbului abstineo.",
+    "trimite_la": "abstineo",
+    "paradigma": []
+  },
+  "abstergĕo": {
+    "indicatii": "-tersi, -tersum, -ēre",
+    "pos": "vb. tr.",
+    "definitie_ro": "¶ 1. a șterge (lacrimile, sângele, praful) (Cic. Phil. 14, 30; Liv. 1, 41, 5; 3, 26, 10). ¶ 2. [fig.] a șterge, a înlătura, a risipi [durerea, necazurile, etc.] (Cic. Tusc. 3, 43; C. M. 2; Top. 86; Q. 2, 8, 3; Fam. 9, 16, 9). ¶ 3. a lua cu sine, a mătura: remos (Curt. 9, 9, 16), vâslele. ➣ forme de conj. a 3-a abstergo (Scribonius Largus, 283); pf. sincopat abstersti (Catul. 99, 8).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abstergo": {
+    "indicatii": "",
+    "pos": "vb.",
+    "definitie_ro": "vezi abstergeo.",
+    "trimite_la": "abstergeo",
+    "paradigma": []
+  },
+  "absterno": {
+    "indicatii": "-ēre",
+    "pos": "vb. tr.",
+    "definitie_ro": "a respinge, a înlătura (Gloss.).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absterrĕo": {
+    "indicatii": "-terrŭi, -terrĭtum, -ēre",
+    "pos": "vb. tr.",
+    "definitie_ro": "a deturna prin teamă, a îndepărta; a alunga, a goni: a) ab aliqua re (Cic. Verr. 2, 148), a deturna de la ceva (cf. Planc. 68; Liv. 23, 1, 11); de aliqua re (Pl. Truc. 251), a îndepărta de ceva; [fără prep.] a vitiis (Hor. S. 1, 4, 128); bello (Tac. An. 12, 45), a deturna de la vicii, de la război; || [absol.] hostem (Liv. 27, 28, 12), a alunga inamicul (cf. Liv. 2, 35, 5; Sen. Marc. 17, 6; Tac. An. 13, 44); b) [cu ne și subj.] a deturna de la, a împiedica să (Pl. Most. 421); c) non abterrere quin (V.-Max. 4, 3, 6), a nu deturna de la; d) aliquid alicui (Lucr. 4, 1064; 1233), a refuza ceva cuiva (prin intimidare).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absterrĭtus": {
+    "indicatii": "-a, -um",
+    "pos": "part.",
+    "definitie_ro": "participiul verbului absterreo.",
+    "trimite_la": "absterreo",
+    "paradigma": []
+  },
+  "abstersi": {
+    "indicatii": "",
+    "pos": "vb.",
+    "definitie_ro": "perfectul verbului abstergeo.",
+    "trimite_la": "abstergeo",
+    "paradigma": []
+  },
+  "abstersĭo": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f.",
+    "definitie_ro": "acțiunea de a șterge (I.-Latr. 22).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abstersus": {
+    "indicatii": "-a, -um",
+    "pos": "part.",
+    "definitie_ro": "participiul verbului abstergeo.",
+    "trimite_la": "abstergeo",
+    "paradigma": []
+  },
+  "abstināx": {
+    "indicatii": "-ācis",
+    "pos": "adj.",
+    "definitie_ro": "obișnuit cu abstinența (Petr. 42).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abstinens": {
+    "indicatii": "-tis",
+    "pos": "part. / adj.",
+    "definitie_ro": "¶ 1. part. prez. de la abstineo. ¶ 2. adj.: a) care se abține, reținut, moderat, rezervat (Cic. Off. 1, 144; Q. 1, 1, 32); b) dezinteresat (Cic. Off. 2, 76; Planc. 64); c) [cu gen.]: pecuniae (Hor. O. 4, 9, 37), indiferent la bani; || abstinentissimus (Plin. Ep. 6, 8, 5), dezinteresat în cel mai înalt grad; || [cu abl.] (Col. 12, 4, 3); || abstinentior (Aug. 119, 66).",
+    "trimite_la": "abstineo",
+    "paradigma": []
+  },
+  "abstinentĕr": {
+    "indicatii": "",
+    "pos": "adv.",
+    "definitie_ro": "cu dezinteres (Cic. Sest. 37; Sen. Brev. 18, 3) || abstinentius (Aug. Manich. 2, 13).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abstinentĭa": {
+    "indicatii": "-ae",
+    "pos": "subst. f.",
+    "definitie_ro": "¶ 1. acțiunea de a se abține, reținere, rezervă (Cic. Att. 5, 15, 2; Sall. C. 3, 3; Nep. Ages. 7); [cu gen.] alicujus rei (Sen. Contr. 2, 1, 24), acțiunea de a se abține de la ceva (cf. Ep. 108, 16). ¶ 2. dezinteres (Cic. Off. 2, 77; Sest. 7; Tusc. 3, 16; Sall. C. 54, 5; Nep. Arist. 1, 2; 3, 2). ¶ 3. abstinență, continență (Sen. Ir. 1, 5, 3; Quint. 2, 2, 4); vitam abstinentia finire (Tac. An. 4, 35), a-și pune capăt zilelor lăsându-se să moară de foame. ¶ 4. [med.] retenție (C.-Aur. Chron. 3, 8, 108).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abstĭnĕo": {
+    "indicatii": "-tĭnŭi, -tentum, -ēre",
+    "pos": "vb.",
+    "definitie_ro": "I. tr. ¶ 1. a ține la distanță de, a menține departe de: a) ab aliquo manum (Pl. Amp. 340; manus Cic. Verr. 1, 93), a-și ține mâinile departe de cineva, a se abține să atingă pe cineva; ab aliqua re (Cic. Verr. 4, 71), a se abține să atingă ceva; a Siculo... manum (Cic. Verr. 4, 34), a-și ține mâinile departe de argintăria sicilienilor (a nu o râvni), a nu pune mâna pe (cf. de Or. 1, 194; Att. 3, 7, 2; Liv. 9, 5, 6); manus a se (Cic. Tusc. 4, 79), a nu-și întoarce mâinile împotriva sa (a nu se sinucide); b) earum populorum finibus vim (Liv. 8, 19, 3), a se abține de la orice violență împotriva acestor țări; direptione militem (Liv. 28, 23, 2), a ține soldatul departe de jaf (cf. 8, 34, 18); c) Aeneae Antenorique omne jus belli (Liv. 1, 1, 1), a se abține de a uza de toate drepturile războiului față de Enea și Antenor; sermonem de aliqua re (Pl. Most. 897), a se dispensa de a vorbi despre ceva (cf. Ter. Haut. 373). ¶ 2. [refl.] a) se abstinere ab aliqua re (Cic. Fin. 2, 71), a se abține de la ceva (cf. Ac. 2, 55; Sen. Ir. 3, 8, 8); a nefario scelere (Cic. Phil. 2, 5), a se abține de la o crimă abominabilă (cf. Fin. 3, 35; Div. 1, 102; Liv. 23, 25, 12, etc.); b) [absol.] se abstinere (Liv. 2, 11, 4), a se ține la distanță || a se abține de la hrană (Varr. R. 2, 9, 10; Cels. 3, 15). II. int., a se abține de la, a se ține deoparte de: a) proelio (Caes. G. 1, 22, 3), a se abține de la a combate; faba (Cic. Div. 2, 119), a se abține de la fasole; nec meo nomine abstinent (Cic. Rep. 1, 6), ei nu se abțin să vorbească despre mine, să mă critice (cf. Off. 3, 72; Sall. J. 54, 5; Liv. 2, 56, 7; 21, 5, 9, etc.); b) a mulieribus (Caes. G. 7, 47, 5), a cruța femeile (cf. Cic. de Or. 3, 171; Liv. 3, 36, 7; 5, 21, 13); ne a legatis quidem violandis (Liv. 39, 25, 10), neabținându-se măcar de a nu-i ultragia pe ambasadori (cf. 5, 21, 13, etc.); c) a voluptatibus (Cic. Tusc. 5, 94), a se abține de la plăceri (cf. Part. 77; a cibo Cels. 1, 3, a se abține de la hrană); [cu gen.]: (Hor. O. 3, 27, 69; Apul. Apol. 10); d) [cu inf.]: (Pl. Curc. 180; Mil. 1309; Suet. Tib. 23); e) non abstinere quin, a nu se abține de la a (Pl. Bac. 915; Liv. 2, 45, 10; Suet. Tib. 44; 72; sau quominus Tac. An. 13, 4; Suet. Gram. 3); f) [absol.] a se abține (Pl. Aul. 344; Men. 166; Virg. En. 2, 534; Liv. 40, 21, 4).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absto": {
+    "indicatii": "-āre",
+    "pos": "vb. int.",
+    "definitie_ro": "a fi plasat la distanță, a sta departe (Hor. P. 200) || abstandus (Pl. Trin. 263), de care trebuie stat departe (vezi M. Delge, 33, p. 296).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abstollo": {
+    "indicatii": "-ĕre",
+    "pos": "vb. tr.",
+    "definitie_ro": "a înlătura (Ps. Ambr. Serm. 18, 3).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abstractĭo": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f.",
+    "definitie_ro": "răpire, sustragere (Dict. 1, 4) || abstracțiune (Boet. An. P. 1, 14).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abstractus": {
+    "indicatii": "-a, -um",
+    "pos": "part. / adj.",
+    "definitie_ro": "¶ 1. participiul verbului abstraho. ¶ 2. adj.: abstract (Isid. 2, 24, 14).",
+    "trimite_la": "abstraho",
+    "paradigma": []
+  },
+ "abstrăho": {
+    "indicatii": "-trāxi, -tractum, -ĕre",
+    "pos": "vb. tr.",
+    "definitie_ro": "1. a trage, a târî departe de, a separa, a detașa de, a îndepărta de [la pr. și fig.]: a) a rebus gerendis (Cic. CM 15), a deturna de la activitatea politică, cf. (Sull. 11; Arch. 12; Phil. 3, 31); a sollicitudine (Cic. Dej. 38), a smulge din, a sustrage neliniștii; se a consuetudine Graecae locutionis (Cic. Br. 259), a se îndepărta de o imitație a vorbirii grecești; a corpore animus abstractus (Cic. Div. 1, 66), sufletul detașat de corp; b) de matris amplexu aliquem (Cic. Font. 46), a smulge pe cineva din brațele mamei sale, cf. (Ov. H. 15, 154); c) e sinu gremioque patriae (Cic. Cael. 59), a smulge din sânul patriei, cf. (Sall. 9; Liv. 37, 27, 6; 38, 49, 8); d) frumento ac commeatu abstractus (Caes. C. 3, 78, 3), tăiat de la aprovizionare; [cu abl. sau dat.] (Ov. M. 13, 658; Sen. Med. 144; Tac. An. 2, 5; Luc. 6, 80); e) parte decori abstrahi (Tac. An. 2, 26), a fi smuls de la o glorie dobândită, cf. (Amm. 20, 4, 15; 30, 7, 2). 2. a antrena: ad bellicas laudes (Cic. Br. 239), a antrena către fapte de arme glorioase, cf. (Sen. Ep. 88, 19; Const. 2, 3; Tac. An. 4, 13). ➣ infinitiv perfect sincopat: abstraxe (Lucr. 3, 650).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abstraxē": {
+    "indicatii": "",
+    "pos": "vb.",
+    "definitie_ro": "vezi abstraho[cite: 5].",
+    "trimite_la": "abstraho",
+    "paradigma": []
+  },
+  "abstrūdo": {
+    "indicatii": "-trūsi, -trūsum, -ĕre",
+    "pos": "vb. tr.",
+    "definitie_ro": "a împinge violent departe de; [mai atenuat] a ascunde, a sustrage vederii [la pr. și fig.]: aulam in fano (Pl. Aul. 617), a ascunde o oală într-un templu; in profundo veritatem (Cic. Ac. 2, 32), a ascunde adevărul în adâncuri; in silvam se (Cic. Att. 12, 15), a se ascunde într-o pădure; tristitiam (Tac. An. 3, 6), a-și disimula tristețea; abstrusus usquam nummus (Cic. Agr. 1, 11), ban ascuns undeva; semina flammae abstrusa in venis silicis (Virg. En. 6, 6), germeni de flăcări ascunși în vinele silexului [dar: venis abstrusus ignis (G. 1, 135)][cite: 5].",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abstrŭo": {
+    "indicatii": "-ĕre",
+    "pos": "vb. tr.",
+    "definitie_ro": "a ascunde (Tert. Marc. 27)[cite: 5].",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abstrūsē": {
+    "indicatii": "",
+    "pos": "adv.",
+    "definitie_ro": "vezi abstrusius[cite: 5].",
+    "trimite_la": "abstrusius",
+    "paradigma": []
+  },
+  "abstrūsĭo": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f.",
+    "definitie_ro": "acțiunea de a ascunde (Arnob. 5, 37)[cite: 5].",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abstrūsĭus": {
+    "indicatii": "",
+    "pos": "adv.",
+    "definitie_ro": "mai în secret, mai pe ascuns (Amm. 28, 1, 49) || abstrusissime (Aug. Quant. 63), într-un mod foarte abstrus / foarte ascuns[cite: 5].",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "abstrūsus": {
+    "indicatii": "-a, -um",
+    "pos": "adj.",
+    "definitie_ro": "1. participiul verbului abstrudo. 2. adj.: a) ascuns: dolor abstrusus (Cic. Dom. 55), durere refulată, cf. (Agr. 2, 69; Ac. 2, 14); b) abstrus, greu de pătruns: disputatio abstrusior (Cic. Ac. 2, 30), argumentație ceva mai abstrusă; c) [despre caracter] disimulat, închis (Tac. An. 1, 24); d) in abstruso esse (Pl. Poen. 342), a fi ascuns[cite: 5].",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ab-stŭlīs": {
+    "indicatii": "-a, etc.",
+    "pos": "vb.",
+    "definitie_ro": "vezi aufero[cite: 5].",
+    "trimite_la": "aufero",
+    "paradigma": []
+  },
+  "ab-stŭli": {
+    "indicatii": "",
+    "pos": "vb.",
+    "definitie_ro": "perfectul verbului aufero[cite: 5].",
+    "trimite_la": "aufero",
+    "paradigma": []
+  },
+  "absum": {
+    "indicatii": "āfŭi, āfŭtūrus, ăbesse",
+    "pos": "vb. int.",
+    "definitie_ro": "1. a fi la o distanță de; [adesea cu adv. longe, prope, procul sau un acuz. de distanță]: non longe a Tolosatium finibus (Caes. G. 1, 10, 1), a nu fi la o mare distanță de ținutul tolozaților; a morte propius (Cic. CM 77), a fi la o distanță mai apropiată de moarte, cf. (Fam. 3, 54; Div. 2, 135); a Larino decem milia passuum (Cic. Clu. 27), a fi la zece mii de pași de Larinum, cf. (Att. 18, 14, 1; Caes. C. 1, 18, 1; 3, 67, 1); non longe ex eo loco (Caes. G. 5, 21, 2), a nu fi departe de acel loc, cf. (Cic. Caec. 20); quadridui iter Laodicea (Cic. Fam. 12, 15, 7), a fi la patru zile de marș de Laodiceea. 2. a fi departe de, a fi îndepărtat de: a) [cu ab] (Cic. Verr. 5, 31; Phil. 2, 31; Fam. 6, 2, 1; 7, 6, 1; Att. 5, 17, 5); [cu ex] (Planc. 67; Att. 15, 5, 3); [cu abl.] patria, Roma, domo, urbe, a fi îndepărtat de patria sa, de Roma, de casă, de oraș (Cic. Tusc. 5, 106; Leg. 2, 2; Fam. 4, 6, 2; Or. 146; Fam. 5, 15, 4); b) [fig.] tantum absum ab ista sententia, ut (Cic. de Or. 1, 255), sunt atât de departe de a împărtăși părerea ta, încât, cf. (Marc. 25; Cael. 75 etc.); c) [absolut, la pr. și fig.] a fi îndepărtat: absentibus notus (Cic. Arch. 3), cunoscut de persoanele depărtate, cunoscut de departe; dum timer abest (Cic. Phil. 2, 90), cât timp teama se află departe, cf. (Lael. 44; Fin. 2, 64); fraternum nomen populi Romani longe iis abest (Caes. C. 1, 36, 5), titlul de frați dat de poporul roman este foarte departe de ei (nu le e de niciun ajutor); [la subj. optativ] utinam abesset (Cic. Flac. 97), de-ar sta violența departe (să nu se arate), cf. (Off. 1, 136); [în decadență, absolut cu inf. sau ut subj.] ferească zeii să: (Apul. M. 2, 3; Hier. Ep. 57, 7); tantum abest spes levandi funeris, ut (Liv. 6, 32, 1), speranța de a ușura dobânda este atât de îndepărtată, încât. 3. a fi îndepărtat de locul unde ne aflăm de obicei, a nu fi de față, a fi absent: (Cic. Verr. 5, 135; Cat. 4, 10; Phil. 14, 37; Br. 308 etc.). 4. [fig. a lipsi, a face defect]: a) [despre persoane]: absentibus nobis (Cic. Ac. 2, 36), fără asistența / prezența mea, cf. (Sull. 70); neque animus neque corpus a vobis aberit (Sall. C. 20, 16), nici inteligența, nici corpul meu nu vă vor lipsi; nec dextrae deus afuit (Virg. En. 7, 498), și asistența unei divinități nu i-a lipsit brațului său; b) [despre lucruri]: aberat illa tertia laus (Cic. Br. 276), lipsea acea a treia calitate, cf. (Br. 79; 119; Fam. 6, 18, 4); ab hoc vis aberat Antoni (Cic. Br. 203), primului îi lipsea forța lui Antoniu, cf. (Planc. 13); hoc unum illi afuit (Cic. Br. 277), aceasta a fost singura calitate care i-a lipsit, cf. (Or. 1, 45; 2, 281; Nat. 2, 37); abest historia litteris nostris (Cic. Leg. 1, 5), genul istoric lipsește literaturii noastre. 5. a fi departe de, diferit de: neque ulla re longius absumus a natura ferarum (Cic. Off. 1, 50), și prin nimic nu ne îndepărtăm mai mult de natura fiarelor, cf. (Br. 222; Liv. 37, 54, 20). 6. [despre lucruri] a fi îndepărtat, a nu fi compatibil cu, a nu se potrivi la: nihil a me abest longius crudelitate (Cic. Att. 9, 16, 2), nimic nu e mai departe de natura mea decât cruzimea, cf. (Or. 3, 63; Tusc. 3, 18); cujus aetas a senatorio gradu longe abest (Cic. Pomp. 61), a cărui vârstă (tinerețe) este incompatibilă cu gradul senatorial, cf. (Or. 37). 7. a fi departe de, a fi scutit de, a fi ferit de, a fi fără: a culpa (Cic. Inv. 2, 10), a fi scutit de greșeală, cf. (Fin. 1, 62; Amer. 55) || a se ține departe de, a se da în lături de la: ab hoc genere largitionis ut..., aberunt ii qui rem publicam tuebuntur (Cic. Off. 2, 55), de acest gen de liberalitate... se vor ține departe cei care vor veghea asupra intereselor statului, cf. (Tusc. 5, 89; Att. 10, 2, 1). 8. [expresii]: a) non multum, haud procul, non longe, paulum abest quin, nu lipsește mult ca să: (Caes. C. 2, 35, 3; 2, 35, 2; Liv. 5, 4, 14; 2, 2, 3; 25, 1, 10; 44, 19, 9; Cic. Att. 9, 9, 3); abesse non potest quin (C. Grac. ap. Cic. Or. 233), nu se poate ca să nu; nihil abest quin (Virg. En. 8, 147), nu lipsește nimic ca să; neque multum abest ab eo, quin (Caes. G. 5, 2, 2), nu lipsește mult ca el să; quid abest quin? (Liv. 8, 4, 2), ce lipsește ca să? cf. (35, 16, 11; 36, 17, 15); b) longe abest ut (Cic. Ac. 2, 117), e pe departe să; c) tantum abest ab eo, ut malum mors sit, ut (Cic. Tusc. 1, 76), e atât de departe ca moartea să fie un rău, încât, cf. (Liv. 25, 6, 11); [cel mai frecvent] tantum abest ut... ut, atât de mult lipsește ca..., încât dimpotrivă: (Cic. Or. 104; Phil. 11, 36); [după al doilea ut se găsește și]: contra (Liv. 6, 15, 5; 6, 31, 4; 22, 5, 3); etiam (Cic. Tusc. 2, 4; 5, 6 etc.; vezi Liv. 22, 5, 3); [în loc de al doilea ut, o propoziție principală]: tantum abest ut voluptates consectentur: etiam curas, vigilias perferunt (Cic. Fin. 5, 87), sunt atât de departe de a căuta plăcerile, [încât dimpotrivă] suportă griji, veghi, cf. (Br. 278; Att. 13, 21, 5); d) [tantum exclamativ]: tantum abest ut ego... velim! (Cic. Att. 6, 2, 1), atât de departe sunt eu de a dori...! cf. (Liv. 4, 58, 2; 26, 31, 5; Sen. Ep. 90, 45). ➣ formele abfui, abforem, abfore, abfuturus au mai puțină autoritate | subj. prez. abfiet (Cat. Agr. 19, 1); abfuat = absit (Front. p. 184, 4) | formele apeum, apeens apar în anumite mss. de Plaut și Cicero[cite: 5].",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absūmēdo": {
+    "indicatii": "-ĭnĭs",
+    "pos": "subst. f.",
+    "definitie_ro": "(din absumo) consumare: joc de cuvinte la Pl. Cap. 904[cite: 5].",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absumo": {
+    "indicatii": "-sumpsi, -sumptum, -ĕre",
+    "pos": "vb. tr.",
+    "definitie_ro": "a lua în întregime: 1. a uza în întregime, a consuma [la pr. și fig.]: magna vis frumenti, pecuniae absumitur (Liv. 23, 12, 4), o mare cantitate de grâu și de bani se consumă; res paternas (Hor. Ep. 1, 15, 26), a risipi patrimoniul, cf. (Suet. Ner. 26); absumptis frugum alimentis (Liv. 23, 30, 3), după ce a epuizat toate mijloacele de alimentație în cereale, cf. (41, 4, 4); Glauci Potniades malis membra absumpsere quadrigae (Virg. G. 3, 268), iepele potniene ale lui Glaucus i-au devorat membrele cu fălcile; absumet Caecuba (Hor. O. 2, 15, 25), el va înghiți (vinul de) Caecubum; vires (Lucr. 4, 1121), a-și epuiza forțele || [despre timp]: dicendo tempus (Cic. Quinct. 34), a epuiza timpul vorbind, cf. (Liv. 2, 4, 3; 22, 49, 9; 26, 51, 3); id tempus colloquiis absumptum est (Liv. 28, 6, 1), acest răstimp s-a consumat în discuții, cf. (22, 19, 13; 37, 11, 4 etc.). 2. a distruge, a nimici: [despre obiecte] (Liv. 24, 30, 7; 28, 22, 10); classis absumpta (Liv. 37, 26, 4), flotă nimicită; ignis sacra profanaque multa absumpsit (Liv. 24, 17, 16), focul a distrus multe clădiri sacre și profane, cf. (3, 54, 1; 30, 7, 9 etc.); cadavera tabes absumebat (Liv. 43, 21, 7), cadavrele se descompuneau. 3. a face să piară, a nimici: reliquias pugnae (Liv. 5, 13, 12), a masacra supraviețuitorii luptei, cf. (2, 42, 4; 21, 58, 6; 23, 19, 17 etc.) || [la pasiv] absumi, a fi răpus, a pieri: ubi avunculus ejus absumptus erat (Liv. 9, 17, 17), unde unchiul său pierise, cf. (21, 58, 11); multi ferro ignique absumpti sunt (Liv. 5, 7, 3), mulți au pierit prin fier și foc, cf. (30, 6, 9; 35, 27, 7 etc.). ➣ forma apsumo apare în câteva manuscrise din Plaut și Titus Livius[cite: 5].",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absumptĭo": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f.",
+    "definitie_ro": "1. consumare (Dig. 7, 5, 5) || anihilare, distrugere (Macr. Somn. 2, 12, 14).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absumptus": {
+    "indicatii": "-a, -um",
+    "pos": "part.",
+    "definitie_ro": "participiul verbului absumo.",
+    "trimite_la": "absumo",
+    "paradigma": []
+  },
+  "absurdē": {
+    "indicatii": "",
+    "pos": "adv.",
+    "definitie_ro": "1. într-o manieră care face notă discordantă (Cic. Tusc. 2, 12). 2. deplasat, ne la locul lui (Tac. H. 3, 51). 3. într-o manieră absurdă (Cic. Ac. 2, 36; Fin. 2, 21; Div. 2, 119; Rep. 2, 28) || absurdissime (Eccl.).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absurdĭtās": {
+    "indicatii": "-ātis",
+    "pos": "subst. f.",
+    "definitie_ro": "discordanță (Prisc. 3, 194, 32) || absurditate (Eccl.).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absurdus": {
+    "indicatii": "-a, -um",
+    "pos": "adj.",
+    "definitie_ro": "1. care are un sunet fals, care detonează (Cic. de Or. 3, 41) || [de aici] șocant, dezagreabil, neplăcut (Cic. Com. 19; Charis. 1, 185, 14). 2. care face notă discordantă, care nu se potrivește: sin plane abhorrebit et erit absurdus (Cic. de Or. 2, 85), dacă va avea o natură cu totul rebelă și discordantă, cf. (Liv. 30, 44, 6) || ab initio consilique talium facinorum non absurda (Tac. H. 4, 43), fapte care nu sunt lipsite de legătură cu originea și cauzele acestui fel de crime; aetati alicujus res absurda (Tac. An. 12, 9), un lucru care nu se potrivește cu vârsta cuiva || haud absurdum est [cu inf.], nu este deplasat să (Sall. C. 3, 1; Tac. An. 4, 68; 12, 24). 3. [despre idei, vorbe etc.] absurd, stupid (Cic. Mar. 20; Tusc. 5, 112 etc.); quo quid absurdius dici potest? (Cic. Phil. 5, 4), se poate spune ceva mai absurd de atât? cf. (Div. 2, 93) || absurdum est [cu inf.], este absurd să (Cic. Or. 160; Att. 2, 9, 1; 2, 22, 4; CM 66); [cu prop. inf.] este absurd ca (Cic. Fin. 2, 93; Sull. 37; Liv. 37, 52, 10) || quid tam absurdum quam si praeco praedicet...? (Cic. Off. 3, 55), ce ar fi atât de absurd ca strigătorul anunțând...? || absurdissimus (Cic. Att. 7, 13, 6).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "Absurĭtānus": {
+    "indicatii": "-a, -um",
+    "pos": "adj.",
+    "definitie_ro": "din Absyra (Plin. 5, 29).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "absynthĭum": {
+    "indicatii": "",
+    "pos": "",
+    "definitie_ro": "vezi absinthium.",
+    "trimite_la": "absinthium",
+    "paradigma": []
+  },
+  "Absyrtĭdēs": {
+    "indicatii": "-um",
+    "pos": "subst. f. pl.",
+    "definitie_ro": "insule în Marea Adriatică (Plin. 3, 151).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "Absyrtis": {
+    "indicatii": "-ĭdis",
+    "pos": "subst. f.",
+    "definitie_ro": "insulă în Marea Adriatică (Mel. 2, 114).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "Absyrtus": {
+    "indicatii": "-i",
+    "pos": "subst. m.",
+    "definitie_ro": "1. fiul lui Aeetes, fratele Medeei (Cic. Nat. 3, 48; Ov. Tr. 3, 9, 6). 2. fluviu în Iliria (Luc. 3, 190).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "Abudĭacum": {
+    "indicatii": "",
+    "pos": "",
+    "definitie_ro": "vezi Abodiacum.",
+    "trimite_la": "Abodiacum",
+    "paradigma": []
+  },
+  "Abudĭus": {
+    "indicatii": "",
+    "pos": "subst. pr.",
+    "definitie_ro": "nume de familie roman (Tac. An. 6, 30).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "Abulītēs": {
+    "indicatii": "-is",
+    "pos": "subst. m.",
+    "definitie_ro": "numele unui persan (Curt. 5, 2, 8; 5, 2, 17).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăbundābĭlis": {
+    "indicatii": "-e",
+    "pos": "adj.",
+    "definitie_ro": "pletoric, abundent (Cass.-Fel. 84, 17).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăbundans": {
+    "indicatii": "-tis",
+    "pos": "part. / adj.",
+    "definitie_ro": "1. participiul prezent al verbului abundo. 2. adj.: a) care se revarsă, care dă pe dinafară (Lucr. 1, 282; Plin. 2, 227; [fig.] Cic. Rep. 2, 34); b) care este din abundență, din belșug, supraabundent (Cic. Quinct. 40; Fin. 2, 111); c) care are din abundență, bogat (Cic. Phil. 2, 66); d) bogat în [cu abl.]: bellicis laudibus (Cic. Off. 1, 78), bogat în glorie războinică, cf. (Rep. 2, 11); [cu gen.] via omnium rerum abundans (Nep. Eum. 8, 5), un drum oferind de toate din abundență, cf. (Virg. B. 2, 20) || abundantior (Cic. Pis. 62); abundantissimus (Cic. Rep. 2, 34).",
+    "trimite_la": "abundo",
+    "paradigma": []
+  },
+  "ăbundantĕr": {
+    "indicatii": "",
+    "pos": "adv.",
+    "definitie_ro": "din abundență, cu abundență (Cic. de Or. 3, 53) || abundantius (Cic. Top. 41); abundantissime (Plin. 5, 57).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăbundantĭa": {
+    "indicatii": "-ae",
+    "pos": "subst. f.",
+    "definitie_ro": "1. abundență (Cic. Agr. 1, 18; 2, 97; Br. 320; Liv. 87, etc.) || ingenii (Cic. Ac. 1, 18), bogăție de spirit / de geniu. 2. bogăție, opulență (Cic. Cat. 2, 10; Nat. 2, 130). 3. [ret.] supraabundență, prolixitate (Quint. 12, 1, 20, cf. Cic. Opt. 8).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăbundātĭo": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f.",
+    "definitie_ro": "revărsare a unui curs de apă (Plin. 3, 121; Flor. 2, 13, 26).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăbundē": {
+    "indicatii": "",
+    "pos": "adv.",
+    "definitie_ro": "1. abundent, din abundență (Cic. CM 48; Div. 2, 3; Fam. 10, 23, 6); alia omnia abunde erant (Sall. J. 83, 2), avea din abundență toate celelalte calități || suficient: ad beatam vitam praecepta abunde sunt (Sen. Ep. 95, 6), pentru o viață fericită preceptele sunt suficiente; abunde magna praesidia (Sall. J. 14, 13), ajutoare suficient de mari, cf. (J. 1, 5; Sen. Clem. 1, 13, 4); abunde est [cu inf.] (Sen. Ep. 40, 6), este de ajuns să, cf. (Ben. 7, 25, 2); abunde est, si (Plin. Ep. 7, 2, 3), este destul dacă, cf. (Pan. 44; Sen. Contr. 10, 5, 15). 2. [cu gen.] destul de, destulă (Virg. En. 7, 552; Plin. 25, 25; Quint. 10, 1, 94; Gell. 7, 8, 4).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăbundo": {
+    "indicatii": "-āvi, -ātum, -āre",
+    "pos": "vb. int.",
+    "definitie_ro": "1. a se revărsa, a da pe dinafară (Liv. 5, 15, 11; 30, 38, 10; Sen. Nat. 4, 1, 1; Virg. G. 1, 115). 2. a fi din abundență: quae de terris abundat (Lucr. 5, 920), care vin din abundență din pământ, cf. (Liv. 2, 41, 9; Sen. Marc. 33, 3; Hirt. 18, 6). 3. a avea din abundență, a fi bine aprovizionat cu: [cu abl.] equitatu (Caes. G. 7, 14, 3), a fi din plin prevăzut cu cavalerie, cf. (Cic. Rep. 2, 26; Tusc. 5, 44; Off. 2, 13; etc.); villa abundat porco, lacte, caseo, melle (Cic. CM 56), casa de la țară are din abundență porci, lapte, brânză, miere || [cu gen.] (Lucil. 272; Manil. 2, 600). 4. [absol.] a fi bogat, a fi în abundență (Cic. Par. 49; Lael. 23; Att. 1, 4, 3; 15, 15, 3). 5. [în Dig. cu acuz.] a excede, a depăși.",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăbundus": {
+    "indicatii": "-a, -um",
+    "pos": "adj.",
+    "definitie_ro": "abundent (Gell. 1, 2, 2).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "Aburas": {
+    "indicatii": "",
+    "pos": "",
+    "definitie_ro": "vezi Abora.",
+    "trimite_la": "Abora",
+    "paradigma": []
+  },
+  "Aburĭus": {
+    "indicatii": "-ĭi",
+    "pos": "subst. m.",
+    "definitie_ro": "nume de bărbat (Liv. 39, 4, 3).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "Abusīna": {
+    "indicatii": "-ae",
+    "pos": "subst. f.",
+    "definitie_ro": "oraș în Vindelicia (Anton.).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăbūsĭo": {
+    "indicatii": "-ōnis",
+    "pos": "subst. f.",
+    "definitie_ro": "(din abutor) 1. [ret.] catahreză (Her. 4, 33, 45; Cic. Or. 94; Quint. 10, 1, 11). 2. abuz (Eccl.).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăbūsīvē": {
+    "indicatii": "",
+    "pos": "adv.",
+    "definitie_ro": "1. prin catahreză, metaforic (Quint. 8, 6, 35). 2. într-un mod neobișnuit, abuziv (Mamert. An. 1, 6; Amm. 24, 4, 19).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăbūsīvus": {
+    "indicatii": "-a, -um",
+    "pos": "adj.",
+    "definitie_ro": "folosit în mod abuziv (C.-Aur. Ac. 1, pr. 14).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăbūsŏr": {
+    "indicatii": "-ōris",
+    "pos": "subst. m.",
+    "definitie_ro": "cel care abuzează, risipitor (Salv. Gub. 8, 4).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăbusquē": {
+    "indicatii": "",
+    "pos": "prep. cu abl.",
+    "definitie_ro": "(= usque ab) de la, dinspre: abusque Pachyno (Virg. En. 7, 289), de la promontoriul Pachynum; Oceano abusque (Tac. An. 15, 37), dinspre Ocean; Tiberio abusque (Tac. An. 13, 45), de la Tibru încoace.",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăbūsus 1": {
+    "indicatii": "-a, -um",
+    "pos": "part.",
+    "definitie_ro": "participiul verbului abutor.",
+    "trimite_la": "abutor",
+    "paradigma": []
+  },
+  "ăbūsŭs 2": {
+    "indicatii": "-ūs",
+    "pos": "subst. m.",
+    "definitie_ro": "utilizarea unui lucru până la epuizarea sa, consumare completă (Cic. Top. 17).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăbūtendus": {
+    "indicatii": "-a, -um",
+    "pos": "adj.",
+    "definitie_ro": "de care se poate abuza (Suet. Galb. 14).",
+    "trimite_la": "",
+    "paradigma": []
+  },
+  "ăbūto": {
+    "indicatii": "-ĕre",
+    "pos": "vb.",
+    "definitie_ro": "vezi abutor.",
+    "trimite_la": "abutor",
+    "paradigma": []
+  },
+  "ăbūtor": {
+    "indicatii": "-ūsus sum, -ūti",
+    "pos": "vb. dep.",
+    "definitie_ro": "I. [arh.] tr., a folosi până la epuizare, a consuma: caseum (Cat. Agr. 76), a consuma complet brânza; aurum (Pl. Bac. 359) / rem patriam (Pl. Trin. 682), a risipi o sumă de aur, patrimoniul său; operam (Ter. And. 5), a-și epuiza activitatea, a-și pierde timpul, cf. (Sall. C. 13, 2). II. int. 1. a se servi din plin de, a uza liber de, a folosi complet: sole (Cic. Att. 12, 6, 2), a uza liber de soare; his festivitatibus insolentius (Cic. Or. 176), a folosi aceste ornamente de stil cu o libertate cam excesivă; prooemio (Cic. Att. 16, 6, 4), a utiliza un preambul [definitiv, o dată pentru totdeauna]; otio (Cic. Rep. 1, 14), a-și folosi în întregime momentele de răgaz. 2. a uza [deturnând obiectul de la destinația sa primară]: sagacitate canum ad utilitatem nostram (Cic. Nat. 2, 151), a face ca mirosul câinilor să servească uzului nostru, cf. (Lig. 1; Mil. 6; Verr. 3, 61; Inv. 2, 24) || verbo (Cic. de Or. 3, 169), a face o utilizare deturnată a unui cuvânt (catahreză), cf. (Or. 94; Part. 17; Leg. 1, 45; ...).",
     "trimite_la": "",
     "paradigma": []
   }

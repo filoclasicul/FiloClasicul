@@ -152,6 +152,13 @@
       gap: 1.25rem;
     }
 
+    @media (min-width: 1051px) {
+      main {
+        max-width: 1280px;
+        padding: 0 2.5rem;
+      }
+    }
+
     .content-column {
       grid-area: content;
       min-width: 0;
@@ -734,6 +741,16 @@
       color: var(--crimson);
     }
 
+    .definition-item,
+    .etymology-box,
+    .reverse-match-text,
+    .citation-original,
+    .citation-trans,
+    .morph-notice,
+    .dictionary-load-error {
+      text-align: justify;
+    }
+
     header {
       border-bottom: 1px solid var(--border-color);
       box-shadow: 0 5px 22px rgba(24, 34, 56, 0.045);
@@ -1130,6 +1147,7 @@
         pos: escape(entry.pos ?? 'Parte de vorbire nespecificată'),
         forms: escape(Array.isArray(rawForms) ? rawForms.join(', ') : rawForms),
         indicatii: escape(entry.indicatii ?? ''),
+        definitionLanguage: escape(entry.definitionLanguage ?? 'română'),
         redirect: escape(entry.trimite_la ?? ''),
         searchForms,
         etym: escape(entry.etym ?? entry.etimologie ?? ''),
@@ -1143,6 +1161,64 @@
           ? entry.paradigm.map(row => Array.isArray(row) ? row.map(escape) : [])
           : []
       };
+    }
+
+    function getDictionaryEntries(data) {
+      if (!Array.isArray(data)) {
+        if (!data || typeof data !== 'object') {
+          throw new TypeError('Fișierul JSON trebuie să conțină intrări de dicționar.');
+        }
+        return Object.entries(data);
+      }
+
+      const entries = new Map();
+      data.forEach((sourceEntry, index) => {
+        if (!sourceEntry || typeof sourceEntry !== 'object' || Array.isArray(sourceEntry)) {
+          throw new TypeError(`Înregistrarea ${index + 1} nu este un obiect valid.`);
+        }
+
+        const lemma = typeof sourceEntry.key === 'string' ? sourceEntry.key.trim() : '';
+        if (!lemma) {
+          throw new TypeError(`Înregistrarea ${index + 1} nu are o cheie de lemă validă.`);
+        }
+
+        const senses = Array.isArray(sourceEntry.senses)
+          ? sourceEntry.senses.map(String).filter(Boolean)
+          : [];
+        const notes = typeof sourceEntry.main_notes === 'string' ? sourceEntry.main_notes.trim() : '';
+        const orthography = typeof sourceEntry.title_orthography === 'string'
+          ? sourceEntry.title_orthography.trim()
+          : '';
+        const genitive = typeof sourceEntry.title_genitive === 'string'
+          ? sourceEntry.title_genitive.trim()
+          : '';
+        const grammar = [
+          sourceEntry.gender,
+          sourceEntry.declension != null ? `Declinarea ${sourceEntry.declension}` : '',
+          genitive ? `Genitiv: ${genitive}` : '',
+          notes && senses.length ? `Notă: ${notes}` : ''
+        ].filter(Boolean).join(', ');
+        const adaptedEntry = {
+          variante: orthography && orthography !== lemma ? [orthography] : [],
+          indicatii: grammar,
+          pos: sourceEntry.part_of_speech ?? '',
+          definitie_ro: senses.length ? senses : (notes ? [notes] : []),
+          definitionLanguage: 'engleză'
+        };
+        const existingEntry = entries.get(lemma);
+
+        if (!existingEntry) {
+          entries.set(lemma, adaptedEntry);
+          return;
+        }
+
+        existingEntry.variante = [...new Set([...existingEntry.variante, ...adaptedEntry.variante])];
+        existingEntry.indicatii = [...new Set([existingEntry.indicatii, adaptedEntry.indicatii].filter(Boolean))].join('; ');
+        existingEntry.definitie_ro = [...new Set([...existingEntry.definitie_ro, ...adaptedEntry.definitie_ro])];
+        existingEntry.etym = [...new Set([existingEntry.etym, adaptedEntry.etym].filter(Boolean))].join('; ');
+      });
+
+      return [...entries.entries()];
     }
 
     async function loadRemoteDictionary(query) {
@@ -1172,10 +1248,7 @@
 
         try {
           const data = await remoteDictionaryCache.get(target.path);
-          if (!data || typeof data !== 'object' || Array.isArray(data)) {
-            throw new TypeError('Fișierul JSON trebuie să conțină un obiect cu intrări indexate după lemă.');
-          }
-          for (const [lemma, entry] of Object.entries(data)) {
+          for (const [lemma, entry] of getDictionaryEntries(data)) {
             if (!Object.prototype.hasOwnProperty.call(lexiconData, lemma)) {
               lexiconData[lemma] = normalizeRemoteEntry(lemma, entry, target.language);
             }
@@ -1540,7 +1613,7 @@
 
           ${data.redirect ? `<div class="morph-notice active">Formă flexionată. Trimite la: <strong>${data.redirect}</strong></div>` : ''}
 
-          <div class="section-title">Definiții & Sensuri (Limba Română)</div>
+          <div class="section-title">Definiții & Sensuri (Limba ${data.definitionLanguage === 'engleză' ? 'Engleză' : 'Română'})</div>
           <ol class="definitions-list">
             ${data.defs.map((d, idx) => `<li class="definition-item"><span class="definition-num">${idx + 1}.</span> ${formatDefinition(d)}</li>`).join('')}
           </ol>
