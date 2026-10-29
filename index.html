@@ -837,6 +837,10 @@
       overflow: hidden;
     }
 
+    #dictionaryDisplay {
+      scroll-margin-top: 6rem;
+    }
+
     .entry-card::before {
       content: "";
       position: absolute;
@@ -1016,7 +1020,7 @@
               onkeydown="handleSearchKeydown(event)"
             >
             <div class="search-actions">
-              <button class="icon-btn" id="searchSubmitBtn" onclick="submitSearch()" title="Caută" aria-label="Caută" style="display:none;">🔍</button>
+              <button class="icon-btn" id="searchSubmitBtn" onclick="submitSearch()" title="Caută" aria-label="Caută">🔍</button>
               <button class="icon-btn" onclick="clearSearch()" title="Șterge textul">✕</button>
               <button class="icon-btn" id="kbdToggleBtn" onclick="toggleKeyboard()" title="Tastatură diacritice">ᾱ/ὦ</button>
             </div>
@@ -1221,49 +1225,71 @@
       return [...entries.entries()];
     }
 
+    async function loadDictionaryTarget(target, allowMissing = false) {
+      if (!remoteDictionaryCache.has(target.path)) {
+        const request = fetch(target.path).then(async response => {
+          if (!response.ok) {
+            const error = new Error(`Răspuns HTTP ${response.status}`);
+            error.status = response.status;
+            throw error;
+          }
+          const body = await response.text();
+          try {
+            return JSON.parse(body);
+          } catch (error) {
+            if (body.trimStart().startsWith('<')) {
+              throw new Error('serverul a returnat o pagină HTML, nu fișierul JSON cerut');
+            }
+            throw error;
+          }
+        });
+        remoteDictionaryCache.set(target.path, request);
+      }
+
+      try {
+        const data = await remoteDictionaryCache.get(target.path);
+        for (const [lemma, entry] of getDictionaryEntries(data)) {
+          if (!Object.prototype.hasOwnProperty.call(lexiconData, lemma)) {
+            lexiconData[lemma] = normalizeRemoteEntry(lemma, entry, target.language);
+          }
+        }
+        return true;
+      } catch (error) {
+        remoteDictionaryCache.delete(target.path);
+        if (allowMissing && error.status === 404) return false;
+        throw new Error(`${target.path}: ${error.message}`);
+      }
+    }
+
     async function loadRemoteDictionary(query) {
       const targets = buildDictionaryTargets(query);
       if (!targets.length) return;
+      await Promise.all(targets.map(target => loadDictionaryTarget(target)));
+    }
 
-      let lastError = null;
-
-      for (const target of targets) {
-        if (!remoteDictionaryCache.has(target.path)) {
-          const request = fetch(target.path).then(async response => {
-            if (!response.ok) {
-              throw new Error(`Răspuns HTTP ${response.status}`);
-            }
-            const body = await response.text();
-            try {
-              return JSON.parse(body);
-            } catch (error) {
-              if (body.trimStart().startsWith('<')) {
-                throw new Error('serverul a returnat o pagină HTML, nu fișierul JSON cerut');
-              }
-              throw error;
-            }
-          });
-          remoteDictionaryCache.set(target.path, request);
-        }
-
-        try {
-          const data = await remoteDictionaryCache.get(target.path);
-          for (const [lemma, entry] of getDictionaryEntries(data)) {
-            if (!Object.prototype.hasOwnProperty.call(lexiconData, lemma)) {
-              lexiconData[lemma] = normalizeRemoteEntry(lemma, entry, target.language);
-            }
-          }
-          return;
-        } catch (error) {
-          lastError = new Error(`${target.path}: ${error.message}`);
-          remoteDictionaryCache.delete(target.path);
-        }
+    async function loadReverseSearchDictionary() {
+      const languages = currentMode === 'greek-rev'
+        ? ['gr']
+        : currentMode === 'latin-rev'
+          ? ['lat']
+          : ['gr', 'lat'];
+      const alphabets = {
+        gr: Array.from('αβγδεζηθικλμνξοπρστυφχψω'),
+        lat: Array.from('abcdefghijklmnopqrstuvwxyz')
+      };
+      const targets = languages.flatMap(language => alphabets[language].map(letter => ({
+        language,
+        path: `data/${language}/${encodeURIComponent(letter)}.json`
+      })));
+      const results = await Promise.all(targets.map(target => loadDictionaryTarget(target, true)));
+      const failures = results.filter(result => result === false).length;
+      if (failures === results.length) {
+        throw new Error('Nu s-au găsit fișiere de dicționar pentru limba selectată.');
       }
-
-      throw new Error(`Nu s-a putut încărca niciun fișier pentru ${query}: ${lastError ? lastError.message : 'eroare necunoscută'}`);
     }
 
     function setSearchMode(mode) {
+      searchRequestId++;
       currentMode = mode;
       const allModeButtons = ['omnia-dir', 'greek-dir', 'latin-dir', 'omnia-rev', 'greek-rev', 'latin-rev'];
       allModeButtons.forEach(m => {
@@ -1273,7 +1299,6 @@
 
       const input = document.getElementById('searchInput');
       const kbdBtn = document.getElementById('kbdToggleBtn');
-      const searchSubmitBtn = document.getElementById('searchSubmitBtn');
       const kbdPanel = document.getElementById('keyboardPanel');
 
       kbdPanel.classList.remove('active');
@@ -1281,7 +1306,6 @@
 
       const isReverse = mode.endsWith('-rev');
       kbdBtn.style.display = isReverse ? "none" : "inline-block";
-      searchSubmitBtn.style.display = isReverse ? "inline-block" : "none";
 
       if (!isReverse) {
         input.placeholder = "Tastează o literă sau un cuvânt";
@@ -1292,6 +1316,7 @@
       if (isReverse) {
         document.getElementById('autocompleteDropdown').classList.remove('active');
         document.getElementById('dictionaryDisplay').innerHTML = '';
+        updateHomeView(input.value);
       } else {
         handleSearchInput(input.value);
       }
@@ -1299,6 +1324,7 @@
     }
 
     function handleSearchInput(query) {
+      const requestId = ++searchRequestId;
       if (currentMode.endsWith('-rev')) {
         document.getElementById('autocompleteDropdown').classList.remove('active');
         document.getElementById('dictionaryDisplay').innerHTML = '';
@@ -1306,33 +1332,54 @@
         return;
       }
 
-      const requestId = ++searchRequestId;
       updateLiveSuggestions(query);
-      handleSearch(query);
       if (!query.trim()) return;
 
       loadRemoteDictionary(query).then(() => {
         if (requestId !== searchRequestId || currentMode.endsWith('-rev')) return;
         updateLiveSuggestions(query);
-        handleSearch(query);
       }).catch(error => {
         if (requestId !== searchRequestId || currentMode.endsWith('-rev')) return;
-        const display = document.getElementById('dictionaryDisplay');
-        const message = document.createElement('p');
-        message.className = 'dictionary-load-error';
-        message.textContent = error.message;
-        display.appendChild(message);
+        const dropdown = document.getElementById('autocompleteDropdown');
+        dropdown.classList.add('active');
+        document.getElementById('dropdownTitle').innerText = 'Eroare la încărcarea recomandărilor';
+        document.getElementById('dropdownList').innerHTML = `<p class="dictionary-load-error">${escapeHtml(error.message)}</p>`;
       });
     }
 
-    function submitSearch() {
-      if (!currentMode.endsWith('-rev')) return;
+    async function submitSearch() {
+      const query = document.getElementById('searchInput').value.trim();
+      const display = document.getElementById('dictionaryDisplay');
       document.getElementById('autocompleteDropdown').classList.remove('active');
-      runReverseSearch(document.getElementById('searchInput').value);
+      display.innerHTML = '';
+      updateHomeView(query);
+      if (!query) return;
+
+      const requestId = ++searchRequestId;
+      try {
+        if (currentMode.endsWith('-rev')) {
+          await loadReverseSearchDictionary();
+        } else {
+          await loadRemoteDictionary(query);
+        }
+        if (requestId !== searchRequestId) return;
+
+        if (currentMode.endsWith('-rev')) {
+          if (!runReverseSearch(query)) {
+            display.innerHTML = `<p class="dictionary-load-error">Nu am găsit rezultate pentru „${escapeHtml(query)}”.</p>`;
+          }
+        } else if (!runDirectSearch(query)) {
+          display.innerHTML = `<p class="dictionary-load-error">Nu am găsit „${escapeHtml(query)}”. Alege o recomandare sau verifică scrierea.</p>`;
+        }
+        display.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } catch (error) {
+        if (requestId !== searchRequestId) return;
+        display.innerHTML = `<p class="dictionary-load-error">${escapeHtml(error.message)}</p>`;
+      }
     }
 
     function handleSearchKeydown(event) {
-      if (event.key === 'Enter' && currentMode.endsWith('-rev')) {
+      if (event.key === 'Enter') {
         event.preventDefault();
         submitSearch();
       }
@@ -1350,6 +1397,7 @@
 
       if (!query || query.trim() === '') {
         dropdown.classList.remove('active');
+        list.innerHTML = '';
         return;
       }
 
@@ -1393,19 +1441,12 @@
     }
 
     function selectSuggestion(lemma) {
+      searchRequestId++;
       document.getElementById('searchInput').value = lemma;
       document.getElementById('autocompleteDropdown').classList.remove('active');
       updateHomeView(lemma);
       renderEntry(lemma);
-    }
-
-    function handleSearch(query) {
-      updateHomeView(query);
-      if (currentMode.endsWith('-dir')) {
-        runDirectSearch(query);
-      } else {
-        runReverseSearch(query);
-      }
+      document.getElementById('dictionaryDisplay').scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
     function italicizeLatinExamples(text) {
@@ -1467,7 +1508,7 @@
 
       if (!query || query.trim() === '') {
         display.innerHTML = '';
-        return;
+        return false;
       }
 
       const raw = query.trim();
@@ -1487,8 +1528,10 @@
 
       if (matchedLemma) {
         renderEntry(matchedLemma);
+        return true;
       } else {
         display.innerHTML = '';
+        return false;
       }
     }
 
@@ -1497,7 +1540,7 @@
 
       if (!query || query.trim().length < 2) {
         display.innerHTML = '';
-        return;
+        return false;
       }
 
       const raw = query.trim();
@@ -1530,7 +1573,7 @@
 
       if (matches.length === 0) {
         display.innerHTML = '';
-        return;
+        return false;
       }
 
       let html = `<div class="reverse-results-container">`;
@@ -1557,6 +1600,7 @@
       display.querySelectorAll('.reverse-item-card').forEach((element, index) => {
         element.addEventListener('click', () => selectSuggestion(matches[index].lemma));
       });
+      return true;
     }
 
     function renderEntry(lemmaKey) {
@@ -1629,8 +1673,10 @@
       const input = document.getElementById('searchInput');
       input.value = '';
       document.getElementById('autocompleteDropdown').classList.remove('active');
+      document.getElementById('dropdownList').innerHTML = '';
       input.focus();
-      handleSearch('');
+      document.getElementById('dictionaryDisplay').innerHTML = '';
+      updateHomeView('');
     }
 
     function resetToHome() {
